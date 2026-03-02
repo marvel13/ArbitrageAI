@@ -158,3 +158,39 @@ class LLMTaxonomyResponse(BaseModel):
     clusters: list[TaxonomyCluster] = Field(
         description="List of 4-8 top-level document clusters"
     )
+
+
+# --------------------------------------------------------------------------- #
+# Phase 2 Step 2 — Classification                                             #
+# --------------------------------------------------------------------------- #
+
+
+class LLMClassificationResponse(BaseModel):
+    """Schema sent to Gemini for segment classification."""
+
+    primary_cluster: str = Field(description="Exactly one primary cluster key")
+    secondary_clusters: list[str] = Field(
+        default_factory=list,
+        description="0-2 additional cluster keys (do not repeat primary)",
+    )
+    confidence: float = Field(
+        ge=0.0,
+        le=1.0,
+        description="Confidence score for primary_cluster between 0 and 1",
+    )
+
+
+class SegmentClassification(BaseModel):
+    """Classification result for a single segment."""
+
+    segment_id: str = Field(description="Folder name of the segment")
+    primary_cluster: str = Field(description="Primary cluster key")
+    secondary_clusters: list[str] = Field(
+        default_factory=list,
+        description="0-2 secondary cluster keys",
+    )
+    confidence: float = Field(
+        ge=0.0,
+        le=1.0,
+        description="Confidence score for primary_cluster",
+    )

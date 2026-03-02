@@ -11,7 +11,7 @@ import sys
 from pathlib import Path
 
 from pipeline.phase1_index import run_phase1
-from pipeline.phase2_types import run_phase2_step1
+from pipeline.phase2_types import run_phase2_step1, run_phase2_step2
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -68,8 +68,12 @@ def main() -> None:
         "Phase 2 Step 1 produced %d clusters", len(phase2_taxonomy)
     )
 
-    # Phase 2 Step 2 — Classification (TODO)
-    # run_phase2_step2(outputs_dir=OUTPUTS_DIR, force=args.force)
+    # Phase 2 Step 2 — Classification
+    phase2_classifications = run_phase2_step2(outputs_dir=OUTPUTS_DIR, force=args.force)
+
+    logging.getLogger(__name__).info(
+        "Phase 2 Step 2 produced %d classifications", len(phase2_classifications)
+    )
 
     # ------------------------------------------------------------------
     # Phase 3 — Claim Head Discovery & Mapping (TODO)

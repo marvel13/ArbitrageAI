@@ -1,7 +1,7 @@
 """Phase 2 — Document Type Taxonomy & Classification.
 
 Step 1: Generate a corpus-level taxonomy from index.json metadata.
-Step 2: Classify each segment into taxonomy sub-types. (TODO)
+Step 2: Classify each segment into taxonomy clusters.
 
 All Phase 2-specific LLM logic (prompts, post-processing) lives here.
 The generic GeminiClient is imported from utils.llm.
@@ -10,9 +10,14 @@ The generic GeminiClient is imported from utils.llm.
 import json
 import logging
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-from models.schemas import LLMTaxonomyResponse
+from models.schemas import (
+    LLMClassificationResponse,
+    LLMTaxonomyResponse,
+    SegmentClassification,
+)
 from utils.file_io import write_json_output
 from utils.llm import GeminiClient
 
@@ -20,6 +25,10 @@ logger = logging.getLogger(__name__)
 
 # Model used for Phase 2 taxonomy generation
 PHASE2_MODEL = "gemini-2.5-flash"
+
+# Hard cap on parallel Gemini calls
+MAX_WORKERS = 5
+
 
 # ---------------------------------------------------------------------------
 # Phase 2 prompts
@@ -185,20 +194,205 @@ def run_phase2_step1(outputs_dir: Path, force: bool = False) -> list[dict]:
 
 
 # --------------------------------------------------------------------------- #
-# Step 2 — Classification (TODO)                                              #
+# Step 2 — Classification                                                     #
 # --------------------------------------------------------------------------- #
+
+CLASSIFICATION_SYSTEM_PROMPT = """\
+You are a document classifier for construction arbitration disputes.
+
+Select 1 to 3 clusters from the provided list that best describe the document.
+You MUST choose exactly one primary_cluster.
+Do NOT invent new cluster keys — only use keys from the provided list.
+"""
+
+CLASSIFICATION_USER_PROMPT_TEMPLATE = """\
+Classify this document into the most appropriate cluster(s).
+
+DOCUMENT METADATA:
+- Document Type: {document_type}
+- Document Stage: {document_stage}
+- Summary: {summary}
+- Dispute Signals: {dispute_signals}
+
+VALID CLUSTER KEYS (choose only from this list):
+{cluster_list}
+
+RULES:
+1. Select exactly ONE primary_cluster from the list above.
+2. Optionally select up to TWO secondary_clusters if the document spans multiple themes.
+3. secondary_clusters must NOT include the primary_cluster.
+4. Total clusters assigned must be between 1 and 3.
+5. Confidence (0.0 to 1.0) applies to the primary_cluster selection.
+6. Do NOT invent new cluster keys.
+
+Output strict JSON matching the provided schema."""
+
+
+def _classify_one(
+    client: GeminiClient,
+    segment: dict,
+    valid_clusters: set[str],
+) -> SegmentClassification | None:
+    """Classify a single segment. Returns None on failure."""
+    segment_id = segment["segment_id"]
+    start = time.perf_counter()
+
+    try:
+        # Format dispute signals for prompt
+        signals = segment.get("dispute_signals", [])
+        signal_str = ", ".join(
+            s.get("signal_type", "") for s in signals if s.get("signal_type")
+        ) or "none"
+
+        user_prompt = CLASSIFICATION_USER_PROMPT_TEMPLATE.format(
+            document_type=segment.get("document_type", "Unknown"),
+            document_stage=segment.get("document_stage", "Unknown"),
+            summary=segment.get("summary", "No summary available"),
+            dispute_signals=signal_str,
+            cluster_list="\n".join(f"- {k}" for k in sorted(valid_clusters)),
+        )
+
+        raw_json = client.generate_json(
+            system_prompt=CLASSIFICATION_SYSTEM_PROMPT,
+            user_prompt=user_prompt,
+            schema=LLMClassificationResponse.model_json_schema(),
+            model=PHASE2_MODEL,
+            temperature=0.1,
+        )
+
+        # Validate response
+        llm_result = LLMClassificationResponse.model_validate(raw_json)
+
+        # Post-LLM validation: check cluster keys exist
+        if llm_result.primary_cluster not in valid_clusters:
+            raise ValueError(
+                f"Invalid primary_cluster: {llm_result.primary_cluster}"
+            )
+
+        for sec in llm_result.secondary_clusters:
+            if sec not in valid_clusters:
+                raise ValueError(f"Invalid secondary_cluster: {sec}")
+
+        if llm_result.primary_cluster in llm_result.secondary_clusters:
+            raise ValueError("primary_cluster cannot appear in secondary_clusters")
+
+        # Limit secondary_clusters to 2
+        secondary = llm_result.secondary_clusters[:2]
+
+        # Total clusters must be 1-3
+        total = 1 + len(secondary)
+        if total > 3:
+            raise ValueError(f"Too many clusters assigned: {total}")
+
+        # Round confidence to 2 decimal places
+        confidence = round(llm_result.confidence, 2)
+
+        result = SegmentClassification(
+            segment_id=segment_id,
+            primary_cluster=llm_result.primary_cluster,
+            secondary_clusters=secondary,
+            confidence=confidence,
+        )
+
+        elapsed = time.perf_counter() - start
+        logger.info("Done: %s → %s (%.1fs)", segment_id, result.primary_cluster, elapsed)
+        return result
+
+    except Exception as exc:
+        elapsed = time.perf_counter() - start
+        logger.error("Failed: %s (%.1fs): %s", segment_id, elapsed, exc)
+        return None
 
 
 def run_phase2_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
-    """Classify each segment into taxonomy sub-types.
+    """Classify each segment into taxonomy clusters.
 
-    TODO: Implement classification of each segment against the taxonomy.
+    Reads index.json and type_taxonomy.json, classifies each segment
+    into 1-3 clusters, writes result to type_classifications.json.
 
     Args:
-        outputs_dir: Directory containing type_taxonomy.json and index.json.
+        outputs_dir: Directory containing index.json and type_taxonomy.json.
         force: If True, reclassify even if output exists.
 
     Returns:
         List of classification dicts.
+
+    Raises:
+        FileNotFoundError: If required input files do not exist.
     """
-    raise NotImplementedError("Phase 2 Step 2 not yet implemented")
+    output_path = outputs_dir / "type_classifications.json"
+
+    # Checkpoint: skip if already exists
+    if output_path.exists() and not force:
+        logger.info("Phase 2 Step 2 output exists, loading: %s", output_path)
+        existing = json.loads(output_path.read_text(encoding="utf-8"))
+        logger.info("Loaded %d classifications from checkpoint", len(existing))
+        return existing
+
+    # Dependency checks
+    index_path = outputs_dir / "index.json"
+    taxonomy_path = outputs_dir / "type_taxonomy.json"
+
+    if not index_path.exists():
+        raise FileNotFoundError(f"index.json not found: {index_path}")
+    if not taxonomy_path.exists():
+        raise FileNotFoundError(f"type_taxonomy.json not found: {taxonomy_path}")
+
+    logger.info("=== Phase 2 Step 2 — Classification ===")
+    phase_start = time.perf_counter()
+
+    # Load inputs
+    index_data = json.loads(index_path.read_text(encoding="utf-8"))
+    taxonomy_data = json.loads(taxonomy_path.read_text(encoding="utf-8"))
+
+    # Extract valid cluster keys (top-level only, no sub-types)
+    valid_clusters: set[str] = {c["cluster_key"] for c in taxonomy_data}
+
+    logger.info(
+        "Loaded %d segments, %d valid clusters",
+        len(index_data),
+        len(valid_clusters),
+    )
+
+    # Process segments in parallel
+    client = GeminiClient()
+    results: list[SegmentClassification] = []
+    failures: list[str] = []
+
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+        future_to_seg = {
+            pool.submit(_classify_one, client, seg, valid_clusters): seg["segment_id"]
+            for seg in index_data
+        }
+
+        for i, future in enumerate(as_completed(future_to_seg), 1):
+            segment_id = future_to_seg[future]
+            result = future.result()
+
+            if result is not None:
+                results.append(result)
+            else:
+                failures.append(segment_id)
+
+            logger.info("Progress: %d/%d complete", i, len(index_data))
+
+    # Sort by segment_id for deterministic output
+    results.sort(key=lambda r: r.segment_id)
+
+    # Write output atomically
+    data = [r.model_dump() for r in results]
+    write_json_output(data, output_path)
+
+    elapsed = time.perf_counter() - phase_start
+    logger.info(
+        "Phase 2 Step 2 complete: %d succeeded, %d failed, %.1fs",
+        len(results),
+        len(failures),
+        elapsed,
+    )
+
+    if failures:
+        logger.warning("Failed segments: %s", ", ".join(sorted(failures)))
+
+    return data
+
