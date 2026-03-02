@@ -128,3 +128,33 @@ class LLMSegmentResponse(BaseModel):
     monetary_amounts: list[MonetaryAmount] = Field(default_factory=list)
     summary: str = Field(description="2-4 sentence factual summary of the document")
     dispute_signals: list[DisputeSignal] = Field(default_factory=list)
+
+
+# --------------------------------------------------------------------------- #
+# Phase 2 — Document Type Taxonomy                                            #
+# --------------------------------------------------------------------------- #
+
+
+class TaxonomySubType(BaseModel):
+    """A sub-type within a taxonomy cluster."""
+
+    sub_type_key: str = Field(description="Unique key in format cluster_key/sub_type_slug")
+    label: str = Field(description="Human-readable label for this sub-type")
+
+
+class TaxonomyCluster(BaseModel):
+    """A top-level cluster in the document taxonomy."""
+
+    cluster_key: str = Field(description="Unique snake_case key for this cluster")
+    label: str = Field(description="Human-readable label for this cluster")
+    sub_types: list[TaxonomySubType] = Field(
+        description="Sub-types within this cluster (1-5 items)"
+    )
+
+
+class LLMTaxonomyResponse(BaseModel):
+    """Schema sent to Gemini for taxonomy generation."""
+
+    clusters: list[TaxonomyCluster] = Field(
+        description="List of 4-8 top-level document clusters"
+    )
