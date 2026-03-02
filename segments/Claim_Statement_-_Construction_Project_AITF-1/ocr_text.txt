@@ -1,0 +1,78 @@
+--- Page 1 ---
+C C C C C
+001578
+Name of the work: Construction of Extension to Assembly Integration and Test Facility (AITF-1) at ISITE, Bangalore
+Name of the Agency: M/s. URC Construction (P) Ltd., Bangalore
+WO.No: URSC/C&MG/ISAC/2/36(T) dated 4.7.2018
+SI.No
+Description
+Escalation
+a
+1 Civil
+2 Electrical
+3 HVAC
+4 Mechanical
+CLAIM STATEMENT
+Total Amount
+Released
+Balance
+Remarks
+8,61,72,922.00 5,51,72,758.00
+1,98,46,088.00 1,02,16,226.00
+2,32,61,695.00 1,30,82,527.00
+3,10,00,164,00
+96,29,862.00
+1,01,79,168.00
+72,82,293.00
+38,71,935.00
+34,10,358.00
+5,42,19,552.00
+59,97,813.00
+6,78,16,783.00
+b
+LD Amount
+59,97,813.00
+C
+Covid Claim
+6,78,16,783.00
+Compensation for prolongation
+d
+period
+6,41,59,499.00
+6,41,59,499.00
+e
+Interest
+Interest on Final Bills
+Civil
+6,23,915.57
+HVAC
+7,56,553.94
+Mechanical
+Electrical
+2,76,279.02
+9,54,751.96
+6,23,915.57
+7,56,553.94
+2,76,279.02
+9,54,751.96
+Interest on Escalation bills
+Civil
+3,23,57,961.00
+Electrical
+HVAC
+Mechanical
+69,44,599.00
+1,26,82,381.00
+41,13,984.00
+Total Interest
+Balance Total Amount due
+3,23,57,961.00
+69,44,599.00
+1,26,82,381.00
+41,13,984.00
+5,87,10,425.49
+25,09,04,072.49
+For URC Construction (R) Ltd
+Authorised Signator
+P) Ltd
+23

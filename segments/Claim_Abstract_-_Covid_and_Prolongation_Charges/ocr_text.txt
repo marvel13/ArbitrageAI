@@ -1,0 +1,39 @@
+--- Page 1 ---
+CLAIM ABSTRACT
+Sl.No
+Description
+a
+Covid Claims
+b
+Prolongation Charges
+C
+Interest
+Interest on Civil Final bill
+ii Interest on HVAC Final bill
+Interest on Mechanical Final bill
+iv Interest on Electrical Final bill
+v Interest on Escalation-Civil
+vi Interest on Escalation-HVAC
+vii Interest on Escalation-Mechanical
+viii Interest on Escalation-Electrical
+Sub total
+Grand Total
+For URC Construction C
+Authorised SignNGALO
+LORE
+RON (P) LTD
+Amount
+8,34,30,676.00
+1,81,66,196.60
+6,23,915,57
+7,56,553.94
+2,76,279.02
+9,54,751.96
+2,84,07,118.53
+1,14,17,573.69
+37,45,645.65
+67,09,096.79
+5,28,90,935.15
+15,44,87,807.75
+Remarks
+001207
