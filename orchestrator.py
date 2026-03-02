@@ -1,18 +1,20 @@
 """Orchestrator — runs the arbitration analysis pipeline.
 
 Usage:
-    uv run python orchestrator.py            # Run all phases (skips completed)
-    uv run python orchestrator.py --force    # Force re-run Phase 1
+    uv run python orchestrator.py            # Run all phases (parallel, skips completed)
+    uv run python orchestrator.py --force    # Force re-run all phases
+    uv run python orchestrator.py --no-parallel  # Run sequentially
 """
 
 import argparse
 import logging
-import sys
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from pipeline.phase1_index import run_phase1
-from pipeline.phase2_types import run_phase2_step1, run_phase2_step2
-from pipeline.phase3_claims import run_phase3_step1, run_phase3_step2
+from pipeline.phase2_types import run_phase2_full, run_phase2_step1, run_phase2_step2
+from pipeline.phase3_claims import run_phase3_full, run_phase3_step1, run_phase3_step2
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -28,6 +30,19 @@ def main() -> None:
         "--force",
         action="store_true",
         help="Force re-run phases even if output already exists",
+    )
+    parser.add_argument(
+        "--parallel",
+        action="store_true",
+        default=True,
+        dest="parallel",
+        help="Run Phase 2 and Phase 3 in parallel (default: True)",
+    )
+    parser.add_argument(
+        "--no-parallel",
+        action="store_false",
+        dest="parallel",
+        help="Run Phase 2 and Phase 3 sequentially",
     )
     args = parser.parse_args()
 
@@ -61,36 +76,80 @@ def main() -> None:
     )
 
     # ------------------------------------------------------------------
-    # Phase 2 — Document Type Taxonomy & Classification
+    # Phase 2 & 3 — Parallel or Sequential execution
     # ------------------------------------------------------------------
-    phase2_taxonomy = run_phase2_step1(outputs_dir=OUTPUTS_DIR, force=args.force)
+    logger = logging.getLogger(__name__)
 
-    logging.getLogger(__name__).info(
-        "Phase 2 Step 1 produced %d clusters", len(phase2_taxonomy)
-    )
+    if args.parallel:
+        logger.info("=== Running Phase 2 and Phase 3 in parallel ===")
+        parallel_start = time.perf_counter()
 
-    # Phase 2 Step 2 — Classification
-    phase2_classifications = run_phase2_step2(outputs_dir=OUTPUTS_DIR, force=args.force)
+        # Shared LLM worker pool (max 5 concurrent API calls)
+        with ThreadPoolExecutor(max_workers=5) as llm_executor:
+            # Phase-level executor (2 workers: one per phase)
+            with ThreadPoolExecutor(max_workers=2) as phase_executor:
+                phase2_future = phase_executor.submit(
+                    run_phase2_full,
+                    outputs_dir=OUTPUTS_DIR,
+                    force=args.force,
+                    executor=llm_executor,
+                )
+                phase3_future = phase_executor.submit(
+                    run_phase3_full,
+                    outputs_dir=OUTPUTS_DIR,
+                    force=args.force,
+                    executor=llm_executor,
+                )
 
-    logging.getLogger(__name__).info(
-        "Phase 2 Step 2 produced %d classifications", len(phase2_classifications)
-    )
+                # Wait for both phases to complete
+                futures = {phase2_future: "Phase 2", phase3_future: "Phase 3"}
+                for future in as_completed(futures):
+                    phase_name = futures[future]
+                    try:
+                        result = future.result()
+                        if phase_name == "Phase 2":
+                            phase2_taxonomy, phase2_classifications = result
+                            logger.info(
+                                "%s complete: %d clusters, %d classifications",
+                                phase_name,
+                                len(phase2_taxonomy),
+                                len(phase2_classifications),
+                            )
+                        else:
+                            phase3_claims, phase3_mappings = result
+                            logger.info(
+                                "%s complete: %d claim heads, %d mappings",
+                                phase_name,
+                                len(phase3_claims),
+                                len(phase3_mappings),
+                            )
+                    except Exception as exc:
+                        logger.error("%s failed: %s", phase_name, exc)
+                        raise
 
-    # ------------------------------------------------------------------
-    # Phase 3 — Claim Head Discovery & Mapping
-    # ------------------------------------------------------------------
-    phase3_claims = run_phase3_step1(outputs_dir=OUTPUTS_DIR, force=args.force)
+        parallel_elapsed = time.perf_counter() - parallel_start
+        logger.info("Parallel phases completed in %.1fs", parallel_elapsed)
 
-    logging.getLogger(__name__).info(
-        "Phase 3 Step 1 produced %d claim heads", len(phase3_claims)
-    )
+    else:
+        logger.info("=== Running Phase 2 and Phase 3 sequentially ===")
 
-    # Phase 3 Step 2 — Claim Mapping
-    phase3_mappings = run_phase3_step2(outputs_dir=OUTPUTS_DIR, force=args.force)
+        # Phase 2 — Document Type Taxonomy & Classification
+        phase2_taxonomy = run_phase2_step1(outputs_dir=OUTPUTS_DIR, force=args.force)
+        logger.info("Phase 2 Step 1 produced %d clusters", len(phase2_taxonomy))
 
-    logging.getLogger(__name__).info(
-        "Phase 3 Step 2 produced %d claim mappings", len(phase3_mappings)
-    )
+        phase2_classifications = run_phase2_step2(
+            outputs_dir=OUTPUTS_DIR, force=args.force
+        )
+        logger.info(
+            "Phase 2 Step 2 produced %d classifications", len(phase2_classifications)
+        )
+
+        # Phase 3 — Claim Head Discovery & Mapping
+        phase3_claims = run_phase3_step1(outputs_dir=OUTPUTS_DIR, force=args.force)
+        logger.info("Phase 3 Step 1 produced %d claim heads", len(phase3_claims))
+
+        phase3_mappings = run_phase3_step2(outputs_dir=OUTPUTS_DIR, force=args.force)
+        logger.info("Phase 3 Step 2 produced %d claim mappings", len(phase3_mappings))
 
     # ------------------------------------------------------------------
     # Phase 4 — Case-Level Reasoning & Report (TODO)

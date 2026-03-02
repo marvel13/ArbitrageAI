@@ -304,7 +304,11 @@ def _classify_one(
         return None
 
 
-def run_phase2_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
+def run_phase2_step2(
+    outputs_dir: Path,
+    force: bool = False,
+    executor: ThreadPoolExecutor | None = None,
+) -> list[dict]:
     """Classify each segment into taxonomy clusters.
 
     Reads index.json and type_taxonomy.json, classifies each segment
@@ -313,6 +317,8 @@ def run_phase2_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
     Args:
         outputs_dir: Directory containing index.json and type_taxonomy.json.
         force: If True, reclassify even if output exists.
+        executor: Optional shared ThreadPoolExecutor for LLM calls.
+            If None, creates an internal pool.
 
     Returns:
         List of classification dicts.
@@ -359,7 +365,8 @@ def run_phase2_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
     results: list[SegmentClassification] = []
     failures: list[str] = []
 
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+    def _run_classification(pool: ThreadPoolExecutor) -> None:
+        """Execute classification with the given pool."""
         future_to_seg = {
             pool.submit(_classify_one, client, seg, valid_clusters): seg["segment_id"]
             for seg in index_data
@@ -374,7 +381,13 @@ def run_phase2_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
             else:
                 failures.append(segment_id)
 
-            logger.info("Progress: %d/%d complete", i, len(index_data))
+            logger.info("Phase 2 Step 2 progress: %d/%d complete", i, len(index_data))
+
+    if executor is not None:
+        _run_classification(executor)
+    else:
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+            _run_classification(pool)
 
     # Sort by segment_id for deterministic output
     results.sort(key=lambda r: r.segment_id)
@@ -395,4 +408,34 @@ def run_phase2_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
         logger.warning("Failed segments: %s", ", ".join(sorted(failures)))
 
     return data
+
+
+# --------------------------------------------------------------------------- #
+# Full Phase 2 Runner (for parallel orchestration)                            #
+# --------------------------------------------------------------------------- #
+
+
+def run_phase2_full(
+    outputs_dir: Path,
+    force: bool = False,
+    executor: ThreadPoolExecutor | None = None,
+) -> tuple[list[dict], list[dict]]:
+    """Run Phase 2 Step 1 and Step 2 sequentially.
+
+    Designed for parallel orchestration where Phase 2 and Phase 3
+    run concurrently but internally execute their steps sequentially.
+
+    Args:
+        outputs_dir: Directory containing index.json and for output.
+        force: If True, re-run even if outputs exist.
+        executor: Optional shared ThreadPoolExecutor for LLM calls in Step 2.
+
+    Returns:
+        Tuple of (taxonomy, classifications).
+    """
+    taxonomy = run_phase2_step1(outputs_dir=outputs_dir, force=force)
+    classifications = run_phase2_step2(
+        outputs_dir=outputs_dir, force=force, executor=executor
+    )
+    return taxonomy, classifications
 

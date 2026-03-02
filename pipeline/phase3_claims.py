@@ -469,7 +469,11 @@ def _map_segment_to_claims(
     return results
 
 
-def run_phase3_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
+def run_phase3_step2(
+    outputs_dir: Path,
+    force: bool = False,
+    executor: ThreadPoolExecutor | None = None,
+) -> list[dict]:
     """Map segments to claim heads.
 
     For each segment, determines which claim heads (if any) it relates to,
@@ -478,6 +482,8 @@ def run_phase3_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
     Args:
         outputs_dir: Directory containing index.json, claim_heads.json.
         force: If True, re-run even if output exists.
+        executor: Optional shared ThreadPoolExecutor for LLM calls.
+            If None, creates an internal pool.
 
     Returns:
         List of segment-claim mapping dicts written to claim_classifications.json.
@@ -523,9 +529,10 @@ def run_phase3_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
     all_mappings: list[SegmentClaimMapping] = []
     failures: list[str] = []
 
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+    def _run_mapping(pool: ThreadPoolExecutor) -> None:
+        """Execute claim mapping with the given pool."""
         future_to_seg = {
-            executor.submit(
+            pool.submit(
                 _map_segment_to_claims,
                 client,
                 segment,
@@ -541,13 +548,19 @@ def run_phase3_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
                 mappings = future.result()
                 all_mappings.extend(mappings)
                 logger.info(
-                    "Mapped segment %s → %d claims",
+                    "Phase 3 Step 2: Mapped segment %s → %d claims",
                     segment_id,
                     len(mappings),
                 )
             except Exception as exc:
                 logger.error("Failed to map segment %s: %s", segment_id, exc)
                 failures.append(segment_id)
+
+    if executor is not None:
+        _run_mapping(executor)
+    else:
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
+            _run_mapping(pool)
 
     if failures:
         logger.warning("Failed to map %d segments: %s", len(failures), failures)
@@ -568,3 +581,33 @@ def run_phase3_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
     )
 
     return mappings_data
+
+
+# --------------------------------------------------------------------------- #
+# Full Phase 3 Runner (for parallel orchestration)                            #
+# --------------------------------------------------------------------------- #
+
+
+def run_phase3_full(
+    outputs_dir: Path,
+    force: bool = False,
+    executor: ThreadPoolExecutor | None = None,
+) -> tuple[list[dict], list[dict]]:
+    """Run Phase 3 Step 1 and Step 2 sequentially.
+
+    Designed for parallel orchestration where Phase 2 and Phase 3
+    run concurrently but internally execute their steps sequentially.
+
+    Args:
+        outputs_dir: Directory containing index.json and for output.
+        force: If True, re-run even if outputs exist.
+        executor: Optional shared ThreadPoolExecutor for LLM calls in Step 2.
+
+    Returns:
+        Tuple of (claim_heads, claim_mappings).
+    """
+    claim_heads = run_phase3_step1(outputs_dir=outputs_dir, force=force)
+    claim_mappings = run_phase3_step2(
+        outputs_dir=outputs_dir, force=force, executor=executor
+    )
+    return claim_heads, claim_mappings
