@@ -72,14 +72,43 @@ Rules:
    "legal counsel", "sub-contractor", "project authority".
    Do NOT extract only the sender — include all parties referenced.
 
-4. dates: Extract all dates found in the document.
-   Normalize to DD-MM-YYYY format. Handle these input formats:
-     DD.MM.YYYY, DD-MM-YYYY, DD/MM/YY, DD/MM/YYYY,
-     Month DD YYYY, D.M.YYYY, abbreviated months.
-   If the year is missing, unreadable, or ambiguous, set normalized = null.
-   Do NOT guess missing digits.
+4. dates:
+Extract only legally significant dates relevant to the dispute, such as:
+- Work order date
+- Commencement date
+- Completion date
+- Suspension date
+- Notice date
+- Claim date
+- Termination date
+- Award/order date
+
+Do NOT extract every referenced correspondence date or repeated historical references.
+
+Limit to a maximum of 10 dates.
+
+Normalize to DD-MM-YYYY format. Handle these input formats:
+  DD.MM.YYYY, DD-MM-YYYY, DD/MM/YY, DD/MM/YYYY,
+  Month DD YYYY, D.M.YYYY, abbreviated months.
+
+If the year is missing, unreadable, or ambiguous, set normalized = null.
+Do NOT guess missing digits.
 
 5. monetary_amounts:
+   Extract only legally significant monetary amounts such as:
+   - Total contract value
+   - Total claim amount
+   - Total escalation amount
+   - Released amount
+   - Balance amount
+   - LD amount
+   - Compensation amount
+   - Interest amounts
+   - Total deviation/extra item value
+   Do NOT extract repetitive line-item breakdowns, per-quarter breakdowns,
+   material/labour splits, or individual BOQ rows unless they are
+   explicitly the final total or legally significant.
+   Limit monetary_amounts to a maximum of 25 entries.
    - Preserve raw_text EXACTLY as it appears in the OCR.
    - Convert the numeric value conservatively to a float.
    - If the OCR number formatting is corrupted, ambiguous, or has
@@ -90,14 +119,19 @@ Rules:
      "Context not specified in document" as the description.
      Do NOT use vague labels like "Unclear amount".
 
-6. summary: 2-4 sentence factual summary of the document's purpose
-   and content. Only state what the document says — do not interpret.
+6. summary: Provide a concise factual summary of the document’s purpose and key claims. Maximum 100 words. Do not exceed 3 sentences. Do not include quotations, detailed allegations, or procedural history. Only describe the document’s main intent and primary financial or legal issue.
 
-7. dispute_signals: Tags indicating dispute themes present.
-   signal_type should be one of: delay, escalation, payment_dispute,
-   EOT, LD, BG, covid, force_majeure, extra_item, interest,
-   arbitration, compensation.
-   Include a brief description of why the signal was identified.
+7. dispute_signals:
+Identify only the most relevant dispute themes present in the document.
+
+signal_type must be one of:
+delay, escalation, payment_dispute, EOT, LD, BG,
+covid, force_majeure, extra_item, interest,
+arbitration, compensation.
+
+Limit to a maximum of 5 dispute signals.
+Do not include redundant or overlapping themes.
+Include a brief one-line explanation of why the signal was identified.
 
 OCR TEXT:
 {ocr_text}"""
@@ -139,12 +173,26 @@ def _post_process(segment: SegmentIndex) -> SegmentIndex:
                 ma.raw_text,
             )
 
+    # Cap monetary amounts to prevent JSON truncation
+    if len(segment.monetary_amounts) > 25:
+        logger.warning(
+            "Capping monetary_amounts from %d to 25 for %s",
+            len(segment.monetary_amounts),
+            segment.segment_id,
+        )
+        segment.monetary_amounts = segment.monetary_amounts[:25]
+
     return segment
 
 
 # ---------------------------------------------------------------------------
 # Phase 1 extraction (per-segment)
 # ---------------------------------------------------------------------------
+
+# OCR truncation thresholds for very large documents
+_MAX_OCR_CHARS = 22000
+_HEAD_CHARS = 15000
+_TAIL_CHARS = 7000
 
 
 def extract_segment_index(
@@ -169,6 +217,22 @@ def extract_segment_index(
     Raises:
         RuntimeError: If extraction fails after all retries.
     """
+    # Truncate very large documents to prevent output token overflow
+    if len(ocr_text) > _MAX_OCR_CHARS:
+        logger.warning(
+            "Truncating OCR for %s: %d chars → %d (head=%d, tail=%d)",
+            segment_id,
+            len(ocr_text),
+            _MAX_OCR_CHARS,
+            _HEAD_CHARS,
+            _TAIL_CHARS,
+        )
+        ocr_text = (
+            ocr_text[:_HEAD_CHARS]
+            + "\n\n--- TRUNCATED MIDDLE ---\n\n"
+            + ocr_text[-_TAIL_CHARS:]
+        )
+
     user_prompt = USER_PROMPT_TEMPLATE.format(ocr_text=ocr_text)
 
     raw_json = client.generate_json(
