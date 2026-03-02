@@ -194,3 +194,61 @@ class SegmentClassification(BaseModel):
         le=1.0,
         description="Confidence score for primary_cluster",
     )
+
+
+# --------------------------------------------------------------------------- #
+# Phase 3 — Claim Head Discovery                                              #
+# --------------------------------------------------------------------------- #
+
+
+class ClaimSubHead(BaseModel):
+    """Optional lightweight sub-head within a claim head.
+
+    Used when a claim head has structural components (e.g., prolongation
+    containing site overheads, machinery idle cost). No supporting IDs
+    or amounts — purely descriptive.
+    """
+
+    sub_claim_key: str = Field(description="Unique key in format claim_key/sub_slug")
+    title: str = Field(description="Human-readable title for this sub-head")
+    description: str = Field(description="Brief description of this sub-head")
+
+
+class ClaimHead(BaseModel):
+    """A financially distinct claim head identified from the corpus.
+
+    Represents a category of recovery being pursued by either the
+    contractor (claim) or employer (counterclaim).
+    """
+
+    claim_key: str = Field(description="Unique snake_case key for this claim head")
+    title: str = Field(description="Human-readable title for this claim head")
+    description: str = Field(
+        description="Description of the claim head and its basis in the dispute"
+    )
+    claimant: str = Field(
+        description="Party pursuing this claim: 'contractor' or 'employer'"
+    )
+    approximate_claimed_amount: str | None = Field(
+        default=None,
+        description=(
+            "Narrative estimate grounded in documents, e.g. "
+            "'Approx. INR 6-7 crore based on claim statements'. "
+            "Not a computed total."
+        ),
+    )
+    supporting_segment_ids: list[str] = Field(
+        description="Segment IDs that support this claim head (minimum 2 required)"
+    )
+    sub_heads: list[ClaimSubHead] | None = Field(
+        default=None,
+        description="Optional structural components of this claim head",
+    )
+
+
+class LLMClaimHeadsResponse(BaseModel):
+    """Schema sent to Gemini for claim head discovery."""
+
+    claim_heads: list[ClaimHead] = Field(
+        description="List of 3-7 financially distinct claim heads discovered from corpus"
+    )
