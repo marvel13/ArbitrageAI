@@ -1,6 +1,8 @@
-"""Phase 3 — Claim Head Discovery.
+"""Phase 3 — Claim Head Discovery & Mapping.
 
 Step 1: Discover financially distinct claim heads from the corpus.
+Step 2: Map each segment to relevant claim heads.
+
 This phase performs dispute abstraction, not clustering.
 
 All Phase 3-specific LLM logic (prompts, validation) lives here.
@@ -10,9 +12,16 @@ The generic GeminiClient is imported from utils.llm.
 import json
 import logging
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-from models.schemas import ClaimHead, LLMClaimHeadsResponse
+from models.schemas import (
+    ClaimHead,
+    ClaimMapping,
+    LLMClaimHeadsResponse,
+    LLMClaimMappingsResponse,
+    SegmentClaimMapping,
+)
 from utils.file_io import write_json_output
 from utils.llm import GeminiClient
 
@@ -20,6 +29,12 @@ logger = logging.getLogger(__name__)
 
 # Model used for Phase 3 claim discovery — requires stronger reasoning
 PHASE3_MODEL = "gemini-2.5-pro"
+
+# Model used for Phase 3 Step 2 — classification is simpler
+PHASE3_STEP2_MODEL = "gemini-2.5-flash"
+
+# Hard cap on parallel Gemini calls
+MAX_WORKERS = 5
 
 
 # ---------------------------------------------------------------------------
@@ -262,3 +277,294 @@ def run_phase3_step1(outputs_dir: Path, force: bool = False) -> list[dict]:
     )
 
     return claim_heads
+
+
+# ---------------------------------------------------------------------------
+# Phase 3 Step 2 — Claim Mapping
+# ---------------------------------------------------------------------------
+
+CLAIM_MAPPING_SYSTEM_PROMPT = """\
+You are an arbitration document analyst determining how documents relate
+to identified claim heads in a construction dispute.
+
+Your task is to assess how a single document relates to one or more
+previously identified claim heads.
+
+For each document, determine:
+
+1. Which claim heads (if any) the document relates to.
+2. The type of relevance:
+   - "direct": The document explicitly evidences, quantifies, asserts, or forms
+     part of the legal basis of the claim.
+   - "contextual": The document provides background, contractual framework,
+     timeline context, or procedural setting relevant to the claim.
+   - "rebuttal": The document disputes, counters, rejects, or challenges
+     the opposing party’s position regarding the claim.
+3. Which party the document supports:
+   - "supports_contractor"
+   - "supports_employer"
+   - "neutral"
+
+------------------------------------------------------------
+RULES
+------------------------------------------------------------
+
+- A document may relate to ZERO claims if it is purely procedural or not
+  materially relevant.
+- A document may relate to MULTIPLE claims if there is genuine
+  multi-claim relevance.
+- Only return mappings with confidence >= 0.5.
+- Do NOT force mappings. If relevance is weak or speculative,
+  return an empty list.
+- Reasoning must be concise (1–2 sentences) and document-specific.
+  Do not restate the claim title. Refer to what the document actually does.
+
+------------------------------------------------------------
+GUARDRAILS
+------------------------------------------------------------
+
+- Do NOT assign a claim mapping unless the document has a clear,
+  meaningful connection to the claim head.
+- Avoid over-assigning "contextual" relevance.
+- party_role must reflect which side the document substantively supports
+  in relation to the specific claim head — NOT merely who authored it.
+- Most documents should map to 1–2 claim heads.
+  Mapping to more than 3 claims should be rare and justified by genuine
+  multi-claim relevance.
+
+------------------------------------------------------------
+CONFIDENCE CALIBRATION RULES
+------------------------------------------------------------
+
+Confidence must reflect the evidentiary strength of the document in
+relation to the claim head — NOT rhetorical clarity or narrative strength.
+
+Use this scale:
+
+- 0.95-1.0  
+  The document explicitly quantifies, asserts, or directly forms part of
+  the legal or financial basis of the claim (e.g., invoice, levy order,
+  claim statement section, quantified demand).
+
+- 0.80-0.94  
+  The document clearly supports, disputes, or materially advances the
+  claim but does not independently quantify or conclusively establish it.
+
+- 0.65-0.79  
+  The document is materially relevant but indirect, inferential,
+  or partially supportive.
+
+- 0.50-0.64  
+  The document provides limited but genuine contextual relevance.
+
+IMPORTANT:
+- Do NOT default to 0.95 or 1.0.
+- Use 1.0 only when the document is explicit, unambiguous,
+  and central to the claim.
+- Contextual mappings should rarely exceed 0.80.
+- Rebuttal mappings should reflect how strongly the document
+  substantively counters the claim.
+- Confidence must meaningfully discriminate between strong,
+  moderate, and weak relevance.
+
+Your goal is to produce disciplined, legally reasoned mappings
+that reflect evidentiary weight — not over-inclusive tagging.
+  """
+
+CLAIM_MAPPING_USER_PROMPT_TEMPLATE = """\
+Determine which claim heads this document relates to.
+
+AVAILABLE CLAIM HEADS:
+{claim_heads_json}
+
+DOCUMENT TO ANALYZE:
+{segment_json}
+
+CONSTRAINTS:
+1. claim_key must EXACTLY match one from the available claim heads.
+2. Only include mappings with confidence >= 0.5.
+3. Return empty mappings list if document is not claim-relevant.
+4. Provide concise reasoning (1-2 sentences) for each mapping.
+
+Output strict JSON matching the provided schema."""
+
+
+def _build_claim_heads_summary(claim_heads: list[dict]) -> list[dict]:
+    """Build condensed claim heads summary for mapping prompt."""
+    return [
+        {
+            "claim_key": h["claim_key"],
+            "title": h["title"],
+            "claimant": h["claimant"],
+        }
+        for h in claim_heads
+    ]
+
+
+def _condense_segment_for_mapping(segment: dict) -> dict:
+    """Extract mapping-relevant fields from a segment."""
+    return {
+        "segment_id": segment["segment_id"],
+        "document_type": segment.get("document_type", ""),
+        "summary": segment.get("summary", ""),
+        "dispute_signals": segment.get("dispute_signals", []),
+    }
+
+
+def _map_segment_to_claims(
+    client: GeminiClient,
+    segment: dict,
+    claim_heads_summary: list[dict],
+    valid_claim_keys: set[str],
+) -> list[SegmentClaimMapping]:
+    """Map a single segment to relevant claim heads.
+
+    Returns list of SegmentClaimMapping (0-N per segment).
+    """
+    segment_id = segment["segment_id"]
+    condensed = _condense_segment_for_mapping(segment)
+
+    user_prompt = CLAIM_MAPPING_USER_PROMPT_TEMPLATE.format(
+        claim_heads_json=json.dumps(claim_heads_summary, indent=2),
+        segment_json=json.dumps(condensed, indent=2),
+    )
+
+    raw_json = client.generate_json(
+        system_prompt=CLAIM_MAPPING_SYSTEM_PROMPT,
+        user_prompt=user_prompt,
+        schema=LLMClaimMappingsResponse.model_json_schema(),
+        model=PHASE3_STEP2_MODEL,
+        temperature=0.1,
+    )
+
+    response = LLMClaimMappingsResponse.model_validate(raw_json)
+
+    # Filter and validate mappings
+    results: list[SegmentClaimMapping] = []
+    for mapping in response.mappings:
+        # Skip invalid claim keys
+        if mapping.claim_key not in valid_claim_keys:
+            logger.warning(
+                "Segment %s: invalid claim_key '%s', skipping",
+                segment_id,
+                mapping.claim_key,
+            )
+            continue
+
+        # Skip low confidence
+        if mapping.confidence < 0.5:
+            continue
+
+        results.append(
+            SegmentClaimMapping(
+                segment_id=segment_id,
+                claim_key=mapping.claim_key,
+                relevance_type=mapping.relevance_type,
+                party_role=mapping.party_role,
+                confidence=mapping.confidence,
+                reasoning=mapping.reasoning,
+            )
+        )
+
+    return results
+
+
+def run_phase3_step2(outputs_dir: Path, force: bool = False) -> list[dict]:
+    """Map segments to claim heads.
+
+    For each segment, determines which claim heads (if any) it relates to,
+    how it relates (direct/contextual/rebuttal), and which party it supports.
+
+    Args:
+        outputs_dir: Directory containing index.json, claim_heads.json.
+        force: If True, re-run even if output exists.
+
+    Returns:
+        List of segment-claim mapping dicts written to claim_classifications.json.
+
+    Raises:
+        FileNotFoundError: If dependencies do not exist.
+        RuntimeError: If LLM calls fail after retries.
+    """
+    output_path = outputs_dir / "claim_classifications.json"
+
+    # Checkpoint: skip if already exists
+    if output_path.exists() and not force:
+        logger.info("Phase 3 Step 2 output exists, loading: %s", output_path)
+        existing = json.loads(output_path.read_text(encoding="utf-8"))
+        return existing
+
+    logger.info("=== Phase 3 Step 2 — Claim Mapping ===")
+    start = time.perf_counter()
+
+    # Load dependencies
+    index_path = outputs_dir / "index.json"
+    claims_path = outputs_dir / "claim_heads.json"
+
+    if not index_path.exists():
+        raise FileNotFoundError(f"Phase 3 Step 2 requires index.json: {index_path}")
+    if not claims_path.exists():
+        raise FileNotFoundError(f"Phase 3 Step 2 requires claim_heads.json: {claims_path}")
+
+    index_data = json.loads(index_path.read_text(encoding="utf-8"))
+    claim_heads = json.loads(claims_path.read_text(encoding="utf-8"))
+
+    valid_claim_keys = {h["claim_key"] for h in claim_heads}
+    claim_heads_summary = _build_claim_heads_summary(claim_heads)
+
+    logger.info(
+        "Mapping %d segments to %d claim heads",
+        len(index_data),
+        len(claim_heads),
+    )
+
+    # Parallel classification
+    client = GeminiClient()
+    all_mappings: list[SegmentClaimMapping] = []
+    failures: list[str] = []
+
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        future_to_seg = {
+            executor.submit(
+                _map_segment_to_claims,
+                client,
+                segment,
+                claim_heads_summary,
+                valid_claim_keys,
+            ): segment["segment_id"]
+            for segment in index_data
+        }
+
+        for future in as_completed(future_to_seg):
+            segment_id = future_to_seg[future]
+            try:
+                mappings = future.result()
+                all_mappings.extend(mappings)
+                logger.info(
+                    "Mapped segment %s → %d claims",
+                    segment_id,
+                    len(mappings),
+                )
+            except Exception as exc:
+                logger.error("Failed to map segment %s: %s", segment_id, exc)
+                failures.append(segment_id)
+
+    if failures:
+        logger.warning("Failed to map %d segments: %s", len(failures), failures)
+
+    # Sort for determinism
+    all_mappings.sort(key=lambda m: (m.segment_id, m.claim_key))
+
+    # Serialize and write
+    mappings_data = [m.model_dump() for m in all_mappings]
+    write_json_output(mappings_data, output_path)
+
+    elapsed = time.perf_counter() - start
+    logger.info(
+        "Phase 3 Step 2 complete: %d mappings from %d segments in %.1fs",
+        len(mappings_data),
+        len(index_data),
+        elapsed,
+    )
+
+    return mappings_data

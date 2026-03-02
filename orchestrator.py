@@ -12,7 +12,7 @@ from pathlib import Path
 
 from pipeline.phase1_index import run_phase1
 from pipeline.phase2_types import run_phase2_step1, run_phase2_step2
-from pipeline.phase3_claims import run_phase3_step1
+from pipeline.phase3_claims import run_phase3_step1, run_phase3_step2
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -85,8 +85,12 @@ def main() -> None:
         "Phase 3 Step 1 produced %d claim heads", len(phase3_claims)
     )
 
-    # Phase 3 Step 2 — Claim Mapping (TODO)
-    # run_phase3_step2(...)
+    # Phase 3 Step 2 — Claim Mapping
+    phase3_mappings = run_phase3_step2(outputs_dir=OUTPUTS_DIR, force=args.force)
+
+    logging.getLogger(__name__).info(
+        "Phase 3 Step 2 produced %d claim mappings", len(phase3_mappings)
+    )
 
     # ------------------------------------------------------------------
     # Phase 4 — Case-Level Reasoning & Report (TODO)

@@ -252,3 +252,60 @@ class LLMClaimHeadsResponse(BaseModel):
     claim_heads: list[ClaimHead] = Field(
         description="List of 3-7 financially distinct claim heads discovered from corpus"
     )
+
+
+# --------------------------------------------------------------------------- #
+# Phase 3 Step 2 — Claim Mapping                                              #
+# --------------------------------------------------------------------------- #
+
+# Constrained types for claim mapping
+RelevanceType = Literal["direct", "contextual", "rebuttal"]
+PartyRole = Literal["supports_contractor", "supports_employer", "neutral"]
+
+
+class ClaimMapping(BaseModel):
+    """A single segment-to-claim mapping from LLM response."""
+
+    claim_key: str = Field(description="Claim head key this segment relates to")
+    relevance_type: RelevanceType = Field(
+        description=(
+            "How the segment relates: "
+            "'direct' (evidences/quantifies), "
+            "'contextual' (background/procedural), "
+            "'rebuttal' (counters/disputes)"
+        )
+    )
+    party_role: PartyRole = Field(
+        description=(
+            "Who the document supports: "
+            "'supports_contractor', 'supports_employer', or 'neutral'"
+        )
+    )
+    confidence: float = Field(
+        ge=0.0,
+        le=1.0,
+        description="Confidence score for this mapping (0.0-1.0)",
+    )
+    reasoning: str = Field(
+        description="1-2 sentence explanation of why this mapping exists"
+    )
+
+
+class LLMClaimMappingsResponse(BaseModel):
+    """Schema sent to Gemini for segment-to-claim mapping."""
+
+    mappings: list[ClaimMapping] = Field(
+        default_factory=list,
+        description="0-N claim mappings for this segment (empty if not claim-relevant)",
+    )
+
+
+class SegmentClaimMapping(BaseModel):
+    """Final output record with segment_id injected."""
+
+    segment_id: str = Field(description="Folder name of the segment")
+    claim_key: str = Field(description="Claim head key")
+    relevance_type: RelevanceType = Field(description="How the segment relates to the claim")
+    party_role: PartyRole = Field(description="Who the document supports")
+    confidence: float = Field(ge=0.0, le=1.0, description="Confidence score")
+    reasoning: str = Field(description="Explanation of the mapping")
