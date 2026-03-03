@@ -73,19 +73,34 @@ Rules:
    Do NOT extract only the sender — include all parties referenced.
 
 4. dates:
-Extract only legally significant dates relevant to the dispute, such as:
-- Work order date
-- Commencement date
-- Completion date
-- Suspension date
-- Notice date
-- Claim date
-- Termination date
-- Award/order date
 
-Do NOT extract every referenced correspondence date or repeated historical references.
+Extract ONLY legally or contractually material milestone dates that
+have direct relevance to rights, obligations, delay entitlement,
+payment entitlement, or dispute escalation.
 
-Limit to a maximum of 10 dates.
+Include dates that:
+
+- Establish contractual formation (e.g., tender acceptance, work order, agreement execution)
+- Trigger performance obligations (e.g., commencement date)
+- Define time boundaries (e.g., scheduled completion, revised completion, EOT granted)
+- Mark suspension or force majeure periods (e.g., lockdown start/end)
+- Record levy of liquidated damages or compensation
+- Record formal claim submission or rejection
+- Record demand notice, arbitration invocation, court filing, award, or order
+- Mark termination or rescission, if applicable
+
+Do NOT extract:
+
+- Generic “letter dated” or “reference dated” correspondence
+- Fax, email, or routing dates
+- Repeated historical references to the same milestone
+- Signature dates unless they legally create or modify rights
+- Invoice dates unless tied to a disputed payment event
+- Any date that does not alter contractual or dispute position
+
+Prefer extracting milestone dates over procedural exchange dates.
+
+Limit to a maximum of 12 dates per document.
 
 Normalize to DD-MM-YYYY format. Handle these input formats:
   DD.MM.YYYY, DD-MM-YYYY, DD/MM/YY, DD/MM/YYYY,
@@ -93,6 +108,11 @@ Normalize to DD-MM-YYYY format. Handle these input formats:
 
 If the year is missing, unreadable, or ambiguous, set normalized = null.
 Do NOT guess missing digits.
+
+For each date, provide a short, clear context label describing the
+legal significance (e.g., "Work Order Issued", "EOT Granted",
+"LD Levied", "Demand Notice Issued").
+Avoid generic labels like "Date" or "Dated".
 
 5. monetary_amounts:
    Extract only legally significant monetary amounts such as:
