@@ -309,3 +309,19 @@ class SegmentClaimMapping(BaseModel):
     party_role: PartyRole = Field(description="Who the document supports")
     confidence: float = Field(ge=0.0, le=1.0, description="Confidence score")
     reasoning: str = Field(description="Explanation of the mapping")
+
+
+# --------------------------------------------------------------------------- #
+# Phase 4 — Case-Level Analysis                                               #
+# --------------------------------------------------------------------------- #
+
+
+class LLMMarkdownSection(BaseModel):
+    """Schema for receiving a single markdown section from Gemini.
+
+    Used by Phase 4 where each LLM call produces one report section.
+    """
+
+    markdown: str = Field(
+        description="The full markdown content for this report section"
+    )

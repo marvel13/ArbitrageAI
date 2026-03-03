@@ -1,8 +1,9 @@
 """Orchestrator — runs the arbitration analysis pipeline.
 
 Usage:
-    uv run python orchestrator.py            # Run all phases (parallel, skips completed)
-    uv run python orchestrator.py --force    # Force re-run all phases
+    uv run python orchestrator.py                # Run all phases (parallel, skips completed)
+    uv run python orchestrator.py --force        # Force re-run all phases
+    uv run python orchestrator.py --phase 1 4 --force  # Re-run only Phase 1 and Phase 4
     uv run python orchestrator.py --no-parallel  # Run sequentially
 """
 
@@ -15,6 +16,7 @@ from pathlib import Path
 from pipeline.phase1_index import run_phase1
 from pipeline.phase2_types import run_phase2_full, run_phase2_step1, run_phase2_step2
 from pipeline.phase3_claims import run_phase3_full, run_phase3_step1, run_phase3_step2
+from pipeline.phase4_analysis import run_phase4
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -44,7 +46,18 @@ def main() -> None:
         dest="parallel",
         help="Run Phase 2 and Phase 3 sequentially",
     )
+    parser.add_argument(
+        "--phase",
+        type=int,
+        nargs="+",
+        choices=[1, 2, 3, 4],
+        default=None,
+        help="Run only specific phase(s), e.g. --phase 1 4",
+    )
     args = parser.parse_args()
+
+    # Which phases to run (None = all)
+    run_phases: set[int] = set(args.phase) if args.phase else {1, 2, 3, 4}
 
     # ------------------------------------------------------------------
     # Logging
@@ -63,24 +76,29 @@ def main() -> None:
     # ------------------------------------------------------------------
     # Phase 1 — Index & Structured Extraction
     # ------------------------------------------------------------------
-    logging.getLogger(__name__).info("=== Starting Pipeline ===")
+    logger = logging.getLogger(__name__)
+    logger.info("=== Starting Pipeline (phases: %s) ===",
+               ", ".join(str(p) for p in sorted(run_phases)))
 
-    phase1_results = run_phase1(
-        segments_dir=SEGMENTS_DIR,
-        output_path=OUTPUTS_DIR / "index.json",
-        force=args.force,
-    )
-
-    logging.getLogger(__name__).info(
-        "Phase 1 produced %d segment entries", len(phase1_results)
-    )
+    # ------------------------------------------------------------------
+    # Phase 1 — Index & Structured Extraction
+    # ------------------------------------------------------------------
+    if 1 in run_phases:
+        phase1_results = run_phase1(
+            segments_dir=SEGMENTS_DIR,
+            output_path=OUTPUTS_DIR / "index.json",
+            force=args.force,
+        )
+        logger.info("Phase 1 produced %d segment entries", len(phase1_results))
+    else:
+        logger.info("Skipping Phase 1")
 
     # ------------------------------------------------------------------
     # Phase 2 & 3 — Parallel or Sequential execution
     # ------------------------------------------------------------------
-    logger = logging.getLogger(__name__)
+    run_middle = bool(run_phases & {2, 3})
 
-    if args.parallel:
+    if run_middle and args.parallel:
         logger.info("=== Running Phase 2 and Phase 3 in parallel ===")
         parallel_start = time.perf_counter()
 
@@ -88,21 +106,23 @@ def main() -> None:
         with ThreadPoolExecutor(max_workers=5) as llm_executor:
             # Phase-level executor (2 workers: one per phase)
             with ThreadPoolExecutor(max_workers=2) as phase_executor:
-                phase2_future = phase_executor.submit(
-                    run_phase2_full,
-                    outputs_dir=OUTPUTS_DIR,
-                    force=args.force,
-                    executor=llm_executor,
-                )
-                phase3_future = phase_executor.submit(
-                    run_phase3_full,
-                    outputs_dir=OUTPUTS_DIR,
-                    force=args.force,
-                    executor=llm_executor,
-                )
+                futures: dict = {}
+                if 2 in run_phases:
+                    futures[phase_executor.submit(
+                        run_phase2_full,
+                        outputs_dir=OUTPUTS_DIR,
+                        force=args.force,
+                        executor=llm_executor,
+                    )] = "Phase 2"
+                if 3 in run_phases:
+                    futures[phase_executor.submit(
+                        run_phase3_full,
+                        outputs_dir=OUTPUTS_DIR,
+                        force=args.force,
+                        executor=llm_executor,
+                    )] = "Phase 3"
 
-                # Wait for both phases to complete
-                futures = {phase2_future: "Phase 2", phase3_future: "Phase 3"}
+                # Wait for submitted phases to complete
                 for future in as_completed(futures):
                     phase_name = futures[future]
                     try:
@@ -130,33 +150,40 @@ def main() -> None:
         parallel_elapsed = time.perf_counter() - parallel_start
         logger.info("Parallel phases completed in %.1fs", parallel_elapsed)
 
-    else:
+    elif run_middle:
         logger.info("=== Running Phase 2 and Phase 3 sequentially ===")
 
-        # Phase 2 — Document Type Taxonomy & Classification
-        phase2_taxonomy = run_phase2_step1(outputs_dir=OUTPUTS_DIR, force=args.force)
-        logger.info("Phase 2 Step 1 produced %d clusters", len(phase2_taxonomy))
+        if 2 in run_phases:
+            phase2_taxonomy = run_phase2_step1(outputs_dir=OUTPUTS_DIR, force=args.force)
+            logger.info("Phase 2 Step 1 produced %d clusters", len(phase2_taxonomy))
 
-        phase2_classifications = run_phase2_step2(
-            outputs_dir=OUTPUTS_DIR, force=args.force
-        )
-        logger.info(
-            "Phase 2 Step 2 produced %d classifications", len(phase2_classifications)
-        )
+            phase2_classifications = run_phase2_step2(
+                outputs_dir=OUTPUTS_DIR, force=args.force
+            )
+            logger.info(
+                "Phase 2 Step 2 produced %d classifications", len(phase2_classifications)
+            )
 
-        # Phase 3 — Claim Head Discovery & Mapping
-        phase3_claims = run_phase3_step1(outputs_dir=OUTPUTS_DIR, force=args.force)
-        logger.info("Phase 3 Step 1 produced %d claim heads", len(phase3_claims))
+        if 3 in run_phases:
+            phase3_claims = run_phase3_step1(outputs_dir=OUTPUTS_DIR, force=args.force)
+            logger.info("Phase 3 Step 1 produced %d claim heads", len(phase3_claims))
 
-        phase3_mappings = run_phase3_step2(outputs_dir=OUTPUTS_DIR, force=args.force)
-        logger.info("Phase 3 Step 2 produced %d claim mappings", len(phase3_mappings))
+            phase3_mappings = run_phase3_step2(outputs_dir=OUTPUTS_DIR, force=args.force)
+            logger.info("Phase 3 Step 2 produced %d claim mappings", len(phase3_mappings))
+    else:
+        logger.info("Skipping Phase 2 and Phase 3")
 
     # ------------------------------------------------------------------
-    # Phase 4 — Case-Level Reasoning & Report (TODO)
+    # Phase 4 — Case-Level Reasoning & Report
     # ------------------------------------------------------------------
-    # run_phase4(...)
+    if 4 in run_phases:
+        logger.info("=== Starting Phase 4 ===")
+        report_path = run_phase4(outputs_dir=OUTPUTS_DIR, force=args.force)
+        logger.info("Phase 4 produced report at %s", report_path)
+    else:
+        logger.info("Skipping Phase 4")
 
-    logging.getLogger(__name__).info("=== Pipeline Complete ===")
+    logger.info("=== Pipeline Complete ===")
 
 
 if __name__ == "__main__":
