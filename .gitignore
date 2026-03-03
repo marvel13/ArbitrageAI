@@ -1,0 +1,18 @@
+# macOS system files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+
+# Secrets — never commit
+.env
+gemini_api_key.txt
+vertex-ai-credentials.json
+
+.github/
+# Ignore all PDF files
+*.pdf
+**/*.pdf
