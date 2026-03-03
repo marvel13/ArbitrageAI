@@ -1,0 +1,102 @@
+[
+  {
+    "cluster_key": "contractual_foundation_scope",
+    "label": "Contractual Foundation & Scope",
+    "sub_types": [
+      {
+        "sub_type_key": "contractual_foundation_scope/original_agreement_terms",
+        "label": "Original Agreement & Terms"
+      },
+      {
+        "sub_type_key": "contractual_foundation_scope/scope_variations_amendments",
+        "label": "Scope Variations & Amendments"
+      }
+    ]
+  },
+  {
+    "cluster_key": "project_execution_completion",
+    "label": "Project Execution & Completion",
+    "sub_types": [
+      {
+        "sub_type_key": "project_execution_completion/performance_monitoring",
+        "label": "Performance Monitoring & Reporting"
+      },
+      {
+        "sub_type_key": "project_execution_completion/completion_handover",
+        "label": "Completion & Handover"
+      }
+    ]
+  },
+  {
+    "cluster_key": "delay_time_claims",
+    "label": "Delay & Time-Related Claims",
+    "sub_types": [
+      {
+        "sub_type_key": "delay_time_claims/eot_requests_decisions",
+        "label": "Extension of Time (EOT) Requests & Decisions"
+      },
+      {
+        "sub_type_key": "delay_time_claims/force_majeure_impact",
+        "label": "Force Majeure & Disruptions Impact"
+      }
+    ]
+  },
+  {
+    "cluster_key": "financial_administration_payment_disputes",
+    "label": "Financial Administration & Payment Disputes",
+    "sub_types": [
+      {
+        "sub_type_key": "financial_administration_payment_disputes/payment_applications_invoices",
+        "label": "Payment Applications & Invoices"
+      },
+      {
+        "sub_type_key": "financial_administration_payment_disputes/extra_work_variation_claims",
+        "label": "Extra Work & Variation Claims"
+      },
+      {
+        "sub_type_key": "financial_administration_payment_disputes/compensation_damages_claims",
+        "label": "Compensation & Damages Claims"
+      },
+      {
+        "sub_type_key": "financial_administration_payment_disputes/payment_dispute_correspondence",
+        "label": "Payment Dispute Correspondence"
+      }
+    ]
+  },
+  {
+    "cluster_key": "contractual_securities_guarantees",
+    "label": "Contractual Securities & Guarantees",
+    "sub_types": [
+      {
+        "sub_type_key": "contractual_securities_guarantees/bank_guarantee_management",
+        "label": "Bank Guarantee Management"
+      },
+      {
+        "sub_type_key": "contractual_securities_guarantees/security_release_reduction",
+        "label": "Security Release & Reduction"
+      }
+    ]
+  },
+  {
+    "cluster_key": "formal_dispute_resolution_litigation",
+    "label": "Formal Dispute Resolution & Litigation",
+    "sub_types": [
+      {
+        "sub_type_key": "formal_dispute_resolution_litigation/notices_of_dispute_demand",
+        "label": "Notices of Dispute & Demand"
+      },
+      {
+        "sub_type_key": "formal_dispute_resolution_litigation/alternative_dispute_resolution",
+        "label": "Alternative Dispute Resolution (ADR) Records"
+      },
+      {
+        "sub_type_key": "formal_dispute_resolution_litigation/court_arbitration_filings",
+        "label": "Court & Arbitration Filings"
+      },
+      {
+        "sub_type_key": "formal_dispute_resolution_litigation/internal_legal_authorizations",
+        "label": "Internal Legal Authorizations"
+      }
+    ]
+  }
+]

@@ -1,0 +1,114 @@
+[
+  {
+    "claim_key": "prolongation_and_delay_costs",
+    "title": "Compensation for Project Prolongation and Delay",
+    "description": "The contractor claims compensation for costs incurred due to the project extending significantly beyond the stipulated completion date. This includes costs for maintaining site establishment, overheads, and other time-related expenses for the extended period, distinct from specific COVID-19 lockdown claims.",
+    "claimant": "contractor",
+    "approximate_claimed_amount": "Approximately INR 1.81 crore is claimed for 'Prolongation Charges' in one notice, while another claim statement seeks INR 6.41 crore as 'Compensation for prolongation period'.",
+    "supporting_segment_ids": [
+      "Claim_Abstract_-_Covid_and_Prolongation_Charges",
+      "Demand_Notice_-_Construction_Project_Delays",
+      "Claim_Statement_-_Construction_Project_AITF-1",
+      "Application_-_Extension_of_Time_for_Construction"
+    ],
+    "sub_heads": null
+  },
+  {
+    "claim_key": "covid19_lockdown_costs",
+    "title": "Costs Incurred During COVID-19 Lockdown",
+    "description": "The contractor is seeking reimbursement for specific expenses incurred during the mandatory national lockdown period from March 2020 to December 2020, when work was suspended. These costs are claimed under force majeure provisions.",
+    "claimant": "contractor",
+    "approximate_claimed_amount": "A specific claim for approximately INR 8.34 crore is consistently mentioned across multiple documents, supported by a detailed breakdown of expenses.",
+    "supporting_segment_ids": [
+      "Financial_Report_-_Lockdown_Expenses",
+      "Claim_Abstract_-_Covid_and_Prolongation_Charges",
+      "Demand_Notice_-_Construction_Project_Delays",
+      "Government_Order_-_Compensation_for_Construction_Delay"
+    ],
+    "sub_heads": [
+      {
+        "sub_claim_key": "covid19_lockdown_costs/labor_and_welfare",
+        "title": "Labor and Welfare Expenses",
+        "description": "Costs related to labor wages, food, and accommodation during the lockdown period."
+      },
+      {
+        "sub_claim_key": "covid19_lockdown_costs/equipment_and_materials",
+        "title": "Equipment and Materials Hire Charges",
+        "description": "Idle hire charges for both internal and external equipment and centering materials."
+      },
+      {
+        "sub_claim_key": "covid19_lockdown_costs/site_and_corporate_overheads",
+        "title": "Site and Corporate Overheads",
+        "description": "Expenses for site operations, staff salaries, financial charges (like BG costs), and corporate overheads during the suspension."
+      }
+    ]
+  },
+  {
+    "claim_key": "unpaid_bills_and_escalation",
+    "title": "Unpaid Final Bills and Price Escalation",
+    "description": "The contractor claims payment for certified final bills that remain unpaid, along with significant amounts for price variation (escalation) due to increases in the cost of labor and materials over the project's duration. These amounts were allegedly withheld or not released by the employer.",
+    "claimant": "contractor",
+    "approximate_claimed_amount": "Approximately INR 13.21 crore is claimed as the total pending amount, comprising final bills (approx. INR 91.9 lakhs), withheld amounts (approx. INR 10.5 lakhs), and price variation/escalation bills (approx. INR 11.29 crore).",
+    "supporting_segment_ids": [
+      "Letter_-_Final_Bill_Payment_Request",
+      "Letter_-_Payment_Release_Request",
+      "Claim_Statement_-_Construction_Project_AITF-1",
+      "Invoice_-_Construction_Escalation_Bill",
+      "Invoice_-_Construction_Escalation_Bill_2"
+    ],
+    "sub_heads": null
+  },
+  {
+    "claim_key": "interest_on_delayed_payments",
+    "title": "Interest on Delayed Payments",
+    "description": "The contractor is claiming interest, typically cited at 18% per annum, on all delayed payments, including unpaid final bills, withheld amounts, and escalation bills.",
+    "claimant": "contractor",
+    "approximate_claimed_amount": "Claims for interest total over INR 5.8 crore in one statement, with a consistent demand for 18% (or 12% in one court filing) interest on all outstanding dues.",
+    "supporting_segment_ids": [
+      "Claim_Abstract_-_Covid_and_Prolongation_Charges",
+      "Claim_Letter_-_Construction_Dispute_Settlement",
+      "Court_Filing_-_Construction_Dispute",
+      "Statement_of_Truth_-_Commercial_Suit"
+    ],
+    "sub_heads": [
+      {
+        "sub_claim_key": "interest_on_delayed_payments/interest_on_final_bills",
+        "title": "Interest on Final Bills",
+        "description": "Interest claimed on the principal amount of the unpaid final bills for various work packages (Civil, HVAC, Mechanical, Electrical)."
+      },
+      {
+        "sub_claim_key": "interest_on_delayed_payments/interest_on_escalation",
+        "title": "Interest on Escalation Bills",
+        "description": "Interest claimed on the principal amount of the unpaid escalation/price variation bills."
+      }
+    ]
+  },
+  {
+    "claim_key": "extra_and_deviated_works",
+    "title": "Payment for Extra and Deviated Works",
+    "description": "The contractor seeks payment for work executed that was outside the original contract scope, including new items, variations in quantities, and substitutions. While some amounts were sanctioned via supplementary work orders, disputes over other items persist.",
+    "claimant": "contractor",
+    "approximate_claimed_amount": "Supported by various documents sanctioning amounts such as INR 43.7 lakhs, INR 12.1 lakhs, and INR 60.2 lakhs for different extra/deviated works.",
+    "supporting_segment_ids": [
+      "Abstract_Statement_-_Construction_Work_Deviation",
+      "Supplementary_Work_Order_-_AITF-1_Construction",
+      "Work_Order_-_AITF_Extension_Construction",
+      "Letter_-_Extra_Item_Claim_Rejection"
+    ],
+    "sub_heads": null
+  },
+  {
+    "claim_key": "liquidated_damages_for_delay",
+    "title": "Liquidated Damages for Delay (Counterclaim)",
+    "description": "The employer has levied compensation, functioning as liquidated damages (LD), against the contractor for a 68-day period of delay that the employer deemed unjustified. The contractor disputes this levy and seeks its refund.",
+    "claimant": "employer",
+    "approximate_claimed_amount": "A specific amount of INR 59,97,813.00 is consistently stated as the compensation levied by the employer and deducted from the contractor's dues.",
+    "supporting_segment_ids": [
+      "Government_Order_-_Levy_of_Compensation",
+      "Completion_Certificate_-_AITF-1_Extension_Work",
+      "Letter_-_Extension_of_Time_Dispute",
+      "Demand_Notice_-_Construction_Project_Delays"
+    ],
+    "sub_heads": null
+  }
+]

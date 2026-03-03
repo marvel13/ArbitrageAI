@@ -1,0 +1,406 @@
+[
+  {
+    "segment_id": "Abstract_Statement_-_Construction_Work_Deviation",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "contractual_foundation_scope"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Annexure_-_Construction_Milestones_ISITE_Bangalore",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "project_execution_completion",
+      "contractual_foundation_scope"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Application_-_Extension_of_Time_for_Construction",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "project_execution_completion",
+      "contractual_foundation_scope"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Board_Resolution_-_Arbitration_Authorization",
+    "primary_cluster": "formal_dispute_resolution_litigation",
+    "secondary_clusters": [
+      "contractual_foundation_scope"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Certificate_-_Final_Bill_for_Construction_Work",
+    "primary_cluster": "project_execution_completion",
+    "secondary_clusters": [
+      "delay_time_claims",
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "segment_id": "Claim_Abstract_-_Covid_and_Prolongation_Charges",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "delay_time_claims"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Claim_Letter_-_Construction_Dispute_Settlement",
+    "primary_cluster": "formal_dispute_resolution_litigation",
+    "secondary_clusters": [
+      "delay_time_claims",
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "segment_id": "Claim_Statement_-_Construction_Project_AITF-1",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "delay_time_claims"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Clarification_Letter_-_EOT_Crane_Work",
+    "primary_cluster": "project_execution_completion",
+    "secondary_clusters": [
+      "delay_time_claims"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "segment_id": "Completion_Certificate_-_AITF-1_Extension_Work",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "project_execution_completion"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "segment_id": "Contract_Agreement_-_Construction_of_AITF-1_Facility",
+    "primary_cluster": "contractual_foundation_scope",
+    "secondary_clusters": [
+      "project_execution_completion",
+      "formal_dispute_resolution_litigation"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Court_Filing_-_Construction_Dispute",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "delay_time_claims",
+      "formal_dispute_resolution_litigation"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Demand_Notice_-_Construction_Project_Delays",
+    "primary_cluster": "formal_dispute_resolution_litigation",
+    "secondary_clusters": [
+      "delay_time_claims",
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Financial_Report_-_Lockdown_Expenses",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "delay_time_claims"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Government_Order_-_Compensation_for_Construction_Delay",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Government_Order_-_Levy_of_Compensation",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.98
+  },
+  {
+    "segment_id": "Government_Order_-_Performance_Bank_Guarantee_Reduction",
+    "primary_cluster": "contractual_securities_guarantees",
+    "secondary_clusters": [],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Invoice_-_Construction_Escalation_Bill",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "delay_time_claims"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Invoice_-_Construction_Escalation_Bill_2",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "project_execution_completion"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Legal_Notice_-_Demand_Notice_Reply",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "formal_dispute_resolution_litigation",
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_BG_Return_for_Construction_Work",
+    "primary_cluster": "contractual_securities_guarantees",
+    "secondary_clusters": [
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Bank_Guarantee_Extension_for_ISRO_Project",
+    "primary_cluster": "contractual_securities_guarantees",
+    "secondary_clusters": [
+      "project_execution_completion"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Clarifications_on_EOT_Crane_Design",
+    "primary_cluster": "contractual_foundation_scope",
+    "secondary_clusters": [
+      "delay_time_claims"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "segment_id": "Letter_-_Construction_Delay_Appeal",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "financial_administration_payment_disputes",
+      "formal_dispute_resolution_litigation"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Construction_Delay_Hindrances",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "contractual_foundation_scope",
+      "project_execution_completion"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Escalation_Bill_Submission",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Extension_of_Time_Dispute",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Extension_of_Time_Request",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "project_execution_completion"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Extra_Item_Claim_Rejection",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "contractual_foundation_scope"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Final_Bill_Certification_Dispute",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Final_Bill_Payment_Request",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "project_execution_completion",
+      "contractual_foundation_scope"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Mobilisation_Advance_Interest_Deduction",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "contractual_securities_guarantees"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Payment_Release_Request",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "delay_time_claims"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Performance_Bank_Guarantee_Amendment",
+    "primary_cluster": "contractual_securities_guarantees",
+    "secondary_clusters": [],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Rate_Analysis_for_EOT_Crane_Work",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "contractual_foundation_scope"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Request_for_BG_Release",
+    "primary_cluster": "contractual_securities_guarantees",
+    "secondary_clusters": [
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Submission_of_Extra_Item_2",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "contractual_foundation_scope"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "segment_id": "Letter_-_Submission_of_Extra_Item_2_2",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "contractual_foundation_scope"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Submission_of_RA_Bill_No_07",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "project_execution_completion"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Letter_-_Waiver_Request_for_Interest_on_Advance",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "delay_time_claims"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Non-Starter_Report_-_Pre-Institution_Mediation",
+    "primary_cluster": "formal_dispute_resolution_litigation",
+    "secondary_clusters": [],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Notice_-_COVID-19_Impact_on_Contract",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "financial_administration_payment_disputes",
+      "contractual_foundation_scope"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Office_Memorandum_-_Force_Majeure_Clause",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "project_execution_completion"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Office_Memorandum_-_Performance_Security_Reduction",
+    "primary_cluster": "contractual_securities_guarantees",
+    "secondary_clusters": [
+      "formal_dispute_resolution_litigation"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Petition_-_Pending_Contractor_Payment",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "delay_time_claims"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Reply_Letter_-_Construction_Extension_Dispute",
+    "primary_cluster": "delay_time_claims",
+    "secondary_clusters": [
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Statement_of_Truth_-_Commercial_Suit",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "formal_dispute_resolution_litigation"
+    ],
+    "confidence": 0.95
+  },
+  {
+    "segment_id": "Supplementary_Work_Order_-_AITF-1_Construction",
+    "primary_cluster": "financial_administration_payment_disputes",
+    "secondary_clusters": [
+      "contractual_foundation_scope"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "segment_id": "Work_Order_-_AITF_Extension_Construction",
+    "primary_cluster": "contractual_foundation_scope",
+    "secondary_clusters": [
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.9
+  },
+  {
+    "segment_id": "Writ_Petition_-_Payment_Dispute",
+    "primary_cluster": "formal_dispute_resolution_litigation",
+    "secondary_clusters": [
+      "financial_administration_payment_disputes"
+    ],
+    "confidence": 0.95
+  }
+]

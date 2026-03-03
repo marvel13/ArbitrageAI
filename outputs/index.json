@@ -1,0 +1,6197 @@
+[
+  {
+    "segment_id": "Abstract_Statement_-_Construction_Work_Deviation",
+    "document_type": "Abstract Statement",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC CONSTRUCTION PVT LTD.",
+        "role": "contractor"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 659330.0,
+        "currency": "INR",
+        "description": "Earth work in excavation by mechanical means (hydraulic excavator) manual means OVER AREAS (exceeding 30cm in depth, 1.50m width as well as 10sqm on plan) in ALL KINDS OF SOILS up to a depth as mentioned below including disposal of excavated earth, lead up to 500m and all lifts etc., complete all as per specifications. (Disposed earth to be levelled by breaking clods From 3.00 to 4.50 m from GL Amount",
+        "raw_text": "659330.00"
+      },
+      {
+        "amount": 298650.0,
+        "currency": "INR",
+        "description": "Earth work in Excavation for FOUNDATION TRENCHES in ALL KINDS OF SOIL upto a depth as specified below, including dressing of sides, ramming of bottom, disposing the surplus excavated materials within a distance of 500m and for all lifts complete as per specifications. (Disposed soil to be leveled by breaking clods if any and neatly dressed). From 3.00 to 4.50 m from GL",
+        "raw_text": "298650.00"
+      },
+      {
+        "amount": 8687.0,
+        "currency": "INR",
+        "description": "Clearing grass and removal of the rubbish etc., up to a distance of 50m outside the periphery of the area cleared. Deviation Item",
+        "raw_text": "8687.00"
+      },
+      {
+        "amount": 3292575.0,
+        "currency": "INR",
+        "description": "Earth work in excavation by mechanical means (hydraulic excavator) manual means OVER AREAS (exceeding 30cm in depth, 1.50m width as well as 10sqm on pian) in ALL KINDS OF SOILS up to a depth as mentioned below including disposal of excavated earth, lead up to 500m and all lifts etc., complete all as per specifications. (Disposed earth to be levelled by breaking clods if any and neatly dressed). From 1.50 to 3.00 m from GL",
+        "raw_text": "3292575.00"
+      },
+      {
+        "amount": 128375.0,
+        "currency": "INR",
+        "description": "Earth work in Excavation for FOUNDATION TRENCHES in ALL KINDS OF SOIL upto a depth as specified below, including dressing of sides, ramming of bottom, dispocing the surplus excavated materials within a distance of 500m and for all lifts co aplete as per specifications. (Disposed soil to be leveled by breaking clods if any and neatly dressed). From 1.50 to 3.00 m from GL",
+        "raw_text": "128375.00"
+      },
+      {
+        "amount": 4377617.0,
+        "currency": "INR",
+        "description": "TOTAL",
+        "raw_text": "4377617.00"
+      }
+    ],
+    "summary": "This is an abstract statement for extra/deviated items related to the construction of an extension to the Assembly Integration & Test facility (AITF1) at ISITE, Bangalore. It includes details of earthwork excavation and clearing grass, with quantities, rates, and amounts for each item. The total amount for the extra/deviated items is 4377617.00.",
+    "dispute_signals": [
+      {
+        "signal_type": "extra_item",
+        "description": "The document details extra items and deviations from the original work order, indicating potential cost overruns."
+      }
+    ]
+  },
+  {
+    "segment_id": "Annexure_-_Construction_Milestones_ISITE_Bangalore",
+    "document_type": "Annexure",
+    "document_stage": "Execution",
+    "parties": [
+      {
+        "name": "ISITE, Bangalore",
+        "role": "project authority"
+      },
+      {
+        "name": "ISAC BENGALURU",
+        "role": "project authority"
+      },
+      {
+        "name": "B. ESWARAPPA",
+        "role": "engineer"
+      },
+      {
+        "name": "TARUN KANTI BARMAN",
+        "role": "engineer"
+      },
+      {
+        "name": "Govt. of India",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "date of issue of Letter of Acceptance/ work order + 15 days",
+        "normalized": null,
+        "context": "Actual start of work"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 300000.0,
+        "currency": "INR",
+        "description": "Amount to be withheld for Sub Station and allied works completion up to plinth level",
+        "raw_text": "Rs. 3 Lakhs"
+      },
+      {
+        "amount": 300000.0,
+        "currency": "INR",
+        "description": "Cumulative amount withheld for Sub Station and allied works completion up to plinth level",
+        "raw_text": "Rs. 3 Lakhs"
+      },
+      {
+        "amount": 200000.0,
+        "currency": "INR",
+        "description": "Amount to be withheld for completion of all structural RCC works",
+        "raw_text": "Rs. 2 Lakhs"
+      },
+      {
+        "amount": 500000.0,
+        "currency": "INR",
+        "description": "Cumulative amount withheld for completion of all structural RCC works",
+        "raw_text": "Rs. 5 Lakhs"
+      },
+      {
+        "amount": 200000.0,
+        "currency": "INR",
+        "description": "Amount to be withheld for procurement of all the materials required to complete the work",
+        "raw_text": "Rs. 2 Lakhs"
+      },
+      {
+        "amount": 700000.0,
+        "currency": "INR",
+        "description": "Cumulative amount withheld for procurement of all the materials required to complete the work",
+        "raw_text": "Rs. 7 Lakhs"
+      },
+      {
+        "amount": 500000.0,
+        "currency": "INR",
+        "description": "Amount to be withheld for completion of roofing works",
+        "raw_text": "Rs. 5 Lakhs"
+      },
+      {
+        "amount": 1200000.0,
+        "currency": "INR",
+        "description": "Cumulative amount withheld for completion of roofing works",
+        "raw_text": "RS. 12 Lakhs"
+      },
+      {
+        "amount": 300000.0,
+        "currency": "INR",
+        "description": "Amount to be withheld for completion of Internal plastering, Flooring, joinery works, Internal Painting, roof treatment, IPH works & Miscellaneous works etc.",
+        "raw_text": "Rs. 3 Lakhs"
+      },
+      {
+        "amount": 1500000.0,
+        "currency": "INR",
+        "description": "Cumulative amount withheld for completion of Internal plastering, Flooring, joinery works, Internal Painting, roof treatment, IPH works & Miscellaneous works etc.",
+        "raw_text": "Rs. 15 Lakhs"
+      },
+      {
+        "amount": 9700000.0,
+        "currency": "INR",
+        "description": "Amount to be withheld for Completion of all works upto plinth level of upper ground floor level",
+        "raw_text": "Rs. 97 Lakhs"
+      },
+      {
+        "amount": 9700000.0,
+        "currency": "INR",
+        "description": "Cumulative amount withheld for Completion of all works upto plinth level of upper ground floor level",
+        "raw_text": "Rs. 97 Lakhs"
+      },
+      {
+        "amount": 9800000.0,
+        "currency": "INR",
+        "description": "Amount to be withheld for Completion of all structural RCC works in superstructure in all floors including composite construction for high bay areas using deck sheets for RCC roofing and modular wall",
+        "raw_text": "Rs. 98 Lakhs"
+      },
+      {
+        "amount": 19500000.0,
+        "currency": "INR",
+        "description": "Cumulative amount withheld for Completion of all structural RCC works in superstructure in all floors including composite construction for high bay areas using deck sheets for RCC roofing and modular wall",
+        "raw_text": "Rs. 195 Lakhs"
+      },
+      {
+        "amount": 9800000.0,
+        "currency": "INR",
+        "description": "Amount to be withheld for Completion of wall paneling work for internal wall & External walls and masonry wall structural works at all floors, roofing works including roof treatment, fixing rain water pipes, fixing door & window frames, Internal plastering for about 50% area, IPH works in concealed pipe line etc, and",
+        "raw_text": "Rs. 98 Lakhs"
+      },
+      {
+        "amount": 29300000.0,
+        "currency": "INR",
+        "description": "Cumulative amount withheld for Completion of wall paneling work for internal wall & External walls and masonry wall structural works at all floors, roofing works including roof treatment, fixing rain water pipes, fixing door & window frames, Internal plastering for about 50% area, IPH works in concealed pipe line etc, and",
+        "raw_text": "Rs. 293 Lakhs"
+      },
+      {
+        "amount": 14500000.0,
+        "currency": "INR",
+        "description": "Amount to be withheld for Completion of Internal plastering, Flooring, External plastering, joinery works, false ceilings, sky light roofing, hand rails, Internal Painting, IPH works & Miscellaneous works including cable trenches road work and allied works etc.",
+        "raw_text": "Rs. 145 Lakhs"
+      },
+      {
+        "amount": 43800000.0,
+        "currency": "INR",
+        "description": "Cumulative amount withheld for Completion of Internal plastering, Flooring, External plastering, joinery works, false ceilings, sky light roofing, hand rails, Internal Painting, IPH works & Miscellaneous works including cable trenches road work and allied works etc.",
+        "raw_text": "Rs. 438 Lakhs"
+      },
+      {
+        "amount": 48500000.0,
+        "currency": "INR",
+        "description": "Cumulative amount withheld for Completion of all works including final coat of Internal &External painting, polishing, structural glazing, HP laminated sheet wall cladding work, providing hardware& sanitary installations, defect rectifications, site clearance and handing over to users etc)",
+        "raw_text": "Rs. 485 Lakhs"
+      }
+    ],
+    "summary": "This document, Annexure I, outlines the milestone schedule for the construction of an extension to the Assembly Integration & Test Facility (AITF-I) at ISITE, Bangalore. It details the physical milestones, time allowed for each, and the amount to be withheld in case of non-achievement. The document specifies milestones for both civil and PH works, as well as the main building construction, including procurement of materials and completion of structural works.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The document outlines specific milestones with associated penalties for non-achievement, indicating potential for delay-related disputes."
+      },
+      {
+        "signal_type": "LD",
+        "description": "The document specifies amounts to be withheld in case of non-achievement of milestones, which functions as a form of liquidated damages."
+      }
+    ]
+  },
+  {
+    "segment_id": "Application_-_Extension_of_Time_for_Construction",
+    "document_type": "Application",
+    "document_stage": "Delay/EOT",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "ISITE, Bangalore",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "18.07.2018",
+        "normalized": "18-07-2018",
+        "context": "Date of commencement of work as per agreement"
+      },
+      {
+        "date_string": "17.01.2021",
+        "normalized": "17-01-2021",
+        "context": "Date of completion stipulated in agreement"
+      },
+      {
+        "date_string": "17.12.2018",
+        "normalized": "17-12-2018",
+        "context": "1st extension date"
+      },
+      {
+        "date_string": "09.09.2022",
+        "normalized": "09-09-2022",
+        "context": "2nd extension date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 1230000000.0,
+        "currency": "INR",
+        "description": "Estimated amount put to tender",
+        "raw_text": "123 Crore"
+      }
+    ],
+    "summary": "This is an application by M/s. URC Construction (P) Ltd for an extension of time (EOT) for the construction of the Assembly Integration and Test Facility (AITFI) at ISITE, Bangalore. The contractor is seeking a total extension of 773 days due to hindrances and extra work. The original agreement stipulated a completion date of 17.01.2021.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The document is an application for extension of time, indicating potential delays in project completion."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The contractor is formally applying for an Extension of Time."
+      },
+      {
+        "signal_type": "extra_item",
+        "description": "The application mentions extra work as a reason for the extension of time."
+      }
+    ]
+  },
+  {
+    "segment_id": "Board_Resolution_-_Arbitration_Authorization",
+    "document_type": "Board Resolution",
+    "document_stage": "Legal Escalation",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "GANESAN.V",
+        "role": "legal counsel"
+      },
+      {
+        "name": "R.Veerasamy",
+        "role": "legal counsel"
+      },
+      {
+        "name": "GOVERNMENT OF INDIA",
+        "role": "government authority"
+      },
+      {
+        "name": "DEPARTMENT OF SPACE",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO SATELLITE CENTRE",
+        "role": "project authority"
+      },
+      {
+        "name": "TARUN KANTI BARMAN",
+        "role": "project authority"
+      },
+      {
+        "name": "B. ESWARAPPA",
+        "role": "project authority"
+      },
+      {
+        "name": "S. Palanisamy",
+        "role": "Managing Director"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Date"
+      },
+      {
+        "date_string": "9th day of JAN, 2026",
+        "normalized": "09-01-2026",
+        "context": "Board Meeting Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 1260083001.0,
+        "currency": "INR",
+        "description": "Work Order Amount",
+        "raw_text": "₹ 1,26,00,83,001.00"
+      },
+      {
+        "amount": 1260083001.0,
+        "currency": "INR",
+        "description": "Work Order Amount",
+        "raw_text": "1,26,00,83,001.00"
+      }
+    ],
+    "summary": "This document is an extract from the minutes of a Board of Directors meeting of URC Construction (P) Ltd. It resolves to authorize Mr. Ganesan.V, the company's legal consultant, to sign arbitration documents and prosecute litigations and arbitration proceedings on behalf of the company. The resolution pertains to a contract for the construction of an extension to the Assembly Integration and Test Facility (AITF-1) at ISITE, Bangalore.",
+    "dispute_signals": [
+      {
+        "signal_type": "arbitration",
+        "description": "The document authorizes a legal consultant to sign arbitration documents and prosecute arbitration proceedings."
+      }
+    ]
+  },
+  {
+    "segment_id": "Certificate_-_Final_Bill_for_Construction_Work",
+    "document_type": "Completion Certificate",
+    "document_stage": "Execution",
+    "parties": [
+      {
+        "name": "U.R.RAO SATELLITE CENTRE",
+        "role": "employer"
+      },
+      {
+        "name": "URSC/C&MG",
+        "role": "project authority"
+      },
+      {
+        "name": "M/s URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Puja M Singh",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07,2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "24/08/2018",
+        "normalized": "24-08-2018",
+        "context": "Agreement Date"
+      },
+      {
+        "date_string": "15/05/2022",
+        "normalized": "15-05-2022",
+        "context": "Date of Completion"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "This is a Final Bill certificate for the completion of construction work on the Extension to Assembly Integration & Test Facility (AITF-I) at ISITE, Bangalore. It certifies that measurements are final, no materials or services are outstanding, the work is completed satisfactorily within the extended time limit, and according to specifications. The certificate is issued by the Engineer-In-Charge.",
+    "dispute_signals": [
+      {
+        "signal_type": "EOT",
+        "description": "The work was completed in the extended time limit."
+      }
+    ]
+  },
+  {
+    "segment_id": "Claim_Abstract_-_Covid_and_Prolongation_Charges",
+    "document_type": "Claim Statement",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction C",
+        "role": "contractor"
+      },
+      {
+        "name": "RON (P) LTD",
+        "role": "employer"
+      }
+    ],
+    "dates": [],
+    "monetary_amounts": [
+      {
+        "amount": 83430676.0,
+        "currency": "INR",
+        "description": "Covid Claims",
+        "raw_text": "8,34,30,676.00"
+      },
+      {
+        "amount": 18166196.6,
+        "currency": "INR",
+        "description": "Prolongation Charges",
+        "raw_text": "1,81,66,196.60"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Interest on Civil Final bill",
+        "raw_text": "6,23,915,57"
+      },
+      {
+        "amount": 756553.94,
+        "currency": "INR",
+        "description": "Interest on HVAC Final bill",
+        "raw_text": "7,56,553.94"
+      },
+      {
+        "amount": 276279.02,
+        "currency": "INR",
+        "description": "Interest on Mechanical Final bill",
+        "raw_text": "2,76,279.02"
+      },
+      {
+        "amount": 954751.96,
+        "currency": "INR",
+        "description": "Interest on Electrical Final bill",
+        "raw_text": "9,54,751.96"
+      },
+      {
+        "amount": 28407118.53,
+        "currency": "INR",
+        "description": "Interest on Escalation-Civil",
+        "raw_text": "2,84,07,118.53"
+      },
+      {
+        "amount": 11417573.69,
+        "currency": "INR",
+        "description": "Interest on Escalation-HVAC",
+        "raw_text": "1,14,17,573.69"
+      },
+      {
+        "amount": 3745645.65,
+        "currency": "INR",
+        "description": "Interest on Escalation-Mechanical",
+        "raw_text": "37,45,645.65"
+      },
+      {
+        "amount": 6709096.79,
+        "currency": "INR",
+        "description": "Interest on Escalation-Electrical",
+        "raw_text": "67,09,096.79"
+      },
+      {
+        "amount": 52890935.15,
+        "currency": "INR",
+        "description": "Sub total",
+        "raw_text": "5,28,90,935.15"
+      },
+      {
+        "amount": 154487807.75,
+        "currency": "INR",
+        "description": "Grand Total",
+        "raw_text": "15,44,87,807.75"
+      }
+    ],
+    "summary": "This document is a claim abstract detailing various claims made by URC Construction, including Covid claims, prolongation charges, and interest on different bills and escalations. The total claim amount is INR 15,44,87,807.75.",
+    "dispute_signals": [
+      {
+        "signal_type": "covid",
+        "description": "The claim includes an amount for Covid related claims."
+      },
+      {
+        "signal_type": "delay",
+        "description": "The claim includes prolongation charges."
+      },
+      {
+        "signal_type": "interest",
+        "description": "The claim includes interest on final bills and escalations."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The document is a claim statement, indicating a payment dispute."
+      }
+    ]
+  },
+  {
+    "segment_id": "Claim_Letter_-_Construction_Dispute_Settlement",
+    "document_type": "Letter",
+    "document_stage": "Legal Escalation",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Department of Space",
+        "role": "employer"
+      },
+      {
+        "name": "U.R.RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "ISITE Campus",
+        "role": "project authority"
+      },
+      {
+        "name": "The Group Head",
+        "role": "project authority"
+      },
+      {
+        "name": "The Secretary",
+        "role": "government authority"
+      },
+      {
+        "name": "The Chairman",
+        "role": "government authority"
+      },
+      {
+        "name": "The Hon'ble Director",
+        "role": "project authority"
+      },
+      {
+        "name": "The Engineer In Charge",
+        "role": "project authority"
+      },
+      {
+        "name": "S.Palanisamy",
+        "role": "Managing Director"
+      },
+      {
+        "name": "URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "SAC",
+        "role": "project authority"
+      },
+      {
+        "name": "HQ",
+        "role": "project authority"
+      },
+      {
+        "name": "Director, URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "Director, SAC, Ahmedabad",
+        "role": "project authority"
+      },
+      {
+        "name": "Controller, URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "Director, CEPO",
+        "role": "project authority"
+      },
+      {
+        "name": "Associate director SATCOM-PO, ISRO HQ",
+        "role": "project authority"
+      },
+      {
+        "name": "Sr.Head accounts/IFA (C)",
+        "role": "project authority"
+      },
+      {
+        "name": "GD, C&MG",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "27.09.2024",
+        "normalized": "27-09-2024",
+        "context": "Letter dated"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "09.09.2022",
+        "normalized": "09-09-2022",
+        "context": "Requesting Final Extension of time"
+      },
+      {
+        "date_string": "06.05.2024",
+        "normalized": "06-05-2024",
+        "context": "Informing Final extension of time"
+      },
+      {
+        "date_string": "10.05.2024",
+        "normalized": "10-05-2024",
+        "context": "Reply to Final decision of Final Extension of Time"
+      },
+      {
+        "date_string": "20.05.2024",
+        "normalized": "20-05-2024",
+        "context": "Informing Levy of LD"
+      },
+      {
+        "date_string": "31.05.2024",
+        "normalized": "31-05-2024",
+        "context": "Reply to URC's letter dated 10.05.2024"
+      },
+      {
+        "date_string": "03.06.2024",
+        "normalized": "03-06-2024",
+        "context": "Requesting to settle all the claims along with final bill"
+      },
+      {
+        "date_string": "10.05.2024",
+        "normalized": "10-05-2024",
+        "context": "Reply to Final decision of Final Extension of Time"
+      },
+      {
+        "date_string": "01.07.2024",
+        "normalized": "01-07-2024",
+        "context": "Reply to URC's letter dated 12.06.2024"
+      },
+      {
+        "date_string": "23.08.2024",
+        "normalized": "23-08-2024",
+        "context": "Rejection of all claims by EIC"
+      },
+      {
+        "date_string": "13-10-2017",
+        "normalized": "13-10-2017",
+        "context": "Tender Submission Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Work order Value",
+        "raw_text": "*126,00,83,001"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Final bill value",
+        "raw_text": "Rs. 5.89 crore"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Certified value of work done",
+        "raw_text": "Rs. 4.81Crore"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Final Bill (Including Civil, Electrical, HVAC, mechanical)",
+        "raw_text": "91,90,743.00"
+      },
+      {
+        "amount": 623915.57,
+        "currency": "INR",
+        "description": "Interest on Civil Final bill",
+        "raw_text": "6,23,915.57"
+      },
+      {
+        "amount": 756553.94,
+        "currency": "INR",
+        "description": "Interest on HVAC Final bill",
+        "raw_text": "7,56,553.94"
+      },
+      {
+        "amount": 276279.02,
+        "currency": "INR",
+        "description": "Interest on Mechanical Final bill",
+        "raw_text": "2,76,279.02"
+      },
+      {
+        "amount": 954751.96,
+        "currency": "INR",
+        "description": "Interest on Electrical Final bill",
+        "raw_text": "9,54,751.96"
+      },
+      {
+        "amount": 32357961.0,
+        "currency": "INR",
+        "description": "Interest on Escalation-Civil",
+        "raw_text": "3,23,57,961.00"
+      },
+      {
+        "amount": 12682381.0,
+        "currency": "INR",
+        "description": "Interest on Escalation-HVAC",
+        "raw_text": "1,26,82,381.00"
+      },
+      {
+        "amount": 4113984.0,
+        "currency": "INR",
+        "description": "Interest on Escalation- Mechanical",
+        "raw_text": "41,13,984.00"
+      },
+      {
+        "amount": 6944599.0,
+        "currency": "INR",
+        "description": "Interest on Escalation- Electrical",
+        "raw_text": "69,44,599.00"
+      }
+    ],
+    "summary": "URC Construction (P) Ltd. invokes Clause 25 of the General Conditions of Contract (GCC) to request the Department of Space to settle outstanding claims related to the construction of an extension to the Assembly Integration and Test Facility (AITF-1) at ISITE Campus in Bangalore. URC claims that the department's stance has changed throughout the project, and they are now facing financial losses due to delays, COVID-19 shutdowns, and non-payment of dues. URC requests compensation for increased costs, interest on delayed payments, and invokes Clause 25 for dispute resolution.",
+    "dispute_signals": [
+      {
+        "signal_type": "payment_dispute",
+        "description": "URC claims non-payment of final bill, price variations, and GST reimbursement."
+      },
+      {
+        "signal_type": "delay",
+        "description": "URC claims delays due to various hindrances and COVID-19 shutdowns."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "URC is disputing the final extension of time and its impact on payments."
+      },
+      {
+        "signal_type": "covid",
+        "description": "URC claims increased expenditures due to COVID-19 shutdowns."
+      },
+      {
+        "signal_type": "interest",
+        "description": "URC is claiming interest on delayed payments."
+      }
+    ]
+  },
+  {
+    "segment_id": "Claim_Statement_-_Construction_Project_AITF-1",
+    "document_type": "Claim Statement",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd.",
+        "role": "contractor"
+      },
+      {
+        "name": "ISITE, Bangalore",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC/C&MG/ISAC",
+        "role": "employer"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "4.7.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 86172922.0,
+        "currency": "INR",
+        "description": "Escalation Total Amount Civil",
+        "raw_text": "8,61,72,922.00"
+      },
+      {
+        "amount": 55172758.0,
+        "currency": "INR",
+        "description": "Escalation Released Civil",
+        "raw_text": "5,51,72,758.00"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Escalation Balance Civil",
+        "raw_text": "3,10,00,164,00"
+      },
+      {
+        "amount": 19846088.0,
+        "currency": "INR",
+        "description": "Escalation Total Amount Electrical",
+        "raw_text": "1,98,46,088.00"
+      },
+      {
+        "amount": 10216226.0,
+        "currency": "INR",
+        "description": "Escalation Released Electrical",
+        "raw_text": "1,02,16,226.00"
+      },
+      {
+        "amount": 9629862.0,
+        "currency": "INR",
+        "description": "Escalation Balance Electrical",
+        "raw_text": "96,29,862.00"
+      },
+      {
+        "amount": 23261695.0,
+        "currency": "INR",
+        "description": "Escalation Total Amount HVAC",
+        "raw_text": "2,32,61,695.00"
+      },
+      {
+        "amount": 13082527.0,
+        "currency": "INR",
+        "description": "Escalation Released HVAC",
+        "raw_text": "1,30,82,527.00"
+      },
+      {
+        "amount": 10179168.0,
+        "currency": "INR",
+        "description": "Escalation Balance HVAC",
+        "raw_text": "1,01,79,168.00"
+      },
+      {
+        "amount": 7282293.0,
+        "currency": "INR",
+        "description": "Escalation Total Amount Mechanical",
+        "raw_text": "72,82,293.00"
+      },
+      {
+        "amount": 3871935.0,
+        "currency": "INR",
+        "description": "Escalation Released Mechanical",
+        "raw_text": "38,71,935.00"
+      },
+      {
+        "amount": 3410358.0,
+        "currency": "INR",
+        "description": "Escalation Balance Mechanical",
+        "raw_text": "34,10,358.00"
+      },
+      {
+        "amount": 5997813.0,
+        "currency": "INR",
+        "description": "LD Amount",
+        "raw_text": "59,97,813.00"
+      },
+      {
+        "amount": 67816783.0,
+        "currency": "INR",
+        "description": "Covid Claim",
+        "raw_text": "6,78,16,783.00"
+      },
+      {
+        "amount": 64159499.0,
+        "currency": "INR",
+        "description": "Compensation for prolongation period",
+        "raw_text": "6,41,59,499.00"
+      },
+      {
+        "amount": 623915.57,
+        "currency": "INR",
+        "description": "Interest on Final Bills Civil",
+        "raw_text": "6,23,915.57"
+      },
+      {
+        "amount": 756553.94,
+        "currency": "INR",
+        "description": "Interest on Final Bills HVAC",
+        "raw_text": "7,56,553.94"
+      },
+      {
+        "amount": 276279.02,
+        "currency": "INR",
+        "description": "Interest on Final Bills Mechanical",
+        "raw_text": "2,76,279.02"
+      },
+      {
+        "amount": 954751.96,
+        "currency": "INR",
+        "description": "Interest on Final Bills Electrical",
+        "raw_text": "9,54,751.96"
+      },
+      {
+        "amount": 32357961.0,
+        "currency": "INR",
+        "description": "Interest on Escalation bills Civil",
+        "raw_text": "3,23,57,961.00"
+      },
+      {
+        "amount": 6944599.0,
+        "currency": "INR",
+        "description": "Interest on Escalation bills Electrical",
+        "raw_text": "69,44,599.00"
+      },
+      {
+        "amount": 12682381.0,
+        "currency": "INR",
+        "description": "Interest on Escalation bills HVAC",
+        "raw_text": "1,26,82,381.00"
+      },
+      {
+        "amount": 4113984.0,
+        "currency": "INR",
+        "description": "Interest on Escalation bills Mechanical",
+        "raw_text": "41,13,984.00"
+      },
+      {
+        "amount": 250904072.49,
+        "currency": "INR",
+        "description": "Balance Total Amount due",
+        "raw_text": "25,09,04,072.49"
+      }
+    ],
+    "summary": "This document is a claim statement for the construction of an extension to the Assembly Integration and Test Facility (AITF-1) at ISITE, Bangalore. The claim is submitted by M/s. URC Construction (P) Ltd. It details escalation amounts for civil, electrical, HVAC, and mechanical work, along with claims for LD amount, Covid, compensation for prolongation period, and interest on final and escalation bills. The total balance amount due is 25,09,04,072.49.",
+    "dispute_signals": [
+      {
+        "signal_type": "escalation",
+        "description": "The document includes escalation claims for civil, electrical, HVAC, and mechanical work."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The document is a claim statement indicating a payment dispute."
+      },
+      {
+        "signal_type": "LD",
+        "description": "The document includes a claim for LD amount."
+      },
+      {
+        "signal_type": "covid",
+        "description": "The document includes a claim related to Covid."
+      },
+      {
+        "signal_type": "compensation",
+        "description": "The document includes a claim for compensation for prolongation period."
+      },
+      {
+        "signal_type": "interest",
+        "description": "The document includes a claim for interest on final bills and escalation bills."
+      }
+    ]
+  },
+  {
+    "segment_id": "Clarification_Letter_-_EOT_Crane_Work",
+    "document_type": "Letter",
+    "document_stage": "Execution",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "G SHANMUGAM",
+        "role": "project authority"
+      },
+      {
+        "name": "The Engineer Incharge - Mechanical",
+        "role": "project authority"
+      },
+      {
+        "name": "Shri Krishnasamy",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "ISITE Campus",
+        "role": "employer"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "12.02.2019",
+        "normalized": "12-02-2019",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "24.04.2019",
+        "normalized": "24-04-2019",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "09.05.2019",
+        "normalized": "09-05-2019",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "09.05.2019",
+        "normalized": "09-05-2019",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "24.05.2019",
+        "normalized": "24-05-2019",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "11.06.19",
+        "normalized": "11-06-2019",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "12-Jun-19",
+        "normalized": "12-06-2019",
+        "context": "Letter date"
+      },
+      {
+        "date_string": "11/06/2019",
+        "normalized": "11-06-2019",
+        "context": "Meeting date"
+      },
+      {
+        "date_string": "11.06.19",
+        "normalized": "11-06-2019",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "12/06/2019",
+        "normalized": "12-06-2019",
+        "context": "Document Received date"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "This is a letter from URC Construction to the Engineer Incharge at URSC, regarding clarification on EOT crane work for the Construction of Extension to Assembly Integration and Test Facility (AITF 1) at ISITE Campus, Marathahalli, Bangalore. The letter references several prior communications and requests clarification on gantry rail, gantry girder, DSL festoon cable, and gearbox.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The letter discusses clarification regarding EOT crane work, which could potentially impact project timelines."
+      }
+    ]
+  },
+  {
+    "segment_id": "Completion_Certificate_-_AITF-1_Extension_Work",
+    "document_type": "Completion Certificate",
+    "document_stage": "Execution",
+    "parties": [
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "ISITE",
+        "role": "project authority"
+      },
+      {
+        "name": "M/s. URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "INDIAN SPACE RESEARCH ORGANISATION",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "23/09/2024",
+        "normalized": "23-09-2024",
+        "context": "Completion Certificate Date"
+      },
+      {
+        "date_string": "04/07/2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Date"
+      },
+      {
+        "date_string": "24/08/2018",
+        "normalized": "24-08-2018",
+        "context": "Agreement Date"
+      },
+      {
+        "date_string": "18/07/2018",
+        "normalized": "18-07-2018",
+        "context": "Scheduled Date of Commencement"
+      },
+      {
+        "date_string": "17/01/2021",
+        "normalized": "17-01-2021",
+        "context": "Scheduled Date of Completion"
+      },
+      {
+        "date_string": "15/05/2022",
+        "normalized": "15-05-2022",
+        "context": "Actual date of Completion"
+      },
+      {
+        "date_string": "22/08/2024",
+        "normalized": "22-08-2024",
+        "context": "Superseded Completion Certificate Date"
+      },
+      {
+        "date_string": "21/08/2024",
+        "normalized": "21-08-2024",
+        "context": "Contractor's Letter Date"
+      },
+      {
+        "date_string": "23/09/2024",
+        "normalized": "23-09-2024",
+        "context": "Engineer-In Charge Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 1260083001.0,
+        "currency": "INR",
+        "description": "Work Order Value",
+        "raw_text": "1,26,00,83,001.00"
+      },
+      {
+        "amount": 1168037807.0,
+        "currency": "INR",
+        "description": "Completion Cost",
+        "raw_text": "1,16,80,37,807.00"
+      },
+      {
+        "amount": 1253738736.0,
+        "currency": "INR",
+        "description": "Completion Cost with Clause 10C(ii)",
+        "raw_text": "₹1,25,37,38,736.00"
+      },
+      {
+        "amount": 5998324.0,
+        "currency": "INR",
+        "description": "Levy of Compensation for Delay",
+        "raw_text": "*59,98,324.00"
+      }
+    ],
+    "summary": "This is a completion certificate for the construction of an extension to the Assembly Integration & Test facility (AITF-1) at ISITE, Bangalore. The work was completed with a delay of 68 days, resulting in a levy of compensation. The certificate supersedes an earlier one issued on 22/08/2024.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The work was completed with a delay of 68 days."
+      },
+      {
+        "signal_type": "LD",
+        "description": "Compensation was levied for the delay."
+      }
+    ]
+  },
+  {
+    "segment_id": "Contract_Agreement_-_Construction_of_AITF-1_Facility",
+    "document_type": "Contract Agreement",
+    "document_stage": "Contract Formation",
+    "parties": [
+      {
+        "name": "URC Constructions (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "S.Suresh Karnik",
+        "role": "project authority"
+      },
+      {
+        "name": "ISRO Satellite Centre",
+        "role": "employer"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "SHRI.B.ESWARAPPA",
+        "role": "project authority"
+      },
+      {
+        "name": "SHRI. TARUN KANTI BARMAN",
+        "role": "project authority"
+      },
+      {
+        "name": "SHRI MAHESH BABU MP",
+        "role": "project authority"
+      },
+      {
+        "name": "S. Palanisamy",
+        "role": "project authority"
+      },
+      {
+        "name": "Vetrivelan",
+        "role": "project authority"
+      },
+      {
+        "name": "P. BUVANESHwaran",
+        "role": "project authority"
+      },
+      {
+        "name": "TARUNYANTI BARMAN",
+        "role": "project authority"
+      },
+      {
+        "name": "MP Mallet",
+        "role": "project authority"
+      },
+      {
+        "name": "KANTI BARMAN",
+        "role": "project authority"
+      },
+      {
+        "name": "GANESH BABU",
+        "role": "project authority"
+      },
+      {
+        "name": "BAQU",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "24th May 2018",
+        "normalized": "24-05-2018",
+        "context": "Letter Date regarding extension of Assembly Integration & Test Facility"
+      },
+      {
+        "date_string": "7.8.2017",
+        "normalized": "07-08-2017",
+        "context": "NIET Dated"
+      },
+      {
+        "date_string": "10.6.2018",
+        "normalized": "10-06-2018",
+        "context": "Offer Validity Date"
+      },
+      {
+        "date_string": "10.7.2018",
+        "normalized": "10-07-2018",
+        "context": "Extended Offer Validity Date"
+      },
+      {
+        "date_string": "05-Jul-2018",
+        "normalized": "05-07-2018",
+        "context": "Certificate Issued Date"
+      },
+      {
+        "date_string": "11th day of July Two Thousand Eighteen (11-07-2018",
+        "normalized": "11-07-2018",
+        "context": "Contract Agreement Date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Date"
+      },
+      {
+        "date_string": "7.8.2017",
+        "normalized": "07-08-2017",
+        "context": "NIT Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 256215.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "2,56,215.00"
+      },
+      {
+        "amount": 75000.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "75,000.00"
+      },
+      {
+        "amount": 225000.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "2,25,000.00"
+      },
+      {
+        "amount": 763500.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "7,63,500.00"
+      },
+      {
+        "amount": 2182500.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "21,82,500.00"
+      },
+      {
+        "amount": 529000.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "5,29,000.00"
+      },
+      {
+        "amount": 151500.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "1,51,500.00"
+      },
+      {
+        "amount": 121500.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "1,21,500.00"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "7.83.000.00"
+      },
+      {
+        "amount": 235200.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "2,35,200.00"
+      },
+      {
+        "amount": 2429475.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "24,29,475.00"
+      },
+      {
+        "amount": 3438000.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "34,38,000.00"
+      },
+      {
+        "amount": 352800.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "3,52,800.00"
+      },
+      {
+        "amount": 2276500.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "22,76,500,00"
+      },
+      {
+        "amount": 41533000.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "4,15,33,000.00"
+      },
+      {
+        "amount": 15000.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "15,000.00"
+      },
+      {
+        "amount": 1096200.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "10,96,200.00"
+      },
+      {
+        "amount": 20382.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "* 20,382.00"
+      },
+      {
+        "amount": 15586.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "* 15,586.00"
+      },
+      {
+        "amount": 853617.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "* 8,53,617.00"
+      },
+      {
+        "amount": 493450.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "* 4,93,450,00"
+      },
+      {
+        "amount": 788375.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "* 7,88,375.00"
+      },
+      {
+        "amount": 164115.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "* 1,64,115.00"
+      },
+      {
+        "amount": 195260.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "* 1,95,260.00"
+      },
+      {
+        "amount": 173230.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "* 1,73,230.00"
+      }
+    ],
+    "summary": "This document is a contract agreement between URC Constructions (P) Ltd and the Government of India, specifically URSC, DOS, for the construction of an extension to the Assembly Integration & Test Facility (AITF-I) at ISITE, Bangalore. The agreement references work order No.URSC/C&MG/2/36(T) dated 04.07.2018. It outlines the specifications, schedule, and plans for the civil, PH, electrical, air conditioning, mechanical, and other allied works.",
+    "dispute_signals": [
+      {
+        "signal_type": "escalation",
+        "description": "Tender acceptance is in advanced stage, indicating potential for disputes if not finalized."
+      }
+    ]
+  },
+  {
+    "segment_id": "Court_Filing_-_Construction_Dispute",
+    "document_type": "Court Filing",
+    "document_stage": "Legal Escalation",
+    "parties": [
+      {
+        "name": "URC CONSTRUCTIONS PRIVATE LIMITED",
+        "role": "contractor"
+      },
+      {
+        "name": "V Ganesan",
+        "role": "Authorized Representative"
+      },
+      {
+        "name": "INDIAN SPACE RESEARCH ORGANISATION",
+        "role": "employer"
+      },
+      {
+        "name": "Rahat Ali H. Shaikh",
+        "role": "project authority"
+      },
+      {
+        "name": "Abhilash Raju V.",
+        "role": "legal counsel"
+      },
+      {
+        "name": "Pratik Pany",
+        "role": "legal counsel"
+      },
+      {
+        "name": "Sharada Reddy",
+        "role": "legal counsel"
+      },
+      {
+        "name": "Inderjeet D",
+        "role": "legal counsel"
+      },
+      {
+        "name": "Anand R Patil",
+        "role": "legal counsel"
+      },
+      {
+        "name": "Divya J.",
+        "role": "legal counsel"
+      },
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "07.08.2017",
+        "normalized": "07-08-2017",
+        "context": "Notice Inviting Tender floated"
+      },
+      {
+        "date_string": "13.10.2017",
+        "normalized": "13-10-2017",
+        "context": "Tender Submission Date"
+      },
+      {
+        "date_string": "09.02.2018",
+        "normalized": "09-02-2018",
+        "context": "Original tender validity expired"
+      },
+      {
+        "date_string": "01.02.2018",
+        "normalized": "01-02-2018",
+        "context": "Tender validity extended"
+      },
+      {
+        "date_string": "09.06.2018",
+        "normalized": "09-06-2018",
+        "context": "Extended tender validity end date"
+      },
+      {
+        "date_string": "24.05.2018",
+        "normalized": "24-05-2018",
+        "context": "Defendant sought an extension of tender validity"
+      },
+      {
+        "date_string": "10.07.2018",
+        "normalized": "10-07-2018",
+        "context": "Extended tender validity end date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "11.07.2018",
+        "normalized": "11-07-2018",
+        "context": "Construction Agreement date"
+      },
+      {
+        "date_string": "18-07-2018",
+        "normalized": "18-07-2018",
+        "context": "Date of Commencement"
+      },
+      {
+        "date_string": "17-01-2021",
+        "normalized": "17-01-2021",
+        "context": "Scheduled Date of Completion"
+      },
+      {
+        "date_string": "23.03.2020",
+        "normalized": "23-03-2020",
+        "context": "Work was stopped due to Covid -19 pandemic"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "amount put to tender",
+        "raw_text": "Rs. 1,23,10,05,775/-"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "total project value",
+        "raw_text": "Rs.126,00,83,001.00/-"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Final bill certified by Engineer in charge and recommended for approval",
+        "raw_text": "Rs.13,21,50,854.00"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Revised/ Reduced final bill value released",
+        "raw_text": "Rs.8,48,67,028.00"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "payment of",
+        "raw_text": "Rs. 59,97,813/-"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "amount due and payable to the Plaintiff",
+        "raw_text": "Rs. 26,15,91,147/-"
+      }
+    ],
+    "summary": "URC Constructions Private Limited has filed a commercial suit against the Indian Space Research Organisation (ISRO) seeking recovery of Rs. 26,15,91,147 due for the execution of a work order. The dispute arose from delays, price escalations, and the levy of liquidated damages. URC claims entitlement to interest at 12% per annum from the date of the final bill submission and 18% per annum on the decretal amount until realization.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The document discusses delays in the project and the extension of time granted."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The plaintiff is seeking recovery of amounts due for the execution of the work order."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The document mentions the extension of time granted for the project."
+      },
+      {
+        "signal_type": "LD",
+        "description": "The plaintiff objects to the unilateral levy of liquidated damages."
+      },
+      {
+        "signal_type": "interest",
+        "description": "The plaintiff is claiming interest on the amounts due."
+      }
+    ]
+  },
+  {
+    "segment_id": "Demand_Notice_-_Construction_Project_Delays",
+    "document_type": "Notice",
+    "document_stage": "Legal Escalation",
+    "parties": [
+      {
+        "name": "Abhilash Raju V.",
+        "role": "legal counsel"
+      },
+      {
+        "name": "Pratik Pany.",
+        "role": "legal counsel"
+      },
+      {
+        "name": "M/s URC Construction Private Limited",
+        "role": "contractor"
+      },
+      {
+        "name": "The UR Rao Satellite Centre",
+        "role": "employer"
+      },
+      {
+        "name": "Director, URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "Director, SAC",
+        "role": "project authority"
+      },
+      {
+        "name": "Director, CEPO",
+        "role": "project authority"
+      },
+      {
+        "name": "Associate director SATCOM-PO, ISRO HQ",
+        "role": "project authority"
+      },
+      {
+        "name": "GD,C&MG",
+        "role": "project authority"
+      },
+      {
+        "name": "Engineer in Charge",
+        "role": "project authority"
+      },
+      {
+        "name": "Group Head",
+        "role": "project authority"
+      },
+      {
+        "name": "Director, ISAC",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "17.04.2025",
+        "normalized": "17-04-2025",
+        "context": "Demand Notice Issued"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "18.07.2018",
+        "normalized": "18-07-2018",
+        "context": "Project Commencement Date"
+      },
+      {
+        "date_string": "17.01.2021",
+        "normalized": "17-01-2021",
+        "context": "Stipulated Completion Date"
+      },
+      {
+        "date_string": "15.05.2022",
+        "normalized": "15-05-2022",
+        "context": "Provisional Extension of Time Granted"
+      },
+      {
+        "date_string": "09.09.2022",
+        "normalized": "09-09-2022",
+        "context": "Final Extension of Time Letter Submitted"
+      },
+      {
+        "date_string": "10.02.2022",
+        "normalized": "10-02-2022",
+        "context": "Pre Final Bill Certification Date"
+      },
+      {
+        "date_string": "20.02.2022",
+        "normalized": "20-02-2022",
+        "context": "Certified Value of Work Done Released"
+      },
+      {
+        "date_string": "23.03.2020",
+        "normalized": "23-03-2020",
+        "context": "Covid 19 Wave 1 Suspension Start"
+      },
+      {
+        "date_string": "16.12.2020",
+        "normalized": "16-12-2020",
+        "context": "Covid 19 Wave 1 Suspension End"
+      },
+      {
+        "date_string": "23.04.2021",
+        "normalized": "23-04-2021",
+        "context": "Covid 19 Wave 2 Suspension Start"
+      },
+      {
+        "date_string": "13.06.2021",
+        "normalized": "13-06-2021",
+        "context": "Covid 19 Wave 2 Suspension End"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 1260083001.0,
+        "currency": "INR",
+        "description": "Value of the project",
+        "raw_text": "Rs. 126,00,83,001.00"
+      },
+      {
+        "amount": 5.89,
+        "currency": "INR",
+        "description": "Final bill value",
+        "raw_text": "Rs. 5.89 crore"
+      },
+      {
+        "amount": 4.81,
+        "currency": "INR",
+        "description": "Pre final bill value",
+        "raw_text": "Rs. 4.81Crore"
+      },
+      {
+        "amount": 9190743.0,
+        "currency": "INR",
+        "description": "Final Bill (Including Civil, Electrical, HVAC, mechanical)",
+        "raw_text": "91,90,743.00"
+      },
+      {
+        "amount": 1059067.0,
+        "currency": "INR",
+        "description": "Withheld Amount",
+        "raw_text": "* 10,59,067.00"
+      },
+      {
+        "amount": 112908309.0,
+        "currency": "INR",
+        "description": "Price Variation Bills (Including Civil, Electrical, HVAC, Mechanical)",
+        "raw_text": "11,29,08,309.00"
+      },
+      {
+        "amount": 8992735.0,
+        "currency": "INR",
+        "description": "Reimbursement of GST from 12% to 18% (Including Civil, Electrical, HVAC, Mechanical)",
+        "raw_text": "89,92,735.00"
+      },
+      {
+        "amount": 132150854.0,
+        "currency": "INR",
+        "description": "Total Amount",
+        "raw_text": "* 13,21,50,854.00"
+      },
+      {
+        "amount": 47283826.0,
+        "currency": "INR",
+        "description": "Releasing of Balance Escalation payment certified and not released due to wrongful action taken for levy of Liquidated damages",
+        "raw_text": "Rs.4,72,83,826.00/-"
+      },
+      {
+        "amount": 5997813.0,
+        "currency": "INR",
+        "description": "Releasing of illegal/arbitrary levy amount by means of Liquidated Damages for the unjustified period of 68 days",
+        "raw_text": "Rs. 59,97,813.00/-"
+      },
+      {
+        "amount": 83430676.0,
+        "currency": "INR",
+        "description": "Compensation for the Expenses incurred during the Covid-19 stay period from 23.03.2020 to 17.12.2020",
+        "raw_text": "Rs.8,34,30,676.00/-"
+      },
+      {
+        "amount": 18166196.0,
+        "currency": "INR",
+        "description": "Compensation for the Prolongation period Expenditures i.e., to from the period of 18.01.2021 to 15.05.2022",
+        "raw_text": "Rs. 1,81, 66,196.00/-"
+      },
+      {
+        "amount": 52890935.0,
+        "currency": "INR",
+        "description": "Additional interest burden due to withholding of Rs.13.20 crores at the rate of 18% per Annum",
+        "raw_text": "Rs. 5,28,90,935.00/-"
+      },
+      {
+        "amount": 207769446.0,
+        "currency": "INR",
+        "description": "Total amount claimed",
+        "raw_text": "Rs.20,77,69,446/-"
+      }
+    ],
+    "summary": "This is a demand notice issued by M/s URC Construction Private Limited through their legal counsel to The UR Rao Satellite Centre regarding a project for the Construction of Extension to Assembly Integration and Test Facility (AITF-1). URC Construction is claiming Rs. 20,77,69,446/- along with 18% interest due to delays, withheld amounts, and expenses incurred during the Covid-19 pandemic. The notice alleges wrongful levy of liquidated damages and seeks compensation for prolongation of the contract period.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The document discusses delays in the project due to various hindrances."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The document mentions non-release of final bill payments and withheld amounts."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The document concerns the extension of time sought for project completion."
+      },
+      {
+        "signal_type": "LD",
+        "description": "The document mentions the levy of liquidated damages for a period of delay."
+      },
+      {
+        "signal_type": "covid",
+        "description": "The document refers to expenses incurred during the Covid-19 pandemic."
+      }
+    ]
+  },
+  {
+    "segment_id": "Financial_Report_-_Lockdown_Expenses",
+    "document_type": "Claim Statement",
+    "document_stage": "Delay/EOT",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Karnataka Government",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order date"
+      },
+      {
+        "date_string": "23.3.2020",
+        "normalized": "23-03-2020",
+        "context": "Lockdown period start date"
+      },
+      {
+        "date_string": "17.12.2020",
+        "normalized": "17-12-2020",
+        "context": "Lockdown period end date"
+      },
+      {
+        "date_string": "23/03/2020",
+        "normalized": "23-03-2020",
+        "context": "Karnataka Government Circular date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 83430676.0,
+        "currency": "INR",
+        "description": "Total expenses (1:7)",
+        "raw_text": "8 34 30 676"
+      },
+      {
+        "amount": 16500000.0,
+        "currency": "INR",
+        "description": "Demobilisation Charges",
+        "raw_text": "1 65 00 000"
+      },
+      {
+        "amount": 1859000.0,
+        "currency": "INR",
+        "description": "Remobilisation Charges",
+        "raw_text": "18 59 000"
+      },
+      {
+        "amount": 3015000.0,
+        "currency": "INR",
+        "description": "Total -7",
+        "raw_text": "30 15 000"
+      }
+    ],
+    "summary": "This document presents a claim by URC Construction (P) Ltd for expenses incurred during the lockdown period from March 23, 2020, to December 17, 2020. The claim includes costs related to labor, equipment hire, site operations, salaries, overheads, demobilization, and remobilization. The total expenses claimed amount to ₹8,34,30,676.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "Claim for expenses incurred due to lockdown period."
+      },
+      {
+        "signal_type": "covid",
+        "description": "Expenses directly related to the COVID-19 lockdown."
+      },
+      {
+        "signal_type": "compensation",
+        "description": "Claiming compensation for expenses during the lockdown."
+      }
+    ]
+  },
+  {
+    "segment_id": "Government_Order_-_Compensation_for_Construction_Delay",
+    "document_type": "Letter",
+    "document_stage": "Delay/EOT",
+    "parties": [
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "M/s URC Construction (P) Limited",
+        "role": "contractor"
+      },
+      {
+        "name": "Director ISAC",
+        "role": "project authority"
+      },
+      {
+        "name": "Director, URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "Smt. Puja M Singh",
+        "role": "project authority"
+      },
+      {
+        "name": "Engineer In-Charge",
+        "role": "project authority"
+      },
+      {
+        "name": "President of India",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "23/08/2024",
+        "normalized": "23-08-2024",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "03/06/2024",
+        "normalized": "03-06-2024",
+        "context": "URC Construction letter regarding compensation for delay"
+      },
+      {
+        "date_string": "31/05/2024",
+        "normalized": "31-05-2024",
+        "context": "Department Letter regarding compensation for delay"
+      },
+      {
+        "date_string": "01/07/2024",
+        "normalized": "01-07-2024",
+        "context": "Department Letter regarding compensation for delay"
+      },
+      {
+        "date_string": "20 May 2024",
+        "normalized": "20-05-2024",
+        "context": "Notice for levy letter"
+      },
+      {
+        "date_string": "09.09.2022",
+        "normalized": "09-09-2022",
+        "context": "Final EOT letter date"
+      },
+      {
+        "date_string": "10.05.2024",
+        "normalized": "10-05-2024",
+        "context": "Detailed reply date"
+      },
+      {
+        "date_string": "09.03.2022",
+        "normalized": "09-03-2022",
+        "context": "Start date of alleged delay period"
+      },
+      {
+        "date_string": "15.05.2022",
+        "normalized": "15-05-2022",
+        "context": "End date of alleged delay period"
+      },
+      {
+        "date_string": "06.09.2023",
+        "normalized": "06-09-2023",
+        "context": "Director ISAC approved the full extension of time without levy of LD"
+      },
+      {
+        "date_string": "15.05.2022",
+        "normalized": "15-05-2022",
+        "context": "Completion of work"
+      },
+      {
+        "date_string": "18.01.2021",
+        "normalized": "18-01-2021",
+        "context": "Start date of final extension of time"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 132100000.0,
+        "currency": "INR",
+        "description": "Value of work done",
+        "raw_text": "Rs. 13.21 crores"
+      },
+      {
+        "amount": 5997813007.0,
+        "currency": "INR",
+        "description": "Compensation amount",
+        "raw_text": "Rs. 59,97,813,007"
+      },
+      {
+        "amount": 83430676.0,
+        "currency": "INR",
+        "description": "Expenses incurred during the Covid-19 stay period",
+        "raw_text": "Rs. 8,34,30,676.00"
+      },
+      {
+        "amount": 18166196.0,
+        "currency": "INR",
+        "description": "Prolongation period Expenditures",
+        "raw_text": "Rs. 1,81,66,196.00"
+      },
+      {
+        "amount": 132000000.0,
+        "currency": "INR",
+        "description": "Additional interest hurden due to withhold of huge certified amount",
+        "raw_text": "Rs. 13.20 Crores"
+      },
+      {
+        "amount": 52890935.0,
+        "currency": "INR",
+        "description": "Interest for final bill",
+        "raw_text": "Rs. 5,28,90,935.00"
+      }
+    ],
+    "summary": "This is a letter from the Department of Space, U.R. Rao Satellite Centre to M/s URC Construction (P) Limited regarding the construction of an extension to the Assembly Integration & Test facility (AITF-1) at ISITE, Bangalore. The letter addresses URC Construction's request to not levy compensation for delay. It provides point-by-point replies to URC's claims, particularly concerning the extension of time, alleged delays, and the levy of compensation.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The document discusses delays in the construction project and the reasons for the delays."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The document refers to the extension of time (EOT) requests and approvals."
+      },
+      {
+        "signal_type": "LD",
+        "description": "The document discusses the levy of liquidated damages (LD) or compensation for delay."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The document mentions disputes over payments and the release of outstanding amounts."
+      },
+      {
+        "signal_type": "compensation",
+        "description": "The document discusses compensation for delays and additional expenses."
+      }
+    ]
+  },
+  {
+    "segment_id": "Government_Order_-_Levy_of_Compensation",
+    "document_type": "Letter",
+    "document_stage": "Delay/EOT",
+    "parties": [
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "URC Construction (P) Limited",
+        "role": "contractor"
+      },
+      {
+        "name": "Puja M Singh",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "06/05/2024",
+        "normalized": "06-05-2024",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "09/03/2022",
+        "normalized": "09-03-2022",
+        "context": "Start date of delay period"
+      },
+      {
+        "date_string": "15/05/2022",
+        "normalized": "15-05-2022",
+        "context": "End date of delay period"
+      },
+      {
+        "date_string": "20/05/2024",
+        "normalized": "20-05-2024",
+        "context": "Letter date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 5997813.0,
+        "currency": "INR",
+        "description": "Compensation amount for delay",
+        "raw_text": "59,97,813.00"
+      }
+    ],
+    "summary": "This letter from the Department of Space, U.R. Rao Satellite Centre, informs M/s URC Construction (P) Limited about the levy of compensation for an unjustified delay of 68 days in the construction of an extension to the Assembly Integration & Test facility. The competent authority has approved the final extension of time with the levy of compensation. The compensation amount is ₹59,97,813.00, which URC Construction is required to pay within one month.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The letter discusses a delay of 68 days in the construction project."
+      },
+      {
+        "signal_type": "compensation",
+        "description": "Compensation is being levied for the unjustified delay."
+      },
+      {
+        "signal_type": "LD",
+        "description": "Levy of compensation acts as liquidated damages for the delay."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "Final extension of time granted with levy of compensation."
+      }
+    ]
+  },
+  {
+    "segment_id": "Government_Order_-_Performance_Bank_Guarantee_Reduction",
+    "document_type": "Letter",
+    "document_stage": "Security/BG",
+    "parties": [
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "URC Construction (P) Limited",
+        "role": "contractor"
+      },
+      {
+        "name": "Ministry of Finance",
+        "role": "government authority"
+      },
+      {
+        "name": "INDIAN SPACE RESEARCH ORGANISATION",
+        "role": "government authority"
+      },
+      {
+        "name": "PUJA MSINGH",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "30/12/2020",
+        "normalized": "30-12-2020",
+        "context": "URC Construction letter date"
+      },
+      {
+        "date_string": "12/11/2020",
+        "normalized": "12-11-2020",
+        "context": "Office memorandum date"
+      },
+      {
+        "date_string": "08.01.2021",
+        "normalized": "08-01-2021",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "08/01/21",
+        "normalized": "08-01-2021",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "08/01/2021",
+        "normalized": "08-01-2021",
+        "context": "Letter Date"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "This letter from the Department of Space, U.R. Rao Satellite Centre, addresses URC Construction's request for a reduction in the performance bank guarantee (PBG) for the Construction of Extension to Assembly Integration & Test facility(AITF-1) at ISITE, Bangalore. The department accepts the request to reduce the PBG from 5% to 3% based on an Office memorandum issued by the Ministry of Finance. URC Construction is required to submit a new PBG amounting to 3% of the work order value, after which the existing PBG will be released.",
+    "dispute_signals": [
+      {
+        "signal_type": "BG",
+        "description": "Concerns the reduction in value of Performance Bank Guarantee."
+      }
+    ]
+  },
+  {
+    "segment_id": "Invoice_-_Construction_Escalation_Bill",
+    "document_type": "Invoice",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "ISUTE",
+        "role": "employer"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "4.7.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 1033340.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "10,33,340.00"
+      },
+      {
+        "amount": 711441.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "7,11,441.00"
+      },
+      {
+        "amount": 10485923.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "1,04,85,923.00"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "3,34,59,11500"
+      },
+      {
+        "amount": 3693610.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "36,93,610.00"
+      },
+      {
+        "amount": 960461.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "9,60,461.00"
+      },
+      {
+        "amount": 6461981.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "64,61,981.00"
+      },
+      {
+        "amount": 6239150.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "62,39,150 00"
+      },
+      {
+        "amount": 4146712.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "41,46,712,00"
+      },
+      {
+        "amount": 10223027.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "1,02,23,027.00"
+      },
+      {
+        "amount": 28214208.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "2.82,14,208.00"
+      },
+      {
+        "amount": 6295893.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "62,95,893.00"
+      },
+      {
+        "amount": 9734607.0,
+        "currency": "INR",
+        "description": "Total value of work done",
+        "raw_text": "97,34,607.00"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Total",
+        "raw_text": "1.41.41.516.00"
+      },
+      {
+        "amount": 5704572.0,
+        "currency": "INR",
+        "description": "Released as on date",
+        "raw_text": "57,04,572.00"
+      },
+      {
+        "amount": 19846088.0,
+        "currency": "INR",
+        "description": "Balance",
+        "raw_text": "1,98,46,088.00"
+      },
+      {
+        "amount": 10216226.0,
+        "currency": "INR",
+        "description": "Context not specified in document",
+        "raw_text": "1,02,16,226.00"
+      },
+      {
+        "amount": 9629862.0,
+        "currency": "INR",
+        "description": "Context not specified in document",
+        "raw_text": "96,29,862.00"
+      }
+    ],
+    "summary": "This document is a 3rd escalation bill (electrical) for the construction of an extension to the Assembly Integration and Test Facility (AMTF-1) at ISITE, Bangalore. It details the value of work done, material component, and labor component for various quarters from August 2018 to July 2022. The total value is INR 1,41,41,516.00, with INR 57,04,572.00 released and a balance of INR 1,98,46,088.00.",
+    "dispute_signals": [
+      {
+        "signal_type": "escalation",
+        "description": "The document is identified as a 3rd escalation bill."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The document shows a balance amount, indicating a potential payment dispute."
+      }
+    ]
+  },
+  {
+    "segment_id": "Invoice_-_Construction_Escalation_Bill_2",
+    "document_type": "Invoice",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd.",
+        "role": "contractor"
+      },
+      {
+        "name": "ISITE, Bangalore",
+        "role": "employer"
+      },
+      {
+        "name": "URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "ISAC",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "4.7.2018",
+        "normalized": "04-07-2018",
+        "context": "Invoice Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 1234417.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 4 (May-19-Jul'19)",
+        "raw_text": "1234417"
+      },
+      {
+        "amount": 23633151.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 5 (Aug'19-Oct'19)",
+        "raw_text": "23633151"
+      },
+      {
+        "amount": 28120400.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 6 (Nov'19-Jan'20)",
+        "raw_text": "28120400"
+      },
+      {
+        "amount": 9731664.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 7 (Feb'20- Apr 20)",
+        "raw_text": "9731664"
+      },
+      {
+        "amount": 1111495.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 8 (May-20-Jul'20)",
+        "raw_text": "1111495"
+      },
+      {
+        "amount": 2045936.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 10 (Nov'20-Jan'21)",
+        "raw_text": "2045936"
+      },
+      {
+        "amount": 13927869.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 11 (Feb 21-Mar 21)",
+        "raw_text": "13927869"
+      },
+      {
+        "amount": 11173904.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 12 (May-21-Jul'21)",
+        "raw_text": "11173904"
+      },
+      {
+        "amount": 11370804.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 13 (Aug 21-Oct'21)",
+        "raw_text": "11370804"
+      },
+      {
+        "amount": 12294541.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 14 (Nov'21-Jan 22)",
+        "raw_text": "12294541.00"
+      },
+      {
+        "amount": 6799646.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 15 (Feb'22-Apr 22)",
+        "raw_text": "6799646.00"
+      },
+      {
+        "amount": 23069939.0,
+        "currency": "INR",
+        "description": "Total value of work done for Quarter 16 (May'22-Jul'22)",
+        "raw_text": "23069939.00"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Released amount as on date",
+        "raw_text": "1,30,82,527.00"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Balance amount",
+        "raw_text": "1,01,79,168.00"
+      }
+    ],
+    "summary": "This is the 1st escalation bill for air conditioning works related to the construction of an extension to the Assembly Integration and Test Facility at ISITE, Bangalore. It details the material and labor components for work done across multiple quarters, from August 2018 to July 2022. The document also mentions the released and balance amounts.",
+    "dispute_signals": [
+      {
+        "signal_type": "escalation",
+        "description": "The document is an escalation bill, indicating a claim for increased costs."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The invoice includes details of released and balance amounts, suggesting a potential payment dispute."
+      }
+    ]
+  },
+  {
+    "segment_id": "Legal_Notice_-_Demand_Notice_Reply",
+    "document_type": "Letter",
+    "document_stage": "Legal Escalation",
+    "parties": [
+      {
+        "name": "KUMAR M.N.",
+        "role": "legal counsel"
+      },
+      {
+        "name": "Shri Abhilash Raju V.",
+        "role": "legal counsel"
+      },
+      {
+        "name": "Union of India",
+        "role": "employer"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "Indian Space Research Organisation",
+        "role": "project authority"
+      },
+      {
+        "name": "U.R.Rao Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "Rahat Ali H.Shaikh",
+        "role": "project authority"
+      },
+      {
+        "name": "M/s. URC Constructions (P) Ltd.",
+        "role": "contractor"
+      },
+      {
+        "name": "Govt. of India",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "25/08/2025",
+        "normalized": "25-08-2025",
+        "context": "Letter Dated"
+      },
+      {
+        "date_string": "17/04/2025",
+        "normalized": "17-04-2025",
+        "context": "Demand Notice Date"
+      },
+      {
+        "date_string": "21/04/2025",
+        "normalized": "21-04-2025",
+        "context": "Demand Notice Delivery Date"
+      },
+      {
+        "date_string": "22/09/2017",
+        "normalized": "22-09-2017",
+        "context": "Original Tender Receipt Last Date"
+      },
+      {
+        "date_string": "12/10/2017",
+        "normalized": "12-10-2017",
+        "context": "Extended Tender Receipt Last Date"
+      },
+      {
+        "date_string": "04/07/2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "04/07/2018",
+        "normalized": "04-07-2018",
+        "context": "Hindrance Free Site Handed Over"
+      },
+      {
+        "date_string": "04/07/2018",
+        "normalized": "04-07-2018",
+        "context": "Architectural Drawings Issued"
+      },
+      {
+        "date_string": "18/07/2018",
+        "normalized": "18-07-2018",
+        "context": "Scheduled Date of Commencement"
+      },
+      {
+        "date_string": "12/07/2018",
+        "normalized": "12-07-2018",
+        "context": "Electrical Drawings Issued"
+      },
+      {
+        "date_string": "17/01/2021",
+        "normalized": "17-01-2021",
+        "context": "Scheduled Date of Completion"
+      },
+      {
+        "date_string": "12/11/2020",
+        "normalized": "12-11-2020",
+        "context": "Government of India Office Memorandum Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 1231005775.0,
+        "currency": "INR",
+        "description": "Amount put to tender",
+        "raw_text": "₹1,23,10,05,775/-"
+      },
+      {
+        "amount": 1260083001.0,
+        "currency": "INR",
+        "description": "Accepted tender amount",
+        "raw_text": "₹1,26,00,83,001/-"
+      },
+      {
+        "amount": 63004150.0,
+        "currency": "INR",
+        "description": "Performance bank guarantee",
+        "raw_text": "Rs.6,30,04,150/-"
+      },
+      {
+        "amount": 13300000.0,
+        "currency": "INR",
+        "description": "EMD",
+        "raw_text": "Rs.1,33,00,000/-"
+      },
+      {
+        "amount": 1327488.0,
+        "currency": "INR",
+        "description": "Supplementary work order value",
+        "raw_text": "Rs.13,27,488"
+      },
+      {
+        "amount": 37802490.0,
+        "currency": "INR",
+        "description": "Reduced Performance bank guarantee amount",
+        "raw_text": "₹ 3,78,02,490/-"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Additional Interest burden due to withholding",
+        "raw_text": "* 13.20 Crores"
+      },
+      {
+        "amount": 250000.0,
+        "currency": "INR",
+        "description": "Reply charges",
+        "raw_text": "Rs.2,50,000/-"
+      }
+    ],
+    "summary": "This is a reply to a demand notice issued by M/s. URC Constructions (P) Ltd. against the Union of India, Department of Space, Indian Space Research Organisation, U.R.Rao Satellite Centre regarding a construction project. The letter addresses claims related to COVID-19 suspension, prolongation costs, and interest. It denies the contractor's entitlement to compensation and interest, citing agreement terms and delays attributable to the contractor.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The letter discusses delays attributable to the contractor."
+      },
+      {
+        "signal_type": "compensation",
+        "description": "The letter addresses claims for compensation related to COVID-19 suspension and prolongation costs."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The letter disputes claims for additional interest due to withholding of funds."
+      },
+      {
+        "signal_type": "force_majeure",
+        "description": "The letter discusses the impact of the COVID-19 pandemic as a force majeure event."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The letter mentions extension of time granted for the COVID-19 pandemic period."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_BG_Return_for_Construction_Work",
+    "document_type": "Letter",
+    "document_stage": "Security/BG",
+    "parties": [
+      {
+        "name": "URC Construction (P) Limited",
+        "role": "contractor"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "State Bank of India",
+        "role": "government authority"
+      },
+      {
+        "name": "PUJA M SINGH",
+        "role": "project authority"
+      },
+      {
+        "name": "INDIAN SPACE RESEARCH ORGANISATION",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04/07/2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "22/03/2021",
+        "normalized": "22-03-2021",
+        "context": "SBI Letter Date"
+      },
+      {
+        "date_string": "19.02.2021",
+        "normalized": "19-02-2021",
+        "context": "URC Construction Letter Date"
+      },
+      {
+        "date_string": "15/03/2021",
+        "normalized": "15-03-2021",
+        "context": "BGs returned to URC Construction"
+      },
+      {
+        "date_string": "23/06/2021",
+        "normalized": "23-06-2021",
+        "context": "Letter Date"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "This is a letter from the Department of Space, U.R. Rao Satellite Centre to M/s URC Construction (P) Limited regarding the release of Bank Guarantees (BG) no.0406118BG0000063 & 0406118BG0000064 related to the construction of an extension to the Assembly Integration & Test facility (AITF-1). The letter requests URC Construction to return the BGs to the State Bank of India, as they were previously returned to URC Construction on 15/03/2021 based on their request.",
+    "dispute_signals": [
+      {
+        "signal_type": "BG",
+        "description": "The letter discusses the release and return of bank guarantees, which are a form of security in construction contracts."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Bank_Guarantee_Extension_for_ISRO_Project",
+    "document_type": "Letter",
+    "document_stage": "Security/BG",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Shri.Eswarappa B",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "ISITE",
+        "role": "employer"
+      },
+      {
+        "name": "ISRO Satellite Centre",
+        "role": "employer"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "State Bank of India",
+        "role": "bank"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "20-Nov-18",
+        "normalized": "20-11-2018",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference Date"
+      },
+      {
+        "date_string": "12.08.2016",
+        "normalized": "12-08-2016",
+        "context": "Bank Guarantee Date"
+      },
+      {
+        "date_string": "01.12.2018",
+        "normalized": "01-12-2018",
+        "context": "Bank Guarantee Validity Start Date"
+      },
+      {
+        "date_string": "31.12.2018",
+        "normalized": "31-12-2018",
+        "context": "Bank Guarantee Extended Validity End Date"
+      },
+      {
+        "date_string": "31.12.2018",
+        "normalized": "31-12-2018",
+        "context": "Last Date of Lodgement Claim"
+      },
+      {
+        "date_string": "30-11-2018",
+        "normalized": "30-11-2018",
+        "context": "Guarantee Cover End Date"
+      },
+      {
+        "date_string": "12-08-2016",
+        "normalized": "12-08-2016",
+        "context": "Original Guarantee Date"
+      },
+      {
+        "date_string": "30-11-2018",
+        "normalized": "30-11-2018",
+        "context": "Amendment Date"
+      },
+      {
+        "date_string": "31-12-2018",
+        "normalized": "31-12-2018",
+        "context": "Expiry Date"
+      },
+      {
+        "date_string": "31-12-2018",
+        "normalized": "31-12-2018",
+        "context": "Date of Claim"
+      },
+      {
+        "date_string": "12-08-2016",
+        "normalized": "12-08-2016",
+        "context": "Bank Guarantee Issue Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 4560354.0,
+        "currency": "INR",
+        "description": "Bank Guarantee Amount",
+        "raw_text": "Rs.45,60,354/-"
+      },
+      {
+        "amount": 4560354.0,
+        "currency": "INR",
+        "description": "Bank Guarantee Amount",
+        "raw_text": "4,560,354.00"
+      },
+      {
+        "amount": 4560354.0,
+        "currency": "INR",
+        "description": "NEW GUARANTEE AMOUNT",
+        "raw_text": "INR 4,560,354.00"
+      }
+    ],
+    "summary": "The first letter from URC Construction requests approval for bottom formwork for plinth beam works at the ISITE Bangalore construction site. The second and third letters from State Bank of India concern the extension of a bank guarantee (No: 0406116BG0000207) issued on behalf of URC Construction to ISRO Satellite Centre. The guarantee's validity is extended from 01-12-2018 to 31-12-2018.",
+    "dispute_signals": [
+      {
+        "signal_type": "BG",
+        "description": "Document relates to the extension of a bank guarantee."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Clarifications_on_EOT_Crane_Design",
+    "document_type": "Letter",
+    "document_stage": "Contract Formation",
+    "parties": [
+      {
+        "name": "Hi-Tech Industries",
+        "role": "contractor"
+      },
+      {
+        "name": "URC Construction (P) Ltd.",
+        "role": "employer"
+      },
+      {
+        "name": "MR. PETCH!MUTHU.M",
+        "role": "project authority"
+      },
+      {
+        "name": "ISRO",
+        "role": "government authority"
+      },
+      {
+        "name": "VIJAY PATIL",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "June 11, 2019",
+        "normalized": "11-06-2019",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "09/01/2019",
+        "normalized": "09-01-2019",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "10/06/19",
+        "normalized": "10-06-2019",
+        "context": "Reference Letter Date"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "This is a letter from Hi-Tech Industries to URC Construction regarding clarifications needed for a work order related to the construction of an extension at the ISITE Campus. Hi-Tech seeks confirmation on gantry rail specifications, existing facility rail levels, and festoon cable DSL systems. They also request clarification on the make of gearboxes for the cranes.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "Clarifications requested may cause delay in design and fabrication."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Construction_Delay_Appeal",
+    "document_type": "Letter",
+    "document_stage": "Delay/EOT",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "ISRO Satellite Centre (ISAC)",
+        "role": "employer"
+      },
+      {
+        "name": "Director, ISRO",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "Department of Space (DOS)",
+        "role": "government authority"
+      },
+      {
+        "name": "Ministry of Finance",
+        "role": "government authority"
+      },
+      {
+        "name": "Eswari Sugumar",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "09.09.2022",
+        "normalized": "09-09-2022",
+        "context": "Requesting Final Extension of time"
+      },
+      {
+        "date_string": "06.05.2024",
+        "normalized": "06-05-2024",
+        "context": "Informing Final extension of time"
+      },
+      {
+        "date_string": "10.05.2024",
+        "normalized": "10-05-2024",
+        "context": "Reply to Final decision of Final Extension of Time"
+      },
+      {
+        "date_string": "20.05.2024",
+        "normalized": "20-05-2024",
+        "context": "Informing Levy of LD"
+      },
+      {
+        "date_string": "31.05.2024",
+        "normalized": "31-05-2024",
+        "context": "Reply to URC's letter dated 10.05.2024"
+      },
+      {
+        "date_string": "03.06.2024",
+        "normalized": "03-06-2024",
+        "context": "Requesting to settle all the claims along with final bill"
+      },
+      {
+        "date_string": "10.05.2024",
+        "normalized": "10-05-2024",
+        "context": "Reply to Final decision of Final Extension of Time"
+      },
+      {
+        "date_string": "01.07.2024",
+        "normalized": "01-07-2024",
+        "context": "Reply to URC's letter dated 12.06.2024"
+      },
+      {
+        "date_string": "23.08.2024",
+        "normalized": "23-08-2024",
+        "context": "Rejection of all claims by EIC"
+      },
+      {
+        "date_string": "27.09.2024",
+        "normalized": "27-09-2024",
+        "context": "Letter Dated"
+      },
+      {
+        "date_string": "04.03.2025",
+        "normalized": "04-03-2025",
+        "context": "Letter Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 6.3,
+        "currency": "INR",
+        "description": "Performance Bank Guarantee amount",
+        "raw_text": "₹6.30"
+      },
+      {
+        "amount": 3.78,
+        "currency": "INR",
+        "description": "Reduced Performance Bank Guarantee amount",
+        "raw_text": "3.78 Crores"
+      },
+      {
+        "amount": 13.2,
+        "currency": "INR",
+        "description": "Additional Interest burden due to withholding",
+        "raw_text": "13.20 Crores"
+      },
+      {
+        "amount": 46.0,
+        "currency": "EUR",
+        "description": "POSTAGE",
+        "raw_text": "€46.00"
+      }
+    ],
+    "summary": "URC Construction (P) Ltd appeals to the Director of ISRO Satellite Centre (ISAC) regarding the non-receipt of a reply from the Group Head within 60 days, invoking Clause 25 of the General Conditions of Contract (GCC). The letter pertains to the construction of an extension to the Assembly Integration and Test Facility (AITF-1) at ISITE Campus, Marathahalli, Bangalore. ISRO denies URC's claims for compensation related to delays, COVID-19 expenses, and interest, citing contract clauses and force majeure provisions.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The document discusses delays in the construction project and the allocation of responsibility for these delays."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The document refers to requests for and granting of extensions of time (EOT) for the project."
+      },
+      {
+        "signal_type": "LD",
+        "description": "The document mentions the levy of liquidated damages (LD) for delays."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The document discusses claims for payment, including balance escalation payment and interest, which are disputed."
+      },
+      {
+        "signal_type": "force_majeure",
+        "description": "The document discusses the impact of the COVID-19 pandemic and the application of force majeure clauses."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Construction_Delay_Hindrances",
+    "document_type": "Letter",
+    "document_stage": "Delay/EOT",
+    "parties": [
+      {
+        "name": "URC CONSTRUCTION (P) LTD",
+        "role": "contractor"
+      },
+      {
+        "name": "G SHANMUGAM",
+        "role": "project authority"
+      },
+      {
+        "name": "Engineer Incharge-Civil",
+        "role": "project authority"
+      },
+      {
+        "name": "Construction & Maintenance Group (C& MG)",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "ISRO",
+        "role": "employer"
+      },
+      {
+        "name": "Civil department",
+        "role": "project authority"
+      },
+      {
+        "name": "Mechanical department",
+        "role": "project authority"
+      },
+      {
+        "name": "Electrical department",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "09-03-2020",
+        "normalized": "09-03-2020",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "18.09.2018",
+        "normalized": "18-09-2018",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "24.10.2018",
+        "normalized": "24-10-2018",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "15.12.2018",
+        "normalized": "15-12-2018",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "07.12.2018",
+        "normalized": "07-12-2018",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "17.12.2019",
+        "normalized": "17-12-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "04.01.2019",
+        "normalized": "04-01-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "06.05.2019",
+        "normalized": "06-05-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "09.05.2019",
+        "normalized": "09-05-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "22.05.2019",
+        "normalized": "22-05-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "03.06.2019",
+        "normalized": "03-06-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "04.06.2019",
+        "normalized": "04-06-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "03.07.2019",
+        "normalized": "03-07-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "21.06.2019",
+        "normalized": "21-06-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "12.07.2019",
+        "normalized": "12-07-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "06.08.2019",
+        "normalized": "06-08-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "16.09.2019",
+        "normalized": "16-09-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "27.09.2019",
+        "normalized": "27-09-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "11.02.2020",
+        "normalized": "11-02-2020",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "20-11-2018",
+        "normalized": "20-11-2018",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "27-04-2019",
+        "normalized": "27-04-2019",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "27th Jan 2020",
+        "normalized": "27-01-2020",
+        "context": "Alternate path provided to Block 1"
+      },
+      {
+        "date_string": "2.12.2019",
+        "normalized": "02-12-2019",
+        "context": "Level clearance date"
+      },
+      {
+        "date_string": "27-11-2018",
+        "normalized": "27-11-2018",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "26-05-2019",
+        "normalized": "26-05-2019",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "4-12-2018",
+        "normalized": "04-12-2018",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "14-06-2019",
+        "normalized": "14-06-2019",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "26-02-2019",
+        "normalized": "26-02-2019",
+        "context": "Fabrication start date"
+      },
+      {
+        "date_string": "10-05-2019",
+        "normalized": "10-05-2019",
+        "context": "Transportation start date"
+      },
+      {
+        "date_string": "12-05-2019",
+        "normalized": "12-05-2019",
+        "context": "Transportation completion date"
+      },
+      {
+        "date_string": "16-05-2019",
+        "normalized": "16-05-2019",
+        "context": "Erection start date"
+      },
+      {
+        "date_string": "17-05-2019",
+        "normalized": "17-05-2019",
+        "context": "Erection start date"
+      },
+      {
+        "date_string": "04-07-2019",
+        "normalized": "04-07-2019",
+        "context": "Erection completion date"
+      },
+      {
+        "date_string": "14-06-2019",
+        "normalized": "14-06-2019",
+        "context": "Deck slab concrete start date"
+      },
+      {
+        "date_string": "14-11-2019",
+        "normalized": "14-11-2019",
+        "context": "Deck slab concrete completion date"
+      },
+      {
+        "date_string": "30-07-2019",
+        "normalized": "30-07-2019",
+        "context": "Erection of MS Service walkway platform start date"
+      },
+      {
+        "date_string": "08-04-2020",
+        "normalized": "08-04-2020",
+        "context": "Erection of MS Service walkway platform completion date"
+      },
+      {
+        "date_string": "26-10-2019",
+        "normalized": "26-10-2019",
+        "context": "Procurement of material start date"
+      },
+      {
+        "date_string": "06-05-2020",
+        "normalized": "06-05-2020",
+        "context": "Procurement of material completion date"
+      },
+      {
+        "date_string": "28.9.19",
+        "normalized": null,
+        "context": "Revised GFC drawing received"
+      },
+      {
+        "date_string": "26-9-19",
+        "normalized": null,
+        "context": "Initial shop drawing submitted"
+      },
+      {
+        "date_string": "19-6-19",
+        "normalized": null,
+        "context": "Detailed discussion with the department"
+      },
+      {
+        "date_string": "7.11.2019",
+        "normalized": "07-11-2019",
+        "context": "Additional details received from department"
+      },
+      {
+        "date_string": "17.2.2020",
+        "normalized": "17-02-2020",
+        "context": "Final comments and suggestions received from Civil department"
+      },
+      {
+        "date_string": "20.2.2020",
+        "normalized": "20-02-2020",
+        "context": "Final comments and suggestions received from Mechanical department"
+      },
+      {
+        "date_string": "19-04-2019",
+        "normalized": "19-04-2019",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "19-07-2019",
+        "normalized": "19-07-2019",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "04-05-2019",
+        "normalized": "04-05-2019",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "03-08-2019",
+        "normalized": "03-08-2019",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "19-05-2019",
+        "normalized": "19-05-2019",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "18-08-2019",
+        "normalized": "18-08-2019",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "04-06-2019",
+        "normalized": "04-06-2019",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "03-09-2019",
+        "normalized": "03-09-2019",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "19-06-2019",
+        "normalized": "19-06-2019",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "18-09-2019",
+        "normalized": "18-09-2019",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "25-09-2019",
+        "normalized": "25-09-2019",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "03-05-2020",
+        "normalized": "03-05-2020",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "22-11-2019",
+        "normalized": "22-11-2019",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "19-12-2019",
+        "normalized": "19-12-2019",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "11-12-2019",
+        "normalized": "11-12-2019",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "26-01-2020",
+        "normalized": "26-01-2020",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "05-01-2020",
+        "normalized": "05-01-2020",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "29-12-2019",
+        "normalized": "29-12-2019",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "13-02-2020",
+        "normalized": "13-02-2020",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "17.10.2019",
+        "normalized": "17-10-2019",
+        "context": "Goods lift machine room slab casting cleared"
+      },
+      {
+        "date_string": "17.10.2019",
+        "normalized": "17-10-2019",
+        "context": "Reference letter date"
+      },
+      {
+        "date_string": "28.9.19",
+        "normalized": null,
+        "context": "Slab concrete casted"
+      },
+      {
+        "date_string": "18.11.2019",
+        "normalized": "18-11-2019",
+        "context": "Request letter date"
+      },
+      {
+        "date_string": "28-11-19",
+        "normalized": "28-11-2019",
+        "context": "Layout of Roof beams & Slab drawing received"
+      },
+      {
+        "date_string": "10-10-19",
+        "normalized": null,
+        "context": "Delay due to drawing delay"
+      },
+      {
+        "date_string": "01-11-2019",
+        "normalized": "01-11-2019",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "27-11-2019",
+        "normalized": "27-11-2019",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "05-01-2020",
+        "normalized": "05-01-2020",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "19-11-2019",
+        "normalized": "19-11-2019",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "22-10-2019",
+        "normalized": "22-10-2019",
+        "context": "Revised start date"
+      },
+      {
+        "date_string": "02-05-2020",
+        "normalized": "02-05-2020",
+        "context": "Revised completion date"
+      },
+      {
+        "date_string": "11.2.2020",
+        "normalized": "11-02-2020",
+        "context": "Final fire door qty confirmation received"
+      },
+      {
+        "date_string": "21.11.2019",
+        "normalized": "21-11-2019",
+        "context": "Shutter submitted to IPIRTI"
+      },
+      {
+        "date_string": "06.02.2020",
+        "normalized": "06-02-2020",
+        "context": "Result for shutter received"
+      },
+      {
+        "date_string": "07-07-2019",
+        "normalized": "07-07-2019",
+        "context": "Internal painting start date"
+      },
+      {
+        "date_string": "07-03-2021",
+        "normalized": "07-03-2021",
+        "context": "Internal painting completion date"
+      },
+      {
+        "date_string": "15-05-2019",
+        "normalized": "15-05-2019",
+        "context": "Completion of Block start date"
+      },
+      {
+        "date_string": "12-09-2020",
+        "normalized": "12-09-2020",
+        "context": "Completion of Block completion date"
+      },
+      {
+        "date_string": "23-05-2019",
+        "normalized": "23-05-2019",
+        "context": "Internal plastering start date"
+      },
+      {
+        "date_string": "15-01-2020",
+        "normalized": "15-01-2020",
+        "context": "External plastering start date"
+      },
+      {
+        "date_string": "11-06-2020",
+        "normalized": "11-06-2020",
+        "context": "External plastering completion date"
+      },
+      {
+        "date_string": "07-11-2020",
+        "normalized": "07-11-2020",
+        "context": "External plastering completion date"
+      },
+      {
+        "date_string": "02-06-2019",
+        "normalized": "02-06-2019",
+        "context": "Internal & External PH works start date"
+      },
+      {
+        "date_string": "01-08-2020",
+        "normalized": "01-08-2020",
+        "context": "Internal & External PH works completion date"
+      },
+      {
+        "date_string": "02-06-2019",
+        "normalized": "02-06-2019",
+        "context": "Completion of Internal PH works start date"
+      },
+      {
+        "date_string": "23-07-2020",
+        "normalized": "23-07-2020",
+        "context": "Completion of Internal PH works completion date"
+      },
+      {
+        "date_string": "01-08-2019",
+        "normalized": "01-08-2019",
+        "context": "External water supply lines start date"
+      },
+      {
+        "date_string": "01-08-2020",
+        "normalized": "01-08-2020",
+        "context": "External water supply lines completion date"
+      },
+      {
+        "date_string": "26-11-2019",
+        "normalized": "26-11-2019",
+        "context": "Water proofing treatment start date"
+      },
+      {
+        "date_string": "27-06-2020",
+        "normalized": "27-06-2020",
+        "context": "Water proofing treatment completion date"
+      },
+      {
+        "date_string": "16-07-2019",
+        "normalized": "16-07-2019",
+        "context": "Flooring works start date"
+      },
+      {
+        "date_string": "29-12-2020",
+        "normalized": "29-12-2020",
+        "context": "Flooring works completion date"
+      },
+      {
+        "date_string": "04-06-2019",
+        "normalized": "04-06-2019",
+        "context": "Joinery works start date"
+      },
+      {
+        "date_string": "19-11-2020",
+        "normalized": "19-11-2020",
+        "context": "Joinery works completion date"
+      },
+      {
+        "date_string": "18-10-2019",
+        "normalized": "18-10-2019",
+        "context": "False ceiling works start date"
+      },
+      {
+        "date_string": "05-12 2020",
+        "normalized": null,
+        "context": "False ceiling works completion date"
+      },
+      {
+        "date_string": "14-11-2019",
+        "normalized": "14-11-2019",
+        "context": "Roads, drains start date"
+      },
+      {
+        "date_string": "05-02-2020",
+        "normalized": "05-02-2020",
+        "context": "Roads, drains completion date"
+      },
+      {
+        "date_string": "16.02.2019",
+        "normalized": "16-02-2019",
+        "context": "Drawing for Zero G beams received"
+      },
+      {
+        "date_string": "06/05/2020",
+        "normalized": "06-05-2020",
+        "context": "Milestone Date"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "This is a letter from URC Construction to the Engineer Incharge at URSC, ISITE Campus, regarding the slow progress of work on the Construction of Extension to Assembly Integration and Test Facility (AITF 1). The letter references previous correspondence and attributes the delays to factors beyond URC's control, including increased quantities, non-tendered items, bad weather, and hindrances. URC requests consideration of these hindrances and a revision of the milestone dates as per Clause 5 of the contract.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The letter discusses delays in the construction project due to various hindrances."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The contractor is requesting an extension of time due to the delays."
+      },
+      {
+        "signal_type": "extra_item",
+        "description": "The letter mentions abnormal increase in quantities and non tendered items."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Escalation_Bill_Submission",
+    "document_type": "Invoice",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Construction & Maintenance Group (C& MG)",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "ISITE Campus",
+        "role": "employer"
+      },
+      {
+        "name": "G SHANMUGAM",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "17-08-2019",
+        "normalized": "17-08-2019",
+        "context": "Invoice Date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference date of original work order"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 1485779.0,
+        "currency": "INR",
+        "description": "Escalation bill amount",
+        "raw_text": "Rs. 14,85,779.00"
+      }
+    ],
+    "summary": "URC Construction (P) Ltd submits an escalation bill to the Construction & Maintenance Group (C& MG) for the extension of the Assembly Integration and Test Facility (AITF 1) project. The bill, numbered 03, covers the escalation up to the 4th quarter and amounts to Rs. 14,85,779.00. URC requests the payment to be released at the earliest.",
+    "dispute_signals": [
+      {
+        "signal_type": "escalation",
+        "description": "Document relates to an escalation bill."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "Request for payment release indicates a potential payment dispute."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Extension_of_Time_Dispute",
+    "document_type": "Letter",
+    "document_stage": "Delay/EOT",
+    "parties": [
+      {
+        "name": "URC Construction (P) Limited",
+        "role": "contractor"
+      },
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO Satellite Centre",
+        "role": "employer"
+      },
+      {
+        "name": "Director ISAC",
+        "role": "project authority"
+      },
+      {
+        "name": "Director, URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "Group Director, C&MG, URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "Engineer In Charge",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "01/07/2024",
+        "normalized": "01-07-2024",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "12/06/2024",
+        "normalized": "12-06-2024",
+        "context": "URC letter regarding EOT"
+      },
+      {
+        "date_string": "31/05/2024",
+        "normalized": "31-05-2024",
+        "context": "Department Letter regarding EOT"
+      },
+      {
+        "date_string": "06.05.2024",
+        "normalized": "06-05-2024",
+        "context": "Engineer In Charge letter regarding EOT"
+      },
+      {
+        "date_string": "09/09/2022",
+        "normalized": "09-09-2022",
+        "context": "URC letter regarding hindrances"
+      },
+      {
+        "date_string": "06/05/2024",
+        "normalized": "06-05-2024",
+        "context": "Department Letter regarding EOT approval"
+      },
+      {
+        "date_string": "20th May 2024",
+        "normalized": "20-05-2024",
+        "context": "Engineer In Charge letter regarding EOT"
+      },
+      {
+        "date_string": "09.09.2022",
+        "normalized": "09-09-2022",
+        "context": "URC Final EOT letter"
+      },
+      {
+        "date_string": "10.5.2024",
+        "normalized": "10-05-2024",
+        "context": "URC detailed reply regarding EOT"
+      },
+      {
+        "date_string": "09.03.2022",
+        "normalized": "09-03-2022",
+        "context": "Start date of alleged delay attributable to Contractor"
+      },
+      {
+        "date_string": "15.05.2022",
+        "normalized": "15-05-2022",
+        "context": "End date of alleged delay attributable to Contractor"
+      },
+      {
+        "date_string": "06.09.2024",
+        "normalized": null,
+        "context": "URC letter regarding EOT approval"
+      },
+      {
+        "date_string": "31.05.2024",
+        "normalized": "31-05-2024",
+        "context": "Engineer in charge's letter rejecting full EOT"
+      },
+      {
+        "date_string": "06/10/2023",
+        "normalized": "06-10-2023",
+        "context": "Meeting with Director, URSC regarding EOT"
+      },
+      {
+        "date_string": "20/05/2024",
+        "normalized": "20-05-2024",
+        "context": "Letter regarding levy of compensation for delay"
+      },
+      {
+        "date_string": "20.5.2024",
+        "normalized": "20-05-2024",
+        "context": "Engineer In Charge letter regarding LD amount"
+      },
+      {
+        "date_string": "03.06.2024",
+        "normalized": "03-06-2024",
+        "context": "URC letter objecting to LD deduction"
+      },
+      {
+        "date_string": "04.06.2024",
+        "normalized": "04-06-2024",
+        "context": "Date URC's letter received"
+      },
+      {
+        "date_string": "3.06.2024",
+        "normalized": "03-06-2024",
+        "context": "URC letter to consider claims with final bill"
+      },
+      {
+        "date_string": "09/03/2022",
+        "normalized": "09-03-2022",
+        "context": "Start date of unjustified delay period"
+      },
+      {
+        "date_string": "15/05/2022",
+        "normalized": "15-05-2022",
+        "context": "End date of unjustified delay period"
+      },
+      {
+        "date_string": "04/06/2024",
+        "normalized": "04-06-2024",
+        "context": "Final bill and final escalation bill submitted"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 132000000.0,
+        "currency": "INR",
+        "description": "Final certified value",
+        "raw_text": "Rs. 13.20 Crores"
+      },
+      {
+        "amount": 5997813.0,
+        "currency": "INR",
+        "description": "LD amount",
+        "raw_text": "Rs. 59,97,813.00"
+      },
+      {
+        "amount": 5997813.0,
+        "currency": "INR",
+        "description": "Total compensation for delay",
+        "raw_text": "₹59,97,813.00"
+      }
+    ],
+    "summary": "This is a letter from the Department of Space, U.R. Rao Satellite Centre to M/s URC Construction (P) Limited regarding the construction of an extension to the Assembly Integration & Test facility (AITF-1). The letter addresses URC's dissent on the grant of a final extension of time and responds to their claims regarding delays and the levy of liquidated damages (LD). The department justifies the extension of time granted and the compensation levied for unjustified delays.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The document discusses delays in the construction project and the extension of time (EOT) granted."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The document revolves around the dispute regarding the final extension of time granted to the contractor."
+      },
+      {
+        "signal_type": "LD",
+        "description": "The document mentions the levy of liquidated damages (LD) for the unjustified delay period."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The document discusses the deduction of LD amount from the final bill and the contractor's objection to it."
+      },
+      {
+        "signal_type": "compensation",
+        "description": "The document mentions the levy of compensation for the unjustified delay period."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Extension_of_Time_Request",
+    "document_type": "Letter",
+    "document_stage": "Delay/EOT",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "ISITE Campus",
+        "role": "project authority"
+      },
+      {
+        "name": "Construction & Maintenance Group (C& MG)",
+        "role": "project authority"
+      },
+      {
+        "name": "The Engineer In charge",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "08-01-2021",
+        "normalized": "08-01-2021",
+        "context": "Letter date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "18.11.201)",
+        "normalized": null,
+        "context": "Reference date"
+      },
+      {
+        "date_string": "09.03.2020",
+        "normalized": "09-03-2020",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "21.03.2020",
+        "normalized": "21-03-2020",
+        "context": "Site order date"
+      },
+      {
+        "date_string": "27.03.2020",
+        "normalized": "27-03-2020",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "30.03.2020",
+        "normalized": "30-03-2020",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "03.04.2020",
+        "normalized": "03-04-2020",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "04.05.2020",
+        "normalized": "04-05-2020",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "13.05.2020",
+        "normalized": "13-05-2020",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "13.0:;.2020",
+        "normalized": null,
+        "context": "Reference date"
+      },
+      {
+        "date_string": "21.05.2020",
+        "normalized": "21-05-2020",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "17.12.2020",
+        "normalized": "17-12-2020",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "23.03.2020",
+        "normalized": "23-03-2020",
+        "context": "Work suspended due to pandemic"
+      },
+      {
+        "date_string": "17.12.202",
+        "normalized": null,
+        "context": "Work resumed"
+      },
+      {
+        "date_string": "18.07.2018",
+        "normalized": "18-07-2018",
+        "context": "Date of commencement of work as per agreement"
+      },
+      {
+        "date_string": "17.01.2024",
+        "normalized": "17-01-2024",
+        "context": "Date of completion stipulated in agreement"
+      },
+      {
+        "date_string": "17-12-18",
+        "normalized": "17-12-2018",
+        "context": "EE's letter date for extension granted"
+      },
+      {
+        "date_string": "8/1/24",
+        "normalized": null,
+        "context": "Application date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Estimated amount put tender",
+        "raw_text": "1.3.00"
+      }
+    ],
+    "summary": "URC Construction (P) Ltd. requests an extension of time (EOT) for the Construction of Extension to Assembly Integration and Test Facility (AITF 1) at ISITE Campus, Marathahalli, Bangalore. The request is based on hindrances caused by the Corona pandemic, which led to the suspension of work from 23.03.2020 to 17.12.2020, declared as a \"Force Majeure\" event by the Government of India. They request consideration of the hindrance period and additional mobilization time, requesting a revision of the milestone and grant of EOT.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The letter requests an extension of time due to delays caused by the pandemic."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The primary request is for an extension of time for the project."
+      },
+      {
+        "signal_type": "force_majeure",
+        "description": "The pandemic is cited as a force majeure event impacting the project."
+      },
+      {
+        "signal_type": "covid",
+        "description": "The COVID-19 pandemic is explicitly mentioned as the cause of work suspension."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Extra_Item_Claim_Rejection",
+    "document_type": "Letter",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Limited",
+        "role": "contractor"
+      },
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. Rao Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "Y.J.Gurumurthy",
+        "role": "project authority"
+      },
+      {
+        "name": "President of India",
+        "role": "employer"
+      },
+      {
+        "name": "INDIAN SPACE RESEARCH ORGANISATION",
+        "role": "employer"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "23.01.2020",
+        "normalized": "23-01-2020",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "16.12.2019",
+        "normalized": "16-12-2019",
+        "context": "Claim for extra item"
+      },
+      {
+        "date_string": "02.11.2018",
+        "normalized": "02-11-2018",
+        "context": "Claim for extra item on earthwork excavation"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "This is a letter from the U.R. Rao Satellite Centre, Department of Space, Government of India, to M/s URC Construction (P) Limited regarding their extra item claim no. 3 for the construction of an extension to the Assembly Integration & Test facility. The letter informs URC Construction that their claim for additional height in centering and shuttering is not acceptable. The letter also states that a revised claim on earthwork excavation is not acceptable and requests the submission of total tax invoices and proof of payment to process the claim further.",
+    "dispute_signals": [
+      {
+        "signal_type": "extra_item",
+        "description": "The document discusses the rejection of an extra item claim related to construction work."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The letter addresses a dispute over payment for extra items claimed by the contractor."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Final_Bill_Certification_Dispute",
+    "document_type": "Letter",
+    "document_stage": "Delay/EOT",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Department of Space",
+        "role": "employer"
+      },
+      {
+        "name": "U.R.RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "ISITE Campus",
+        "role": "project authority"
+      },
+      {
+        "name": "Director ISAC",
+        "role": "project authority"
+      },
+      {
+        "name": "Engineer InCharge",
+        "role": "project authority"
+      },
+      {
+        "name": "CHD/ISRO",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "09.09.2022",
+        "normalized": "09-09-2022",
+        "context": "Requesting Final Extension of time"
+      },
+      {
+        "date_string": "0605.2024",
+        "normalized": "06-05-2024",
+        "context": "Informing Final extension of time"
+      },
+      {
+        "date_string": "10.05.2024",
+        "normalized": "10-05-2024",
+        "context": "Reply to Final decision of Final Extension of Time"
+      },
+      {
+        "date_string": "20.05.2024",
+        "normalized": "20-05-2024",
+        "context": "Informing Levy of LD"
+      },
+      {
+        "date_string": "31.05.2024",
+        "normalized": "31-05-2024",
+        "context": "Reply to URC's letter"
+      },
+      {
+        "date_string": "10.05.2024",
+        "normalized": "10-05-2024",
+        "context": "Reply to URC's letter"
+      },
+      {
+        "date_string": "03.06.2024",
+        "normalized": "03-06-2024",
+        "context": "Reply to Levy information and requesting to certify the additional claims along with Final bill"
+      },
+      {
+        "date_string": "06.05.2024",
+        "normalized": "06-05-2024",
+        "context": "Letter regarding final Extension of time"
+      },
+      {
+        "date_string": "09.09.2022",
+        "normalized": "09-09-2022",
+        "context": "Final EOT letter"
+      },
+      {
+        "date_string": "10.5.2024",
+        "normalized": "10-05-2024",
+        "context": "Detailed reply regarding EOT"
+      },
+      {
+        "date_string": "06.09.2024",
+        "normalized": null,
+        "context": "Letter regarding full extension of time without levy of LD"
+      },
+      {
+        "date_string": "31.05.2024",
+        "normalized": "31-05-2024",
+        "context": "Belated letter rejecting full extension of time"
+      },
+      {
+        "date_string": "20th May 2024",
+        "normalized": "20-05-2024",
+        "context": "Letter informing URC to deposit the LD amount"
+      },
+      {
+        "date_string": "3.06.2024",
+        "normalized": "03-06-2024",
+        "context": "URC's letter objecting to LD deduction"
+      },
+      {
+        "date_string": "04.06.2024",
+        "normalized": "04-06-2024",
+        "context": "URC's letter objecting to LD deduction received"
+      },
+      {
+        "date_string": "03.06.2024",
+        "normalized": "03-06-2024",
+        "context": "Claims along with the final bill"
+      },
+      {
+        "date_string": "04.06.2024",
+        "normalized": "04-06-2024",
+        "context": "7th & Final Escalation Bill Date"
+      },
+      {
+        "date_string": "18-07-2018",
+        "normalized": "18-07-2018",
+        "context": "Date of Commencement"
+      },
+      {
+        "date_string": "15-05-2022",
+        "normalized": "15-05-2022",
+        "context": "Date of Completion"
+      },
+      {
+        "date_string": "24/05/2024",
+        "normalized": "24-05-2024",
+        "context": "Date of final bill"
+      },
+      {
+        "date_string": "13/10/2017",
+        "normalized": "13-10-2017",
+        "context": "Last date of receipt of tenders"
+      },
+      {
+        "date_string": "04/07/2016",
+        "normalized": null,
+        "context": "Work order date"
+      },
+      {
+        "date_string": "18/07/2018",
+        "normalized": "18-07-2018",
+        "context": "schedule date of start"
+      },
+      {
+        "date_string": "17/01/2021",
+        "normalized": "17-01-2021",
+        "context": "Schedule date of completion"
+      },
+      {
+        "date_string": "06/02/2022",
+        "normalized": "06-02-2022",
+        "context": "Extended date of completion"
+      },
+      {
+        "date_string": "15/05/2022",
+        "normalized": "15-05-2022",
+        "context": "Actual date of completion"
+      },
+      {
+        "date_string": "24/05/2024",
+        "normalized": "24-05-2024",
+        "context": "Date of final bill"
+      },
+      {
+        "date_string": "15/02/2022",
+        "normalized": "15-02-2022",
+        "context": "Escalation Eligible upto"
+      },
+      {
+        "date_string": "24/05/2024",
+        "normalized": "24-05-2024",
+        "context": "Present escalation Bill No 7"
+      },
+      {
+        "date_string": "22/07/2020",
+        "normalized": "22-07-2020",
+        "context": "Previous escalation Bill No 6"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 132000000.0,
+        "currency": "INR",
+        "description": "final certified value",
+        "raw_text": "Rs. 13.20 Crores"
+      },
+      {
+        "amount": 5997813.0,
+        "currency": "INR",
+        "description": "LD amount",
+        "raw_text": "Rs. 59, 97,813.00"
+      },
+      {
+        "amount": 55172758.0,
+        "currency": "INR",
+        "description": "Total Value of Escalation Bill",
+        "raw_text": "5,51,72,758.00"
+      },
+      {
+        "amount": 16718963.0,
+        "currency": "INR",
+        "description": "Payment upto previous Bill",
+        "raw_text": "1,67,18,963.00"
+      },
+      {
+        "amount": 38453795.0,
+        "currency": "INR",
+        "description": "Payment Since previous Bill",
+        "raw_text": "3,84,53,795.00"
+      },
+      {
+        "amount": 1103455.0,
+        "currency": "INR",
+        "description": "Income Tax @2%",
+        "raw_text": "11,03,455.00"
+      },
+      {
+        "amount": 551728.0,
+        "currency": "INR",
+        "description": "Construction workers welfare cess @ 1%",
+        "raw_text": "5,51,728.00"
+      },
+      {
+        "amount": 492614.0,
+        "currency": "INR",
+        "description": "TDS-CGST at 1%",
+        "raw_text": "4,92,614.00"
+      },
+      {
+        "amount": 492614.0,
+        "currency": "INR",
+        "description": "TDS-SGST at 1%",
+        "raw_text": "4,92,614.00"
+      },
+      {
+        "amount": 52532347.0,
+        "currency": "INR",
+        "description": "Net after Deductions",
+        "raw_text": "5,25,32,347.00"
+      },
+      {
+        "amount": 52532347.0,
+        "currency": "INR",
+        "description": "Grand Total",
+        "raw_text": "5,25,32,347.00"
+      },
+      {
+        "amount": 15937748.0,
+        "currency": "INR",
+        "description": "Less upto 6th RA Escalation bill",
+        "raw_text": "1,59,37,748.00"
+      },
+      {
+        "amount": 36594599.0,
+        "currency": "INR",
+        "description": "Net payable",
+        "raw_text": "3,65,94,599.00"
+      },
+      {
+        "amount": 16718963.0,
+        "currency": "INR",
+        "description": "Escalation Paid",
+        "raw_text": "1,67,18,963.00"
+      },
+      {
+        "amount": 1260083001.0,
+        "currency": "INR",
+        "description": "W.O. Value",
+        "raw_text": "1,26,00, 83,001.00"
+      },
+      {
+        "amount": 55172758.0,
+        "currency": "INR",
+        "description": "Total Value of Escalation Bill",
+        "raw_text": "5,51,72,758"
+      }
+    ],
+    "summary": "URC Construction (P) Ltd. submits claims along with the final bill for the construction of an extension to the Assembly Integration and Test Facility. They protest the certification of the final bill without considering their claims and the deduction of liquidated damages (LD). URC requests the Group Head to instruct the Engineer in charge to consider all claims and refund the deducted LD amount, also requesting consideration of the remaining 68 days for the extension of time.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The document discusses delays in the project and disputes over the extension of time."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The document focuses on the extension of time requests and approvals."
+      },
+      {
+        "signal_type": "LD",
+        "description": "The document mentions the levy of liquidated damages and URC's objection to it."
+      },
+      {
+        "signal_type": "escalation",
+        "description": "The document refers to final escalation values and bills."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The document discusses the release of final certified value and deduction of LD from the final bill."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Final_Bill_Payment_Request",
+    "document_type": "Letter",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Department of Space",
+        "role": "employer"
+      },
+      {
+        "name": "U.R.Rao Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "ISRO",
+        "role": "employer"
+      },
+      {
+        "name": "S.Palanisamy",
+        "role": "project authority"
+      },
+      {
+        "name": "The Group Director, C&MG,URSC, Bangalore",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference date of original agreement"
+      },
+      {
+        "date_string": "15.05.2022",
+        "normalized": "15-05-2022",
+        "context": "Date of successful completion of work"
+      },
+      {
+        "date_string": "16th February 2023",
+        "normalized": "16-02-2023",
+        "context": "Date of submission of final bill and escalation bills"
+      },
+      {
+        "date_string": "13-06-2023",
+        "normalized": "13-06-2023",
+        "context": "Letter Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 9190743.0,
+        "currency": "INR",
+        "description": "Final Bill",
+        "raw_text": "* 91,90,743.00"
+      },
+      {
+        "amount": 1059067.0,
+        "currency": "INR",
+        "description": "Withheld Amount",
+        "raw_text": "* 10,59,067,00"
+      },
+      {
+        "amount": 112908309.0,
+        "currency": "INR",
+        "description": "Escalation Bills",
+        "raw_text": "11,29,08,309.00"
+      },
+      {
+        "amount": 8992735.0,
+        "currency": "INR",
+        "description": "Reimbursement of GST from 12% to 18%",
+        "raw_text": "* 89,92,735.00"
+      },
+      {
+        "amount": 132150854.0,
+        "currency": "INR",
+        "description": "Total Amount",
+        "raw_text": "13,21,50,854.00"
+      }
+    ],
+    "summary": "URC Construction (P) Ltd. requests the release of final bills, final escalation bills, and GST reimbursement for the construction of an extension to the Assembly Integration and Test Facility (AITF 1) at ISITE Campus. The work was completed on May 15, 2022, and the final bills were submitted on February 16, 2023. The total amount pending is ₹13,21,50,854.00.",
+    "dispute_signals": [
+      {
+        "signal_type": "payment_dispute",
+        "description": "Payment for final bill, escalation bills, and GST reimbursement is pending."
+      },
+      {
+        "signal_type": "escalation",
+        "description": "Claim for escalation bills is part of the pending amount."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Mobilisation_Advance_Interest_Deduction",
+    "document_type": "Letter",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Engineer Incharge",
+        "role": "project authority"
+      },
+      {
+        "name": "Construction & Maintenance Group (C& MG)",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC, ISITE Campus",
+        "role": "employer"
+      },
+      {
+        "name": "Shri. Shivakumar",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "26-04-2019",
+        "normalized": "26-04-2019",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference URSC letter date"
+      },
+      {
+        "date_string": "24-4-2019",
+        "normalized": "24-04-2019",
+        "context": "Reference URC letter date"
+      },
+      {
+        "date_string": "29/04/19",
+        "normalized": "29-04-2019",
+        "context": "Document Received Date"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "URC Construction (P) Ltd. requests the Engineer Incharge at URSC, ISITE Campus, not to deduct interest towards the mobilization advance from their Secured Advance bills, but instead deduct the interest from their RA Bills. They request the release of the full secured advance without any deductions.",
+    "dispute_signals": [
+      {
+        "signal_type": "payment_dispute",
+        "description": "Dispute over deduction of interest from mobilization advance."
+      },
+      {
+        "signal_type": "interest",
+        "description": "Request not to deduct interest from secured advance bills."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Payment_Release_Request",
+    "document_type": "Letter",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Secretary, Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "Chairman, ISRO",
+        "role": "government authority"
+      },
+      {
+        "name": "ISRO",
+        "role": "employer"
+      },
+      {
+        "name": "URCC",
+        "role": "contractor"
+      },
+      {
+        "name": "Palanisamy",
+        "role": "Managing Director"
+      },
+      {
+        "name": "Director, URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "Additional Secretary & FA to the Govt. of India, DOS",
+        "role": "government authority"
+      },
+      {
+        "name": "Director,SAC,Ahmedabad",
+        "role": "project authority"
+      },
+      {
+        "name": "Controller, URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "Director, CEPO",
+        "role": "project authority"
+      },
+      {
+        "name": "Sr.Head accounts/IFA (C)",
+        "role": "project authority"
+      },
+      {
+        "name": "GD,C&MG",
+        "role": "project authority"
+      },
+      {
+        "name": "Associate director SATCOM-PO, ISRO",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work order date"
+      },
+      {
+        "date_string": "13-10-2017",
+        "normalized": "13-10-2017",
+        "context": "Tender Submission Date"
+      },
+      {
+        "date_string": "18-07-2018",
+        "normalized": "18-07-2018",
+        "context": "Date of Commencement"
+      },
+      {
+        "date_string": "17-01-2021",
+        "normalized": "17-01-2021",
+        "context": "Scheduled Date of Completion"
+      },
+      {
+        "date_string": "15-05-2022",
+        "normalized": "15-05-2022",
+        "context": "Actual date of Completion"
+      },
+      {
+        "date_string": "09-05-2022",
+        "normalized": "09-05-2022",
+        "context": "Date of Inauguration"
+      },
+      {
+        "date_string": "23.03.2020",
+        "normalized": "23-03-2020",
+        "context": "Temporary Suspension by department due to Covid Wave"
+      },
+      {
+        "date_string": "16.12.2020",
+        "normalized": "16-12-2020",
+        "context": "Temporary Suspension by department due to Covid Wave"
+      },
+      {
+        "date_string": "23.04.2021",
+        "normalized": "23-04-2021",
+        "context": "Temporary Suspension by department due to Covid Wave"
+      },
+      {
+        "date_string": "13.06.2021",
+        "normalized": "13-06-2021",
+        "context": "Temporary Suspension by department due to Covid Wave"
+      },
+      {
+        "date_string": "23.02.2023",
+        "normalized": "23-02-2023",
+        "context": "Final bill certification date"
+      },
+      {
+        "date_string": "23.08.2023",
+        "normalized": "23-08-2023",
+        "context": "Payments were due on or before"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 1260083001.0,
+        "currency": "INR",
+        "description": "Work order Value",
+        "raw_text": "126,00,83,001"
+      },
+      {
+        "amount": 9190743.0,
+        "currency": "INR",
+        "description": "Final Bill (Including Civil, Electrical, HVAC, Mechanical)",
+        "raw_text": "91,90,743.00"
+      },
+      {
+        "amount": 1059067.0,
+        "currency": "INR",
+        "description": "Withheld Amount",
+        "raw_text": "* 10,59,067,00"
+      },
+      {
+        "amount": 112908309.0,
+        "currency": "INR",
+        "description": "Price Variation Bills (Including Civil, Electrical, HVAC, Mechanical)",
+        "raw_text": "11,29,08,309.00"
+      },
+      {
+        "amount": 8992735.0,
+        "currency": "INR",
+        "description": "Reimbursement of GST from 12% to 18%\n(Including Civil, Electrical, HVAC, Mechanical)",
+        "raw_text": "* 89,92,735.00"
+      },
+      {
+        "amount": 132150854.0,
+        "currency": "INR",
+        "description": "Total Amount",
+        "raw_text": "13,21,50,854.00"
+      },
+      {
+        "amount": 132200000.0,
+        "currency": "INR",
+        "description": "pending from ISRO",
+        "raw_text": "Rs. 13.22 Cr"
+      }
+    ],
+    "summary": "URC Construction (P) Ltd. is requesting the release of pending payments for the construction of an extension to the Assembly Integration & Test Facility (AITF) at ISITE, Bangalore. The final bill amount of Rs. 13,21,50,854.00 is pending from URSC after final bill certification on 23.02.2023. URC claims that the payments are overdue and causing financial stress, and requests intervention from the Department of Space and ISRO to resolve the issue.",
+    "dispute_signals": [
+      {
+        "signal_type": "payment_dispute",
+        "description": "The letter explicitly discusses pending payments and the failure to release the final bill amount."
+      },
+      {
+        "signal_type": "delay",
+        "description": "The letter mentions delays in payment and the project experiencing time overrun."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The letter mentions an extended period of completion and a final Extension of Time (EOT) process."
+      },
+      {
+        "signal_type": "covid",
+        "description": "The letter mentions temporary suspension due to Covid wave."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Performance_Bank_Guarantee_Amendment",
+    "document_type": "Letter",
+    "document_stage": "Security/BG",
+    "parties": [
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "URC Construction (P) Limited",
+        "role": "contractor"
+      },
+      {
+        "name": "PUJA M SINGH",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04/07/2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "02/02/2021",
+        "normalized": "02-02-2021",
+        "context": "Letter regarding PBG submission"
+      },
+      {
+        "date_string": "08.02.2021",
+        "normalized": "08-02-2021",
+        "context": "Letter Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 0.05,
+        "currency": "percentage",
+        "description": "PBG value",
+        "raw_text": "5% of tendered value"
+      },
+      {
+        "amount": 0.03,
+        "currency": "percentage",
+        "description": "PBG value",
+        "raw_text": "3% of tendered value"
+      },
+      {
+        "amount": 0.03,
+        "currency": "percentage",
+        "description": "PBG value",
+        "raw_text": "3% of tendered value"
+      }
+    ],
+    "summary": "This letter from the Department of Space, U.R. Rao Satellite Centre, addresses URC Construction (P) Limited regarding the extension of a bank guarantee for performance security related to the construction of an extension to the Assembly Integration & Test facility. The letter informs URC Construction that the submitted amendment to the Performance Bank Guarantee (PBG) is not acceptable due to a reduction in the PBG value. URC Construction is requested to collect the PBG amendment and resubmit a fresh PBG amounting to 3% of the tendered value.",
+    "dispute_signals": [
+      {
+        "signal_type": "BG",
+        "description": "Concerns the submission and validity of a performance bank guarantee."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Rate_Analysis_for_EOT_Crane_Work",
+    "document_type": "Letter",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "G SHANMUGAM",
+        "role": "project authority"
+      },
+      {
+        "name": "Engineer Incharge - Mechanical",
+        "role": "project authority"
+      },
+      {
+        "name": "Construction & Maintenance Group (C& MG)",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "ISITE Campus",
+        "role": "project authority"
+      },
+      {
+        "name": "Shri Krishnasamy",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference date for EOT Crane Work"
+      },
+      {
+        "date_string": "06-May-2021",
+        "normalized": "06-05-2021",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "27/05/2021",
+        "normalized": "27-05-2021",
+        "context": "Resubmission Date"
+      },
+      {
+        "date_string": "07/05/2021",
+        "normalized": "07-05-2021",
+        "context": "Suites Received Date"
+      },
+      {
+        "date_string": "009/05/2021",
+        "normalized": null,
+        "context": "Suites Received Date"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "URC Construction (P) Ltd submits a rate analysis for extra items (Festoon cable) related to EOT Crane work for the Assembly Integration and Test Facility (AITF 1) project at ISITE Campus, Marathahalli, Bangalore. The document is addressed to the Engineer Incharge - Mechanical, Construction & Maintenance Group (C& MG), URSC, ISITE Campus, Bangalore, seeking approval for the rate analysis. The letter references a previous communication regarding the EOT Crane Work.",
+    "dispute_signals": [
+      {
+        "signal_type": "extra_item",
+        "description": "The document concerns rate analysis for extra items (Festoon cable) of EOT Crane work."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Request_for_BG_Release",
+    "document_type": "Letter",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "ISRO",
+        "role": "employer"
+      },
+      {
+        "name": "Ministry of Home Affairs",
+        "role": "government authority"
+      },
+      {
+        "name": "Ministry of Finance",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Expenditure",
+        "role": "government authority"
+      },
+      {
+        "name": "Procurement Policy Division",
+        "role": "government authority"
+      },
+      {
+        "name": "G. SHANMUGAM",
+        "role": "Authorised Signatory"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "01.06.2020",
+        "normalized": "01-06-2020",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference URSC Letter Date"
+      },
+      {
+        "date_string": "21.03.2020",
+        "normalized": "21-03-2020",
+        "context": "Site order received date"
+      },
+      {
+        "date_string": "27.03.2020",
+        "normalized": "27-03-2020",
+        "context": "URC Letter Date"
+      },
+      {
+        "date_string": "30.03.2020",
+        "normalized": "30-03-2020",
+        "context": "URSC Letter Date"
+      },
+      {
+        "date_string": "03.04.2020",
+        "normalized": "03-04-2020",
+        "context": "URC Letter Date"
+      },
+      {
+        "date_string": "04.05.2020",
+        "normalized": "04-05-2020",
+        "context": "URC Letter Date"
+      },
+      {
+        "date_string": "13.05.2020",
+        "normalized": "13-05-2020",
+        "context": "URSC Letter Date"
+      },
+      {
+        "date_string": "13.05.2020",
+        "normalized": "13-05-2020",
+        "context": "URSC Letter Date"
+      },
+      {
+        "date_string": "13.05.2020",
+        "normalized": "13-05-2020",
+        "context": "URSC Letter Date"
+      },
+      {
+        "date_string": "21.05.2020",
+        "normalized": "21-05-2020",
+        "context": "URC Letter Date"
+      },
+      {
+        "date_string": "24.03.2020",
+        "normalized": "24-03-2020",
+        "context": "Notice by Ministry of Home Affairs date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 63004150.0,
+        "currency": "INR",
+        "description": "Performance bank Guarantee for 5% of tendered amount",
+        "raw_text": "Rs. 6,30,04,150"
+      },
+      {
+        "amount": 69304575.0,
+        "currency": "INR",
+        "description": "Bank guarantee for the value of Mobilization advance",
+        "raw_text": "Rs 6,93,04,575/-"
+      },
+      {
+        "amount": 511899360.0,
+        "currency": "INR",
+        "description": "Total value of work executed till 31.03.2020",
+        "raw_text": "Rs 51,18,99,360 /"
+      },
+      {
+        "amount": 25590000.0,
+        "currency": "INR",
+        "description": "Release of existing Performance Bank Guarantee",
+        "raw_text": "2.559 Cr"
+      },
+      {
+        "amount": 37409182.0,
+        "currency": "INR",
+        "description": "Amended Bank guarantee for the reduced value",
+        "raw_text": "Rs 3,74,09,182"
+      },
+      {
+        "amount": 28844605.0,
+        "currency": "INR",
+        "description": "Deduction made for the value against the Mobilization advance till March 2020",
+        "raw_text": "Rs. 2,88,44,605/-"
+      },
+      {
+        "amount": 34159545.0,
+        "currency": "INR",
+        "description": "Balance amount to be recovered from Bill",
+        "raw_text": "Rs. 3,41,59,545/-"
+      },
+      {
+        "amount": 10000000.0,
+        "currency": "INR",
+        "description": "Bank Guarantee released",
+        "raw_text": "Rs.1,00,00,000/-"
+      },
+      {
+        "amount": 18844605.0,
+        "currency": "INR",
+        "description": "Release the balance Bank guarantee against Mobilization advance recovery",
+        "raw_text": "Rs.1,88,44,605/-"
+      }
+    ],
+    "summary": "URC Construction (P) Ltd requests URSC, ISRO to release the Performance Security Bank Guarantee and Mobilization Advance Bank Guarantee to the extent of the value of work completed up to March 31, 2020. The total value of work executed till March 31, 2020, is Rs 51,18,99,360. URC requests the release of Rs 2.559 Cr of the existing Performance Bank Guarantee and Rs.1,88,44,605 against Mobilization advance recovery.",
+    "dispute_signals": [
+      {
+        "signal_type": "BG",
+        "description": "Request for release of Performance security BG and Mob adv BG."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "Request for release of payment on indirect running costs."
+      },
+      {
+        "signal_type": "covid",
+        "description": "Reference to COVID-19 pandemic and its impact on the construction industry."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Submission_of_Extra_Item_2",
+    "document_type": "Letter",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "G SHANMUGAM",
+        "role": "project authority"
+      },
+      {
+        "name": "Engineer Incharge",
+        "role": "project authority"
+      },
+      {
+        "name": "Construction & Maintenance Group (C& MG)",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "ISITE Campus",
+        "role": "employer"
+      },
+      {
+        "name": "Shri.Eswarappa S",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "02-11-2018",
+        "normalized": "02-11-2018",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference Date"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "This is a letter from URC Construction (P) Ltd to the Engineer Incharge at URSC, regarding the submission of rate analysis for Extra Item No-2 for the construction of an extension to the Assembly Integration and Test Facility (AITF 1) at ISITE Campus, Marathahalli, Bangalore. The letter requests approval for the rate analysis.",
+    "dispute_signals": [
+      {
+        "signal_type": "extra_item",
+        "description": "The document discusses the submission of a rate analysis for an extra item, indicating a potential dispute over additional work and costs."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Submission_of_Extra_Item_2_2",
+    "document_type": "Letter",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "G SHANMUGAM",
+        "role": "project authority"
+      },
+      {
+        "name": "Engineer Incharge",
+        "role": "project authority"
+      },
+      {
+        "name": "Construction & Maintenance Group (C& MG)",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "Siri.Eswarappa S",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference date"
+      },
+      {
+        "date_string": "02-11-2018",
+        "normalized": "02-11-2018",
+        "context": "Letter date"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "URC Construction (P) Ltd submits the rate analysis for Extra Item No-2 for the construction of an extension to the Assembly Integration and Test Facility (AITF 1) at ISITE Campus, Marathahalli, Bangalore, requesting approval from the Engineer Incharge, Construction & Maintenance Group (C& MG), URSC.",
+    "dispute_signals": [
+      {
+        "signal_type": "extra_item",
+        "description": "Submission of rate analysis for Extra Item No-2 indicates a dispute or negotiation regarding additional work and its associated costs."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Submission_of_RA_Bill_No_07",
+    "document_type": "Invoice",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Engineer In Charge, Construction & Maintenance Group (C& MG)",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "ISITE Campus",
+        "role": "project authority"
+      },
+      {
+        "name": "G SHANMUGAM",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "03/05/2019",
+        "normalized": "03-05-2019",
+        "context": "Invoice Date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 8918756.0,
+        "currency": "INR",
+        "description": "Net value of RA Bill No-07",
+        "raw_text": "Rs. 89,18,756.00"
+      }
+    ],
+    "summary": "This is a submission of RA Bill No 07 by URC Construction (P) Ltd to the Engineer In Charge, Construction & Maintenance Group (C& MG), URSC, ISITE Campus for the construction of Extension to Assembly Integration and Test Facility (AITF 1) at ISITE Campus, Marathahalli, Bangalore. The net value of the bill is Rs. 89,18,756.00. The sender requests that the payment be released at the earliest.",
+    "dispute_signals": [
+      {
+        "signal_type": "payment_dispute",
+        "description": "Submission of RA Bill indicates a payment request, which can be a potential area of dispute."
+      }
+    ]
+  },
+  {
+    "segment_id": "Letter_-_Waiver_Request_for_Interest_on_Advance",
+    "document_type": "Letter",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "ISRO",
+        "role": "employer"
+      },
+      {
+        "name": "Construction & Maintenance Group (C& MG)",
+        "role": "project authority"
+      },
+      {
+        "name": "G SHANMUGAM",
+        "role": "project authority"
+      },
+      {
+        "name": "National Highways & Development Corporation Limited",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "18.06.2020",
+        "normalized": "18-06-2020",
+        "context": "Letter Date"
+      },
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 9699220.0,
+        "currency": "INR",
+        "description": "Interest recovery amount",
+        "raw_text": "Rs.96,99,220/-"
+      },
+      {
+        "amount": 6416003.0,
+        "currency": "INR",
+        "description": "Civil interest recovery amount",
+        "raw_text": "Rs.64,16,003/-"
+      },
+      {
+        "amount": 1330948.0,
+        "currency": "INR",
+        "description": "Electrical interest recovery amount",
+        "raw_text": "Rs.13,30,948/"
+      },
+      {
+        "amount": 1465670.0,
+        "currency": "INR",
+        "description": "HVAC interest recovery amount",
+        "raw_text": "Rs.14,65,670/-"
+      },
+      {
+        "amount": 486599.0,
+        "currency": "INR",
+        "description": "Mechanical interest recovery amount",
+        "raw_text": "Rs.4,86,599/-"
+      }
+    ],
+    "summary": "URC Construction (P) Ltd requests URSC, ISRO to waive off the interest on the unadjusted mobilization advance for 6 months (April to Oct-20). The interest recovery of Rs.96,99,220/- has been deducted on the mobilization advance. They cite COVID-19 disruptions and financial losses as reasons for the request.",
+    "dispute_signals": [
+      {
+        "signal_type": "payment_dispute",
+        "description": "Dispute over interest on mobilization advance."
+      },
+      {
+        "signal_type": "covid",
+        "description": "COVID-19 pandemic cited as a reason for financial difficulties."
+      },
+      {
+        "signal_type": "interest",
+        "description": "Request for waiving off interest on mobilization advance."
+      }
+    ]
+  },
+  {
+    "segment_id": "Non-Starter_Report_-_Pre-Institution_Mediation",
+    "document_type": "Report",
+    "document_stage": "Legal Escalation",
+    "parties": [
+      {
+        "name": "URC Constructions Pvt Ltd.",
+        "role": "applicant"
+      },
+      {
+        "name": "The UR Rao satellite Centre",
+        "role": "opposite party"
+      },
+      {
+        "name": "ISRO Satellite center",
+        "role": "opposite party"
+      },
+      {
+        "name": "MNK advocate",
+        "role": "legal counsel"
+      },
+      {
+        "name": "District Legal Services Authority",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "13.06.2025",
+        "normalized": "13-06-2025",
+        "context": "Application date for Pre-Institution Mediation"
+      },
+      {
+        "date_string": "29.07.2025",
+        "normalized": "29-07-2025",
+        "context": "Scheduled appearance date for opposite party"
+      },
+      {
+        "date_string": "06.08.2025",
+        "normalized": "06-08-2025",
+        "context": "Scheduled appearance date for opposite party"
+      },
+      {
+        "date_string": "11.08.2025",
+        "normalized": "11-08-2025",
+        "context": "Report Date"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "This is a Non-Starter Report from the District Legal Services Authority, Bengaluru regarding a pre-institution mediation application. URC Constructions Pvt Ltd. applied for mediation, but the UR Rao Satellite Centre was not ready to mediate. The petition is closed.",
+    "dispute_signals": [
+      {
+        "signal_type": "arbitration",
+        "description": "Report relates to pre-institution mediation, indicating a dispute resolution process."
+      }
+    ]
+  },
+  {
+    "segment_id": "Notice_-_COVID-19_Impact_on_Contract",
+    "document_type": "Letter",
+    "document_stage": "Delay/EOT",
+    "parties": [
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Engineer Incharge-Civil/Electrical/HVAC & Mechanical",
+        "role": "project authority"
+      },
+      {
+        "name": "Construction & Maintenance Group (C& MG)",
+        "role": "project authority"
+      },
+      {
+        "name": "URSC",
+        "role": "employer"
+      },
+      {
+        "name": "ISITE Campus",
+        "role": "employer"
+      },
+      {
+        "name": "Ministry of Home Affairs Govt of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Govt of India",
+        "role": "government authority"
+      },
+      {
+        "name": "World Health Organization (WHO)",
+        "role": "government authority"
+      },
+      {
+        "name": "Ministry of Finance, Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Ministry of Labour and Employment, Government of India",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Reference date of original contract"
+      },
+      {
+        "date_string": "21.03.2020",
+        "normalized": "21-03-2020",
+        "context": "Site order received date"
+      },
+      {
+        "date_string": "27.03.2020",
+        "normalized": "27-03-2020",
+        "context": "Previous letter date"
+      },
+      {
+        "date_string": "30.03.2020",
+        "normalized": "30-03-2020",
+        "context": "Letter reference date"
+      },
+      {
+        "date_string": "19th March",
+        "normalized": null,
+        "context": "Prime Minister's address date regarding COVID-19"
+      },
+      {
+        "date_string": "March 24, 2020",
+        "normalized": "24-03-2020",
+        "context": "Date of lockdown announcement"
+      },
+      {
+        "date_string": "April 14, 2020",
+        "normalized": "14-04-2020",
+        "context": "Initial lockdown end date"
+      },
+      {
+        "date_string": "03-04-2020",
+        "normalized": "03-04-2020",
+        "context": "Letter date"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "URC Construction (P) Ltd. informs URSC about the impact of the COVID-19 pandemic and subsequent lockdown imposed by the Government of India on the construction project of Extension to Assembly Integration and Test Facility (AITF 1). URC anticipates consequences on contract performance and expenditures due to the restrictions and seeks consideration for the suspension's impact on time and cost. The letter serves as an intimation as per the contract.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "Anticipated project delays due to COVID-19 restrictions."
+      },
+      {
+        "signal_type": "covid",
+        "description": "Impact of COVID-19 pandemic on project execution."
+      },
+      {
+        "signal_type": "force_majeure",
+        "description": "COVID-19 declared as a pandemic, potentially invoking force majeure."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "Likely request for Extension of Time due to the lockdown."
+      }
+    ]
+  },
+  {
+    "segment_id": "Office_Memorandum_-_Force_Majeure_Clause",
+    "document_type": "Office Memorandum",
+    "document_stage": "Execution",
+    "parties": [
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Ministry of Finance",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Expenditure",
+        "role": "government authority"
+      },
+      {
+        "name": "Procurement Policy Division",
+        "role": "project authority"
+      },
+      {
+        "name": "Ministry of Home Affairs (MHA)",
+        "role": "government authority"
+      },
+      {
+        "name": "Kotluru Narayana Reddy",
+        "role": "project authority"
+      },
+      {
+        "name": "Secretaries of all Central Government Ministries/Departments",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "13th May, 2020",
+        "normalized": "13-05-2020",
+        "context": "Memorandum Date"
+      },
+      {
+        "date_string": "19th February, 2020",
+        "normalized": "19-02-2020",
+        "context": "Date of original O.M. regarding Force Majeure Clause"
+      },
+      {
+        "date_string": "20th February 2020",
+        "normalized": "20-02-2020",
+        "context": "Start date for completion of contractual obligations extension"
+      },
+      {
+        "date_string": "19th February, 2020",
+        "normalized": "19-02-2020",
+        "context": "Cut-off date for default on contractual obligations"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "This Office Memorandum issued by the Department of Expenditure, Ministry of Finance, Government of India, addresses the invocation of the Force Majeure Clause (FMC) due to disruptions caused by the Coronavirus pandemic. It clarifies that the restrictions on the movement of goods, services, and manpower due to lockdown may allow parties to invoke FMC. The memorandum states that completion dates after February 20, 2020, can be extended for three to six months without penalty, provided the parties were not in default as of February 19, 2020.",
+    "dispute_signals": [
+      {
+        "signal_type": "force_majeure",
+        "description": "The document discusses the invocation of Force Majeure Clause (FMC) due to disruptions caused by the Coronavirus pandemic."
+      },
+      {
+        "signal_type": "delay",
+        "description": "The document addresses delays in fulfilling contractual obligations due to restrictions on movement of goods, services, and manpower."
+      },
+      {
+        "signal_type": "covid",
+        "description": "The document explicitly mentions the impact of the COVID-19 pandemic on contractual obligations."
+      }
+    ]
+  },
+  {
+    "segment_id": "Office_Memorandum_-_Performance_Security_Reduction",
+    "document_type": "Office Memorandum",
+    "document_stage": "Execution",
+    "parties": [
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Ministry of Finance",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Expenditure",
+        "role": "issuing department"
+      },
+      {
+        "name": "Procurement Policy Division",
+        "role": "project authority"
+      },
+      {
+        "name": "Kotluru Narayana Reddy",
+        "role": "project authority"
+      },
+      {
+        "name": "Central Public Sector Undertakings",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "12th November 2020",
+        "normalized": "12-11-2020",
+        "context": "Memorandum Date"
+      },
+      {
+        "date_string": "31.12.2021",
+        "normalized": "31-12-2021",
+        "context": "Applicability of reduced Performance Security"
+      },
+      {
+        "date_string": "31.12.2021",
+        "normalized": "31-12-2021",
+        "context": "No subsequent increase in Performance Security beyond this date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Performance Security amount",
+        "raw_text": "five to ten percent"
+      },
+      {
+        "amount": 3.0,
+        "currency": "INR",
+        "description": "Reduced Performance Security amount",
+        "raw_text": "3%"
+      }
+    ],
+    "summary": "This office memorandum from the Government of India, Ministry of Finance, addresses performance security in government contracts. It reduces the performance security from 5-10% to 3% of the contract value for all existing contracts, except those under dispute with ongoing arbitration or court proceedings. This reduction applies to tenders/contracts issued/concluded until 31.12.2021 and remains valid for the contract's duration.",
+    "dispute_signals": [
+      {
+        "signal_type": "arbitration",
+        "description": "Exclusion of contracts under dispute with ongoing arbitration from reduced performance security benefit."
+      },
+      {
+        "signal_type": "BG",
+        "description": "Addresses the quantum of Performance Security in Government contracts."
+      },
+      {
+        "signal_type": "covid",
+        "description": "References slowdown in economy due to the pandemic as a reason for financial crunch among contractors."
+      }
+    ]
+  },
+  {
+    "segment_id": "Petition_-_Pending_Contractor_Payment",
+    "document_type": "Letter",
+    "document_stage": "Financial/Billing",
+    "parties": [
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "Shri Ramprasath Palanisamy",
+        "role": "project authority"
+      },
+      {
+        "name": "URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "Palanisamy. S",
+        "role": "contractor"
+      },
+      {
+        "name": "GANESAN .V",
+        "role": "contractor"
+      },
+      {
+        "name": "SHANMUGAM .G",
+        "role": "contractor"
+      },
+      {
+        "name": "VENKATESH .K",
+        "role": "contractor"
+      },
+      {
+        "name": "RAMPRASATH .P",
+        "role": "contractor"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Work Order Issued"
+      },
+      {
+        "date_string": "09.12.2023",
+        "normalized": "09-12-2023",
+        "context": "Grievance Petition Date"
+      },
+      {
+        "date_string": "May 2022",
+        "normalized": null,
+        "context": "Project Completion Date"
+      },
+      {
+        "date_string": "Mar 6, 2024",
+        "normalized": null,
+        "context": "Email Date"
+      },
+      {
+        "date_string": "Mar 19, 2024",
+        "normalized": null,
+        "context": "Email Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 126.01,
+        "currency": "INR",
+        "description": "Work order value",
+        "raw_text": "Rs. 126.01 Crores"
+      },
+      {
+        "amount": 13.21,
+        "currency": "INR",
+        "description": "Escalation bill value",
+        "raw_text": "Rs.13.21 Crores"
+      }
+    ],
+    "summary": "This document is a letter from URC Construction (P) Ltd to the Department of Space regarding the pending final bill and escalation payment for the Construction of Extension of Assembly Integration and Test Facility (AITF-I) project. The work was completed in May 2022, but the payment of Rs. 13.21 Crores is still pending. URC Construction requests an appointment with the Hon'ble Member (Finance) to discuss the financial crisis caused by the delayed payment.",
+    "dispute_signals": [
+      {
+        "signal_type": "payment_dispute",
+        "description": "The contractor claims non-receipt of payment for completed work."
+      },
+      {
+        "signal_type": "escalation",
+        "description": "The contractor is escalating the payment issue to higher authorities."
+      },
+      {
+        "signal_type": "delay",
+        "description": "Delay in payment is causing financial crisis for the contractor."
+      }
+    ]
+  },
+  {
+    "segment_id": "Reply_Letter_-_Construction_Extension_Dispute",
+    "document_type": "Letter",
+    "document_stage": "Delay/EOT",
+    "parties": [
+      {
+        "name": "URC Construction (P) Limited",
+        "role": "contractor"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "INDIAN SPACE RESEARCH ORGANISATION",
+        "role": "government authority"
+      },
+      {
+        "name": "Director, URSC",
+        "role": "project authority"
+      },
+      {
+        "name": "PUJA M SINGH",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "06/05/2024",
+        "normalized": "06-05-2024",
+        "context": "Final EOT Intimation Letter Date"
+      },
+      {
+        "date_string": "10/05/2024",
+        "normalized": "10-05-2024",
+        "context": "URC Construction letter regarding EOT queries"
+      },
+      {
+        "date_string": "20/05/2024",
+        "normalized": "20-05-2024",
+        "context": "Letter regarding EOT"
+      },
+      {
+        "date_string": "09.09.2022",
+        "normalized": "09-09-2022",
+        "context": "Final EOT letter not considered"
+      },
+      {
+        "date_string": "09.03.2022",
+        "normalized": "09-03-2022",
+        "context": "Start date of alleged delay period"
+      },
+      {
+        "date_string": "15.05.2022",
+        "normalized": "15-05-2022",
+        "context": "End date of alleged delay period"
+      },
+      {
+        "date_string": "09/09/2022",
+        "normalized": "09-09-2022",
+        "context": "URC letter regarding hindrances"
+      },
+      {
+        "date_string": "18/01/2021",
+        "normalized": "18-01-2021",
+        "context": "Start date of justified delay period"
+      },
+      {
+        "date_string": "08/03/2022",
+        "normalized": "08-03-2022",
+        "context": "End date of justified delay period"
+      },
+      {
+        "date_string": "15/05/2022",
+        "normalized": "15-05-2022",
+        "context": "Project completion date"
+      },
+      {
+        "date_string": "09/09/2022",
+        "normalized": "09-09-2022",
+        "context": "Claim for final extension of time submitted"
+      },
+      {
+        "date_string": "06/10/2023",
+        "normalized": "06-10-2023",
+        "context": "Meeting with Director, URSC"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "This letter from the Department of Space addresses URC Construction's queries regarding the final extension of time (EOT) for the Assembly Integration & Test facility (AITF-1) construction project. It responds to URC's letters and reiterates that the final EOT was granted as per agreement conditions, considering justified and unjustified delays. The letter clarifies the department's position on price escalation and compensation, referencing clause 2A and schedule 'F' of the agreement.",
+    "dispute_signals": [
+      {
+        "signal_type": "delay",
+        "description": "The document discusses delays in the construction project and the allocation of responsibility for these delays."
+      },
+      {
+        "signal_type": "EOT",
+        "description": "The document concerns the grant of a final extension of time (EOT) and the disputes surrounding it."
+      },
+      {
+        "signal_type": "escalation",
+        "description": "The contractor claims entitlement to price escalation for the entire extended period, which is disputed by the department."
+      },
+      {
+        "signal_type": "compensation",
+        "description": "The department's decision to levy compensation for delays is contested by the contractor."
+      },
+      {
+        "signal_type": "payment_dispute",
+        "description": "The contractor is awaiting the release of the final bill amount and final escalation bill, which is being disputed."
+      }
+    ]
+  },
+  {
+    "segment_id": "Statement_of_Truth_-_Commercial_Suit",
+    "document_type": "Court Filing",
+    "document_stage": "Legal Escalation",
+    "parties": [
+      {
+        "name": "URC CONSTRUCTIONS PRIVATE LIMITED",
+        "role": "plaintiff"
+      },
+      {
+        "name": "INDIAN SPACE RESEARCH ORGANISATION",
+        "role": "defendant"
+      },
+      {
+        "name": "Ganesan V.",
+        "role": "authorized signatory"
+      },
+      {
+        "name": "R. Veeraswamy",
+        "role": "Context not specified in document"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "23.02.2023",
+        "normalized": "23-02-2023",
+        "context": "Date of submission of final bill"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Amount claimed for execution of work order with interest",
+        "raw_text": "Rs. 26, 15, 91, 147/-"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Court fee valuation",
+        "raw_text": "Rs Ruppees 2, 47, 125"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Amount excuding amount order payment of Sinterest",
+        "raw_text": "15,15,0311"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Amount excuding amount order payment of Sinterest",
+        "raw_text": "15,15,081-"
+      }
+    ],
+    "summary": "This is a commercial original suit filed in the City Civil and Sessions Court at Bengaluru (Commercial Division). M/s. URC Constructions Private Limited is the plaintiff, and the Indian Space Research Organisation Satellite Center is the defendant. The plaintiff seeks payment of Rs. 26,15,91,147 for the execution of a work order, along with interest.",
+    "dispute_signals": [
+      {
+        "signal_type": "payment_dispute",
+        "description": "The plaintiff is claiming a sum of money for work done."
+      },
+      {
+        "signal_type": "interest",
+        "description": "Interest is claimed on the outstanding amount."
+      }
+    ]
+  },
+  {
+    "segment_id": "Supplementary_Work_Order_-_AITF-1_Construction",
+    "document_type": "Supplementary Work Order",
+    "document_stage": "Execution",
+    "parties": [
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "M/s URC Construction (P) Limited",
+        "role": "contractor"
+      },
+      {
+        "name": "President of India",
+        "role": "employer"
+      },
+      {
+        "name": "Puja M Singh",
+        "role": "project authority"
+      },
+      {
+        "name": "INDIAN SPACE RESEARCH ORGANISATION",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Original Work Order Date"
+      },
+      {
+        "date_string": "22.12.2021",
+        "normalized": "22-12-2021",
+        "context": "Supplementary Work Order Issued"
+      },
+      {
+        "date_string": "22/12/2011",
+        "normalized": "22-12-2011",
+        "context": "Document Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 1214063.0,
+        "currency": "INR",
+        "description": "Extra item amount",
+        "raw_text": "₹12,14,063.00"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Total",
+        "raw_text": "*12,14,062.50"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "* 6,562.50"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "Total",
+        "raw_text": "€12,14,062.50"
+      },
+      {
+        "amount": 1214063.0,
+        "currency": "INR",
+        "description": "Amount",
+        "raw_text": "12,14,063.00"
+      }
+    ],
+    "summary": "This is a supplementary work order issued by the Department of Space, U.R. Rao Satellite Centre to M/s URC Construction (P) Limited for the construction of an extension to the Assembly Integration & Test facility (AITF-1) at ISITE, Bangalore. The work order sanctions rates for extra items amounting to ₹12,14,063.00. All other terms and conditions of the original contract remain unaltered.",
+    "dispute_signals": [
+      {
+        "signal_type": "extra_item",
+        "description": "The document pertains to extra items in a construction project."
+      }
+    ]
+  },
+  {
+    "segment_id": "Work_Order_-_AITF_Extension_Construction",
+    "document_type": "Supplementary Work Order",
+    "document_stage": "Execution",
+    "parties": [
+      {
+        "name": "Government of India",
+        "role": "government authority"
+      },
+      {
+        "name": "Department of Space",
+        "role": "government authority"
+      },
+      {
+        "name": "U.R. RAO Satellite Centre",
+        "role": "project authority"
+      },
+      {
+        "name": "M/s URC Construction (P) Ltd",
+        "role": "contractor"
+      },
+      {
+        "name": "President of India",
+        "role": "employer"
+      },
+      {
+        "name": "INDIAN SPACE RESEARCH ORGANISATION",
+        "role": "project authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "04.07.2018",
+        "normalized": "04-07-2018",
+        "context": "Original Work Order Date"
+      }
+    ],
+    "monetary_amounts": [
+      {
+        "amount": 6022142.9,
+        "currency": "INR",
+        "description": "Extra items/Deviation in quantities/Substitution of items",
+        "raw_text": "Rs. 60,22,142.90/-"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "GRAND TOTAL",
+        "raw_text": "* 1,139,414.00"
+      },
+      {
+        "amount": null,
+        "currency": "INR",
+        "description": "GRAND TOTAL",
+        "raw_text": "€ 4,526,158.50"
+      },
+      {
+        "amount": 3950390.9,
+        "currency": "INR",
+        "description": "Net Cost Implication",
+        "raw_text": "3,950,390.90"
+      },
+      {
+        "amount": 2071.752,
+        "currency": "INR",
+        "description": "GRAND TOTAL",
+        "raw_text": "2,071.752.00"
+      }
+    ],
+    "summary": "This is a supplementary work order issued by the Department of Space, U.R. Rao Satellite Centre to M/s URC Construction (P) Ltd for the construction of an extension to the Assembly Integration & test facility (AITF-1) at ISITE. It sanctions rates for extra items, deviations in quantities, and substitutions of items amounting to Rs. 60,22,142.90. All other terms and conditions of the original contract remain unaltered.",
+    "dispute_signals": [
+      {
+        "signal_type": "extra_item",
+        "description": "The document pertains to a supplementary work order for extra items and deviations in quantities."
+      }
+    ]
+  },
+  {
+    "segment_id": "Writ_Petition_-_Payment_Dispute",
+    "document_type": "Court Filing",
+    "document_stage": "Legal Escalation",
+    "parties": [
+      {
+        "name": "URC CONSTRUCTION PRIVATE LIMITED",
+        "role": "contractor"
+      },
+      {
+        "name": "Palanisamy",
+        "role": "contractor"
+      },
+      {
+        "name": "SECRETARY, DEPARTMENT OF SPACE",
+        "role": "government authority"
+      },
+      {
+        "name": "UNION OF INDIA",
+        "role": "government authority"
+      },
+      {
+        "name": "CHAIRMAN",
+        "role": "project authority"
+      },
+      {
+        "name": "INDIAN SPACE RESEARCH ORGANISATION",
+        "role": "government authority"
+      }
+    ],
+    "dates": [
+      {
+        "date_string": "22/02/2023",
+        "normalized": "22-02-2023",
+        "context": "Final bill submitted"
+      },
+      {
+        "date_string": "06/09/2023",
+        "normalized": "06-09-2023",
+        "context": "Representation submitted against non-payment of final bill"
+      },
+      {
+        "date_string": "May 2022",
+        "normalized": null,
+        "context": "Project completed"
+      }
+    ],
+    "monetary_amounts": [],
+    "summary": "URC Construction Private Limited filed a writ petition in the High Court of Karnataka against the Secretary, Department of Space, and the Chairman, Indian Space Research Organisation, seeking a directive to release payments against a final bill submitted on 22.02.2023 and 06.09.2023. The petitioner claims completion of a construction project and non-payment of the final bill. The court allowed the writ petition and directed the Chairman of ISRO to consider the petitioner's representation and pass appropriate orders within eight weeks.",
+    "dispute_signals": [
+      {
+        "signal_type": "payment_dispute",
+        "description": "The petitioner claims non-payment of the final bill for a completed construction project."
+      }
+    ]
+  }
+]

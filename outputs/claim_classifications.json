@@ -1,0 +1,946 @@
+[
+  {
+    "segment_id": "Abstract_Statement_-_Construction_Work_Deviation",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is an abstract statement detailing specific extra/deviated work items, their quantities, rates, and total amount, directly supporting the contractor's claim for payment for these works."
+  },
+  {
+    "segment_id": "Annexure_-_Construction_Milestones_ISITE_Bangalore",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.95,
+    "reasoning": "The document explicitly specifies amounts to be withheld for non-achievement of milestones, directly establishing the contractual basis for liquidated damages for delay."
+  },
+  {
+    "segment_id": "Annexure_-_Construction_Milestones_ISITE_Bangalore",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "contextual",
+    "party_role": "neutral",
+    "confidence": 0.8,
+    "reasoning": "This annexure details the original construction milestones and timelines, which are fundamental for assessing any claims related to project prolongation and delay."
+  },
+  {
+    "segment_id": "Application_-_Extension_of_Time_for_Construction",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The EOT application explicitly states 'extra work' as a reason for the requested extension, directly supporting the contractor's claim for payment related to these works."
+  },
+  {
+    "segment_id": "Application_-_Extension_of_Time_for_Construction",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The contractor's application for an Extension of Time directly impacts the employer's ability to levy liquidated damages for delay, as a granted EOT would reduce the period for which LDs could be applied."
+  },
+  {
+    "segment_id": "Application_-_Extension_of_Time_for_Construction",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "This document is an application for an Extension of Time (EOT) due to hindrances, which directly supports the contractor's claim for prolongation and delay costs by establishing the basis for extended project duration."
+  },
+  {
+    "segment_id": "Certificate_-_Final_Bill_for_Construction_Work",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The certificate confirms completion 'within the extended time limit,' which directly counters the employer's ability to levy liquidated damages for delay up to that extended date."
+  },
+  {
+    "segment_id": "Certificate_-_Final_Bill_for_Construction_Work",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document explicitly states the work was completed 'within the extended time limit,' directly evidencing project prolongation."
+  },
+  {
+    "segment_id": "Certificate_-_Final_Bill_for_Construction_Work",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "neutral",
+    "confidence": 0.8,
+    "reasoning": "This document is the 'Final Bill certificate' itself, which forms the basis for the contractor's claim regarding unpaid final bills."
+  },
+  {
+    "segment_id": "Claim_Abstract_-_Covid_and_Prolongation_Charges",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document explicitly includes 'amounts for Covid-related issues' as part of the contractor's financial claims."
+  },
+  {
+    "segment_id": "Claim_Abstract_-_Covid_and_Prolongation_Charges",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The claim abstract explicitly includes a claim for 'interest on various final bills and escalations,' directly addressing delayed payments."
+  },
+  {
+    "segment_id": "Claim_Abstract_-_Covid_and_Prolongation_Charges",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The claim abstract explicitly lists 'prolongation charges' as a component of the contractor's financial claims."
+  },
+  {
+    "segment_id": "Claim_Abstract_-_Covid_and_Prolongation_Charges",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document refers to 'interest on various final bills and escalations,' strongly implying that the principal amounts for these items are part of the contractor's overall financial claim."
+  },
+  {
+    "segment_id": "Claim_Letter_-_Construction_Dispute_Settlement",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The letter explicitly mentions seeking settlement of claims due to COVID-19 shutdowns and compensation for increased costs."
+  },
+  {
+    "segment_id": "Claim_Letter_-_Construction_Dispute_Settlement",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.7,
+    "reasoning": "The letter mentions increased costs and financial losses, and the dispute signals refer to 'price variations', which could encompass extra or deviated works."
+  },
+  {
+    "segment_id": "Claim_Letter_-_Construction_Dispute_Settlement",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The letter explicitly states URC is requesting settlement of claims, including interest, due to delays."
+  },
+  {
+    "segment_id": "Claim_Letter_-_Construction_Dispute_Settlement",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The letter explicitly seeks settlement of claims due to delays and compensation for increased costs and financial losses incurred during the project."
+  },
+  {
+    "segment_id": "Claim_Letter_-_Construction_Dispute_Settlement",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document's dispute signals indicate a payment dispute involving rejected claims, withheld payments, final bill amounts, and price variations."
+  },
+  {
+    "segment_id": "Claim_Statement_-_Construction_Project_AITF-1",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is a claim statement from the contractor explicitly including a 'COVID claim amount'."
+  },
+  {
+    "segment_id": "Claim_Statement_-_Construction_Project_AITF-1",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is a claim statement from the contractor explicitly including a claim for 'interest'."
+  },
+  {
+    "segment_id": "Claim_Statement_-_Construction_Project_AITF-1",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The contractor's claim statement includes an 'LD amount', indicating they are addressing or challenging the employer's position on liquidated damages."
+  },
+  {
+    "segment_id": "Claim_Statement_-_Construction_Project_AITF-1",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is a claim statement from the contractor explicitly seeking 'compensation for prolongation period'."
+  },
+  {
+    "segment_id": "Claim_Statement_-_Construction_Project_AITF-1",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is a claim statement from the contractor detailing 'amounts for civil, electrical, HVAC, and mechanical work, as well as escalation' and a 'total balance amount due'."
+  },
+  {
+    "segment_id": "Clarification_Letter_-_EOT_Crane_Work",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "contextual",
+    "party_role": "supports_contractor",
+    "confidence": 0.65,
+    "reasoning": "Clarifications regarding specific components like gantry rail and gearbox could be a precursor to identifying changes in scope or design that might lead to extra or deviated works."
+  },
+  {
+    "segment_id": "Clarification_Letter_-_EOT_Crane_Work",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "contextual",
+    "party_role": "supports_contractor",
+    "confidence": 0.7,
+    "reasoning": "This letter could be used by the contractor to demonstrate that delays were caused by the need for clarification from the employer, thereby defending against liquidated damages."
+  },
+  {
+    "segment_id": "Clarification_Letter_-_EOT_Crane_Work",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "contextual",
+    "party_role": "supports_contractor",
+    "confidence": 0.7,
+    "reasoning": "The contractor's letter seeking clarification on specific work items indicates a need for information to proceed, which could impact the project timeline and contribute to prolongation if not addressed promptly."
+  },
+  {
+    "segment_id": "Completion_Certificate_-_AITF-1_Extension_Work",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.95,
+    "reasoning": "The document explicitly states that a 'compensation levy' resulted from the 68-day delay, directly evidencing the basis for the employer's liquidated damages counterclaim."
+  },
+  {
+    "segment_id": "Completion_Certificate_-_AITF-1_Extension_Work",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document formally records a 68-day delay in project completion, which is a foundational fact for the contractor's claim for prolongation costs."
+  },
+  {
+    "segment_id": "Contract_Agreement_-_Construction_of_AITF-1_Facility",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "contextual",
+    "party_role": "neutral",
+    "confidence": 0.8,
+    "reasoning": "The contract agreement defines the initial project timeline and contractual obligations, providing the baseline against which COVID-19 related disruptions would be evaluated."
+  },
+  {
+    "segment_id": "Contract_Agreement_-_Construction_of_AITF-1_Facility",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "contextual",
+    "party_role": "neutral",
+    "confidence": 0.85,
+    "reasoning": "The contract agreement defines the original scope of work, which is crucial for determining what constitutes 'extra' or 'deviated' works."
+  },
+  {
+    "segment_id": "Contract_Agreement_-_Construction_of_AITF-1_Facility",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "contextual",
+    "party_role": "neutral",
+    "confidence": 0.8,
+    "reasoning": "The contract agreement would specify the payment terms and any provisions for interest on late payments, forming the basis for this claim."
+  },
+  {
+    "segment_id": "Contract_Agreement_-_Construction_of_AITF-1_Facility",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "neutral",
+    "confidence": 0.9,
+    "reasoning": "The contract agreement is the primary document that would contain the specific clauses, rates, and conditions for liquidated damages for delay."
+  },
+  {
+    "segment_id": "Contract_Agreement_-_Construction_of_AITF-1_Facility",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "contextual",
+    "party_role": "neutral",
+    "confidence": 0.85,
+    "reasoning": "The contract agreement establishes the original project schedule and terms, which are fundamental to assessing any claims for prolongation and delay costs."
+  },
+  {
+    "segment_id": "Contract_Agreement_-_Construction_of_AITF-1_Facility",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "contextual",
+    "party_role": "neutral",
+    "confidence": 0.85,
+    "reasoning": "This document outlines the original pricing, payment terms, and potentially clauses for price escalation, which are essential for evaluating claims regarding unpaid bills."
+  },
+  {
+    "segment_id": "Court_Filing_-_Construction_Dispute",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 1.0,
+    "reasoning": "The document explicitly states the plaintiff claims interest at 18% per annum on the amounts due."
+  },
+  {
+    "segment_id": "Court_Filing_-_Construction_Dispute",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The contractor is objecting to the employer's unilateral levy of liquidated damages, directly challenging this counterclaim."
+  },
+  {
+    "segment_id": "Court_Filing_-_Construction_Dispute",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.85,
+    "reasoning": "The document mentions delays in the work order and project completion, and extensions of time, which are the factual basis for a prolongation claim as part of the contractor's overall recovery suit."
+  },
+  {
+    "segment_id": "Court_Filing_-_Construction_Dispute",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The contractor is seeking recovery of a specific amount, claiming the employer has withheld payments despite work completion and non-payment of dues."
+  },
+  {
+    "segment_id": "Demand_Notice_-_Construction_Project_Delays",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The demand notice explicitly includes 'expenses incurred during the Covid-19 pandemic' as part of the total amount claimed."
+  },
+  {
+    "segment_id": "Demand_Notice_-_Construction_Project_Delays",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The demand notice explicitly claims '18% interest' on the total amount due, directly relating to interest on delayed payments."
+  },
+  {
+    "segment_id": "Demand_Notice_-_Construction_Project_Delays",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The demand notice claims amounts related to 'liquidated damages' and contests their levy, directly addressing the employer's potential counterclaim for LDs."
+  },
+  {
+    "segment_id": "Demand_Notice_-_Construction_Project_Delays",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The demand notice explicitly claims compensation for 'delays' and 'prolongation of the contract period' as a basis for the total amount claimed."
+  },
+  {
+    "segment_id": "Demand_Notice_-_Construction_Project_Delays",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The demand notice mentions 'non-release of final bill payments and withheld amounts' as a reason for the claim, directly addressing unpaid bills."
+  },
+  {
+    "segment_id": "Financial_Report_-_Lockdown_Expenses",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is an invoice from the contractor explicitly detailing and quantifying costs incurred during the COVID-19 lockdown period."
+  },
+  {
+    "segment_id": "Financial_Report_-_Lockdown_Expenses",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_contractor",
+    "confidence": 0.75,
+    "reasoning": "The document details costs incurred during a lockdown period, providing evidence that the delay was due to an external event, which could be used to rebut the employer's claim for liquidated damages."
+  },
+  {
+    "segment_id": "Financial_Report_-_Lockdown_Expenses",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The invoice details specific expenses like labor wages and equipment hire incurred over an extended period due to the lockdown, directly quantifying prolongation and delay costs."
+  },
+  {
+    "segment_id": "Financial_Report_-_Lockdown_Expenses",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.85,
+    "reasoning": "As an invoice for significant expenses, this document directly forms part of the contractor's claim for unpaid bills related to the project."
+  },
+  {
+    "segment_id": "Government_Order_-_Compensation_for_Construction_Delay",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_employer",
+    "confidence": 0.9,
+    "reasoning": "The letter explicitly addresses the contractor's claims related to COVID-19 expenses, indicating the employer's response to these costs."
+  },
+  {
+    "segment_id": "Government_Order_-_Compensation_for_Construction_Delay",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_employer",
+    "confidence": 0.9,
+    "reasoning": "The letter explicitly addresses the contractor's claims related to 'interest,' indicating the employer's response to this specific claim."
+  },
+  {
+    "segment_id": "Government_Order_-_Compensation_for_Construction_Delay",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.95,
+    "reasoning": "The letter states that 'compensation for delay was fixed by the competent authority' and responds to the contractor's request to waive it, directly supporting the employer's position on levying such damages."
+  },
+  {
+    "segment_id": "Government_Order_-_Compensation_for_Construction_Delay",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_employer",
+    "confidence": 0.9,
+    "reasoning": "The letter responds to the contractor's claims for prolongation costs and asserts that compensation for delay was fixed and final bills settled, directly countering the contractor's position."
+  },
+  {
+    "segment_id": "Government_Order_-_Compensation_for_Construction_Delay",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_employer",
+    "confidence": 0.9,
+    "reasoning": "The letter addresses 'outstanding payments' and asserts that 'final bills were settled as per the agreement conditions,' directly disputing the contractor's claim for unpaid amounts."
+  },
+  {
+    "segment_id": "Government_Order_-_Levy_of_Compensation",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.95,
+    "reasoning": "This letter formally notifies the contractor of the levy of compensation (liquidated damages) for a 68-day unjustified delay, directly quantifying the amount claimed by the employer."
+  },
+  {
+    "segment_id": "Government_Order_-_Levy_of_Compensation",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_employer",
+    "confidence": 0.85,
+    "reasoning": "The letter asserts an unjustified delay by the contractor and levies compensation, directly rebutting any potential contractor claim for prolongation costs for the same period."
+  },
+  {
+    "segment_id": "Invoice_-_Construction_Escalation_Bill",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "contextual",
+    "party_role": "supports_contractor",
+    "confidence": 0.7,
+    "reasoning": "The invoice shows a substantial unpaid balance, which forms the principal amount upon which a claim for interest on delayed payments would be calculated."
+  },
+  {
+    "segment_id": "Invoice_-_Construction_Escalation_Bill",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is explicitly an 'escalation bill' detailing increased costs and showing a significant unpaid balance, directly evidencing the contractor's claim for price escalation and unpaid amounts."
+  },
+  {
+    "segment_id": "Invoice_-_Construction_Escalation_Bill_2",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "contextual",
+    "party_role": "supports_contractor",
+    "confidence": 0.7,
+    "reasoning": "The invoice shows a balance amount, which, if unpaid, would be a prerequisite for a claim for interest on delayed payments."
+  },
+  {
+    "segment_id": "Invoice_-_Construction_Escalation_Bill_2",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "This document is explicitly an escalation bill for material and labor, detailing amounts due and a balance, directly evidencing the contractor's claim for price escalation and unpaid bills."
+  },
+  {
+    "segment_id": "Legal_Notice_-_Demand_Notice_Reply",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.9,
+    "reasoning": "The document explicitly addresses and denies liability for claims related to COVID-19 suspension and associated compensation."
+  },
+  {
+    "segment_id": "Legal_Notice_-_Demand_Notice_Reply",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.9,
+    "reasoning": "The letter directly denies liability for any additional interest burden, which is a core aspect of this claim."
+  },
+  {
+    "segment_id": "Legal_Notice_-_Demand_Notice_Reply",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.85,
+    "reasoning": "The letter asserts the contractor is responsible for delays, which directly supports the employer's basis for a liquidated damages counterclaim."
+  },
+  {
+    "segment_id": "Legal_Notice_-_Demand_Notice_Reply",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.9,
+    "reasoning": "The letter directly disputes the contractor's claims for prolongation costs and asserts the contractor is responsible for delays."
+  },
+  {
+    "segment_id": "Letter_-_Bank_Guarantee_Extension_for_ISRO_Project",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "contextual",
+    "party_role": "neutral",
+    "confidence": 0.65,
+    "reasoning": "An extended bank guarantee can be a procedural consequence of project delays, which may lead to the application of liquidated damages."
+  },
+  {
+    "segment_id": "Letter_-_Bank_Guarantee_Extension_for_ISRO_Project",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "contextual",
+    "party_role": "neutral",
+    "confidence": 0.65,
+    "reasoning": "The extension of a bank guarantee often indicates a project timeline adjustment, which could be a consequence of project prolongation."
+  },
+  {
+    "segment_id": "Letter_-_Clarifications_on_EOT_Crane_Design",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "contextual",
+    "party_role": "supports_contractor",
+    "confidence": 0.75,
+    "reasoning": "This letter documents a potential cause of delay (lack of necessary information for design) that the contractor could use to defend against claims for liquidated damages."
+  },
+  {
+    "segment_id": "Letter_-_Clarifications_on_EOT_Crane_Design",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "contextual",
+    "party_role": "supports_contractor",
+    "confidence": 0.75,
+    "reasoning": "The document is a request for clarification needed to proceed with design work, indicating a potential delay if the information is not provided promptly, which could contribute to the contractor's prolongation costs."
+  },
+  {
+    "segment_id": "Letter_-_Construction_Delay_Appeal",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document's dispute signals explicitly mention the impact of the COVID-19 pandemic and force majeure, which are central to this claim."
+  },
+  {
+    "segment_id": "Letter_-_Construction_Delay_Appeal",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document directly addresses the 'levy of LD' (liquidated damages), indicating the contractor is appealing against this employer counterclaim."
+  },
+  {
+    "segment_id": "Letter_-_Construction_Delay_Appeal",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document is an appeal by the contractor addressing the final extension of time and settlement of claims related to project delays."
+  },
+  {
+    "segment_id": "Letter_-_Construction_Delay_Appeal",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document addresses the settlement of claims, and its dispute signals specifically refer to final bill settlement and disputes over escalation payments."
+  },
+  {
+    "segment_id": "Letter_-_Construction_Delay_Hindrances",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document cites 'increased quantities' and 'non-tendered items' as hindrances, which are direct indicators of extra or deviated works performed by the contractor."
+  },
+  {
+    "segment_id": "Letter_-_Construction_Delay_Hindrances",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The contractor's request for an Extension of Time (EOT) due to various hindrances directly challenges the employer's potential right to levy liquidated damages for delay."
+  },
+  {
+    "segment_id": "Letter_-_Construction_Delay_Hindrances",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The letter explicitly details hindrances causing slow progress and formally requests an Extension of Time (EOT) for 205 days, directly supporting the contractor's claim for delay-related costs."
+  },
+  {
+    "segment_id": "Letter_-_Escalation_Bill_Submission",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "This document is an escalation bill submitted by the contractor, directly evidencing the contractor's claim for price escalation and quantifying the amount sought."
+  },
+  {
+    "segment_id": "Letter_-_Extension_of_Time_Dispute",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.95,
+    "reasoning": "The letter directly discusses the levy of liquidated damages for unjustified delays and its deduction from the final bill, providing direct evidence for the employer's counterclaim."
+  },
+  {
+    "segment_id": "Letter_-_Extension_of_Time_Dispute",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_employer",
+    "confidence": 0.85,
+    "reasoning": "The letter from the employer provides point-by-point replies to the contractor's dissent regarding EOT and discusses justified versus unjustified delays, thereby challenging the contractor's entitlement to full prolongation costs."
+  },
+  {
+    "segment_id": "Letter_-_Extension_of_Time_Dispute",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_employer",
+    "confidence": 0.9,
+    "reasoning": "The document explains that liquidated damages were deducted from the contractor's final bill, providing the employer's justification for a portion of the bill remaining unpaid."
+  },
+  {
+    "segment_id": "Letter_-_Extension_of_Time_Request",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document explicitly attributes the work suspension and requested extension of time to the COVID-19 pandemic, directly supporting a claim for associated costs."
+  },
+  {
+    "segment_id": "Letter_-_Extension_of_Time_Request",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The request for an extension of time directly seeks to mitigate or negate the employer's potential claim for liquidated damages for delay."
+  },
+  {
+    "segment_id": "Letter_-_Extension_of_Time_Request",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is a formal request for an extension of time due to work suspension, which is a foundational element for a claim for prolongation and delay costs."
+  },
+  {
+    "segment_id": "Letter_-_Extra_Item_Claim_Rejection",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_employer",
+    "confidence": 0.95,
+    "reasoning": "The letter explicitly rejects the contractor's claims for additional height in centering/shuttering and revised earthwork excavation, directly countering the contractor's assertion of extra works."
+  },
+  {
+    "segment_id": "Letter_-_Final_Bill_Certification_Dispute",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document explicitly disputes the levy of Liquidated Damages (LD) and requests a refund of the deducted amount, directly countering the employer's claim for LD."
+  },
+  {
+    "segment_id": "Letter_-_Final_Bill_Certification_Dispute",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document explicitly raises concerns about the reduction of justified Extension of Time (EOT) and requests consideration of claims, which directly relates to the contractor's entitlement to prolongation costs."
+  },
+  {
+    "segment_id": "Letter_-_Final_Bill_Certification_Dispute",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document refers to submitting claims along with the final bill and final escalation bill, and requests the release of the final certified value, directly addressing unpaid amounts and price escalation."
+  },
+  {
+    "segment_id": "Letter_-_Final_Bill_Payment_Request",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.85,
+    "reasoning": "The letter explicitly states that final bills and escalation bills are pending payment, establishing the factual basis for a claim for interest on these delayed payments."
+  },
+  {
+    "segment_id": "Letter_-_Final_Bill_Payment_Request",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The letter is a direct request from the contractor for payment of outstanding final bills and final escalation bills, explicitly stating they are pending."
+  },
+  {
+    "segment_id": "Letter_-_Mobilisation_Advance_Interest_Deduction",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document is a direct request from the contractor to prevent an interest deduction from their secured advance and RA bills, which directly impacts the final amount of payment they receive."
+  },
+  {
+    "segment_id": "Letter_-_Payment_Release_Request",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document states that delayed payments are causing financial strain on the contractor, which is a direct consequence that would lead to a claim for interest on those delayed payments."
+  },
+  {
+    "segment_id": "Letter_-_Payment_Release_Request",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "contextual",
+    "party_role": "supports_contractor",
+    "confidence": 0.65,
+    "reasoning": "The document's dispute signals mention an extended period of completion and a final EOT process, providing contextual evidence for potential prolongation and delay costs incurred by the contractor."
+  },
+  {
+    "segment_id": "Letter_-_Payment_Release_Request",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The letter explicitly requests the release of pending payments for a final bill that remains unpaid, directly supporting the contractor's claim for unpaid amounts."
+  },
+  {
+    "segment_id": "Letter_-_Performance_Bank_Guarantee_Amendment",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "contextual",
+    "party_role": "supports_employer",
+    "confidence": 0.65,
+    "reasoning": "The employer's rejection of a reduced performance bank guarantee (PBG) value indicates their assertion of contractual security, which is a protective measure relevant to potential claims for contractor non-performance, including delays that could lead to liquidated damages."
+  },
+  {
+    "segment_id": "Letter_-_Rate_Analysis_for_EOT_Crane_Work",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is a contractor's submission of a rate analysis for extra items, directly supporting their claim for payment for these works. It explicitly details the cost basis for additional work performed."
+  },
+  {
+    "segment_id": "Letter_-_Request_for_BG_Release",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The contractor requests BG release based on GOI guidelines issued during the COVID-19 period, indicating a direct financial action taken in response to the pandemic's economic impact."
+  },
+  {
+    "segment_id": "Letter_-_Request_for_BG_Release",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "contextual",
+    "party_role": "supports_contractor",
+    "confidence": 0.65,
+    "reasoning": "The contractor requests the release of bank guarantees for completed work, which is a financial action related to the project's payment structure and the contractor's cash flow."
+  },
+  {
+    "segment_id": "Letter_-_Submission_of_Extra_Item_2",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is a submission by the contractor for the rate analysis of an 'Extra Item No-2', directly evidencing the contractor's claim for payment for extra works."
+  },
+  {
+    "segment_id": "Letter_-_Submission_of_Extra_Item_2_2",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is a letter from the contractor submitting a rate analysis for an 'Extra Item No-2', directly evidencing a claim for additional work."
+  },
+  {
+    "segment_id": "Letter_-_Submission_of_RA_Bill_No_07",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The RA Bill represents a principal amount due, and if payment is delayed, this document would be the direct basis for calculating interest on the outstanding sum."
+  },
+  {
+    "segment_id": "Letter_-_Submission_of_RA_Bill_No_07",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "This document is a submitted RA Bill for a specific amount, directly evidencing a payment request that, if unpaid, forms the basis of the contractor's claim for unpaid bills."
+  },
+  {
+    "segment_id": "Letter_-_Waiver_Request_for_Interest_on_Advance",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document explicitly links the request for an interest waiver to the 'impact of the COVID-19 pandemic and financial losses,' indicating a direct financial consequence attributed to COVID-19."
+  },
+  {
+    "segment_id": "Letter_-_Waiver_Request_for_Interest_on_Advance",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "contextual",
+    "party_role": "supports_contractor",
+    "confidence": 0.7,
+    "reasoning": "The request for a six-month interest waiver due to COVID-19's impact suggests that the project likely experienced delays or prolongation, which led to the unadjusted advance."
+  },
+  {
+    "segment_id": "Letter_-_Waiver_Request_for_Interest_on_Advance",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.85,
+    "reasoning": "The document states that the interest has been 'deducted from running bills,' and the contractor's request to waive this interest directly impacts the net amount of their bills."
+  },
+  {
+    "segment_id": "Notice_-_COVID-19_Impact_on_Contract",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The letter from the contractor directly informs the employer about the financial impact of the COVID-19 pandemic and lockdown on project expenditures, seeking consideration for costs."
+  },
+  {
+    "segment_id": "Notice_-_COVID-19_Impact_on_Contract",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_contractor",
+    "confidence": 0.8,
+    "reasoning": "The contractor's notice of delay due to COVID-19 serves as an early warning and potential defense against any future claims for liquidated damages by the employer."
+  },
+  {
+    "segment_id": "Notice_-_COVID-19_Impact_on_Contract",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The contractor's letter notifies the employer of the impact of the COVID-19 lockdown on project time and cost, laying the groundwork for a prolongation claim."
+  },
+  {
+    "segment_id": "Office_Memorandum_-_Force_Majeure_Clause",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "This document establishes the official recognition of COVID-19 and lockdown restrictions as a force majeure event, providing a foundational basis for the contractor to claim associated costs."
+  },
+  {
+    "segment_id": "Office_Memorandum_-_Force_Majeure_Clause",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "rebuttal",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The memorandum explicitly states that completion dates shall be extended for 3-6 months without penalty to the contractor due to COVID-19, directly rebutting any claim for liquidated damages by the employer for delays during this period."
+  },
+  {
+    "segment_id": "Office_Memorandum_-_Force_Majeure_Clause",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The memorandum provides a government directive allowing for extensions of contractual obligations due to COVID-19 without penalty, directly supporting the contractor's claim for legitimate delays."
+  },
+  {
+    "segment_id": "Office_Memorandum_-_Performance_Security_Reduction",
+    "claim_key": "covid19_lockdown_costs",
+    "relevance_type": "contextual",
+    "party_role": "neutral",
+    "confidence": 0.7,
+    "reasoning": "This memorandum provides contextual evidence that the government recognized the economic slowdown due to the pandemic, leading to policy changes for contracts. This supports the general premise that the pandemic had a significant impact on projects, which is relevant to a COVID-19 costs claim."
+  },
+  {
+    "segment_id": "Petition_-_Pending_Contractor_Payment",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.9,
+    "reasoning": "The document indicates that a certified amount of Rs. 13.21 Crores has been pending for two years after project completion, providing a direct basis for an interest claim."
+  },
+  {
+    "segment_id": "Petition_-_Pending_Contractor_Payment",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document explicitly states that the final bill and escalation payment are pending, directly supporting the contractor's claim for these amounts."
+  },
+  {
+    "segment_id": "Reply_Letter_-_Construction_Extension_Dispute",
+    "claim_key": "liquidated_damages_for_delay",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.9,
+    "reasoning": "The letter from the employer clarifies their stance on justified/unjustified delays and compensation, which directly supports their potential counterclaim for liquidated damages."
+  },
+  {
+    "segment_id": "Reply_Letter_-_Construction_Extension_Dispute",
+    "claim_key": "prolongation_and_delay_costs",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.9,
+    "reasoning": "The letter from the employer clarifies their position on justified/unjustified delays and compensation, directly impacting the contractor's claim for prolongation costs by setting out the employer's stance."
+  },
+  {
+    "segment_id": "Reply_Letter_-_Construction_Extension_Dispute",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_employer",
+    "confidence": 0.9,
+    "reasoning": "The letter clarifies the employer's position on escalation and states how the final bill will be settled, directly addressing aspects of the contractor's claim for unpaid bills and escalation from the employer's perspective."
+  },
+  {
+    "segment_id": "Statement_of_Truth_-_Commercial_Suit",
+    "claim_key": "interest_on_delayed_payments",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document explicitly states the contractor is seeking interest at 12% per annum on the claimed amount, directly supporting the claim for interest on delayed payments."
+  },
+  {
+    "segment_id": "Statement_of_Truth_-_Commercial_Suit",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document is a commercial suit filed by the contractor seeking payment of a significant sum for the execution of a work order, directly asserting an unpaid bill."
+  },
+  {
+    "segment_id": "Supplementary_Work_Order_-_AITF-1_Construction",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "This supplementary work order directly sanctions rates for 'extra items' performed by the contractor, forming the basis for their claim for payment for these works."
+  },
+  {
+    "segment_id": "Work_Order_-_AITF_Extension_Construction",
+    "claim_key": "extra_and_deviated_works",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The supplementary work order directly sanctions rates and amounts for extra items and deviations, forming a basis for the contractor's claim for these works."
+  },
+  {
+    "segment_id": "Writ_Petition_-_Payment_Dispute",
+    "claim_key": "unpaid_bills_and_escalation",
+    "relevance_type": "direct",
+    "party_role": "supports_contractor",
+    "confidence": 0.95,
+    "reasoning": "The document describes a writ petition filed by the contractor seeking a directive to release payments against a final bill, directly evidencing a dispute over unpaid bills."
+  }
+]
